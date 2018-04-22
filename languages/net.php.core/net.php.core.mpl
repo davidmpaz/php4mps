@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="net.php.mps" uuid="0aec89ab-27ac-42ca-bc26-613b2eed58f7" languageVersion="0" moduleVersion="0">
+<language namespace="net.php.core" uuid="0aec89ab-27ac-42ca-bc26-613b2eed58f7" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="net.php.mps#01" uuid="5fb36021-6c65-43ff-a10f-1087ac988d13">
+    <generator alias="main" namespace="net.php.core#01" uuid="5fb36021-6c65-43ff-a10f-1087ac988d13">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -39,8 +39,8 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-        <module reference="0aec89ab-27ac-42ca-bc26-613b2eed58f7(net.php.mps)" version="0" />
-        <module reference="5fb36021-6c65-43ff-a10f-1087ac988d13(net.php.mps#01)" version="0" />
+        <module reference="0aec89ab-27ac-42ca-bc26-613b2eed58f7(net.php.core)" version="0" />
+        <module reference="5fb36021-6c65-43ff-a10f-1087ac988d13(net.php.core#01)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -114,7 +114,7 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-    <module reference="0aec89ab-27ac-42ca-bc26-613b2eed58f7(net.php.mps)" version="0" />
+    <module reference="0aec89ab-27ac-42ca-bc26-613b2eed58f7(net.php.core)" version="0" />
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />

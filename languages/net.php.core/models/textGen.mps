@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:43be50b2-248b-42cb-a77f-c1d651be59bb(net.php.mps.textGen)">
+<model ref="r:43be50b2-248b-42cb-a77f-c1d651be59bb(net.php.core.textGen)">
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
