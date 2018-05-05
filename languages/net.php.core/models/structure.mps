@@ -24,6 +24,7 @@
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="5404671619616246344" name="staticScope" index="2_RsDV" />
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -48,7 +49,20 @@
     <property role="EcuMT" value="5669239491951950679" />
     <property role="TrG5h" value="PhpScript" />
     <property role="R4oN_" value="php script" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4UY1WdYQXEL" role="1TKVEi">
+      <property role="IQ2ns" value="5673981116761758385" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="visibility" />
+      <ref role="20lvS9" node="jayJfOhgKc" resolve="Visibility" />
+    </node>
+    <node concept="1TJgyj" id="4UY1WdYQXEN" role="1TKVEi">
+      <property role="IQ2ns" value="5673981116761758387" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modifier" />
+      <ref role="20lvS9" node="jayJfOhG5I" resolve="Modifier" />
+    </node>
     <node concept="PrWs8" id="4UHbOvKqnHo" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -96,6 +110,47 @@
     <property role="34LRSv" value="public" />
     <property role="EcuMT" value="1146644602865" />
     <ref role="1TJDcQ" node="jayJfOhgKc" resolve="Visibility" />
+  </node>
+  <node concept="1TIwiD" id="jayJfOhG5I">
+    <property role="EcuMT" value="345241101827228014" />
+    <property role="TrG5h" value="Modifier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="modifier" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="4UY1WdYQSGq">
+    <property role="EcuMT" value="5673981116761738010" />
+    <property role="3GE5qa" value="modifier" />
+    <property role="TrG5h" value="IHasModifiers" />
+    <node concept="1TJgyj" id="4UY1WdYQSGr" role="1TKVEi">
+      <property role="IQ2ns" value="5673981116761738011" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modifiers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="jayJfOhG5I" resolve="Modifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4UY1WdYQSGx">
+    <property role="EcuMT" value="5673981116761738017" />
+    <property role="3GE5qa" value="modifier" />
+    <property role="TrG5h" value="StaticModifier" />
+    <property role="34LRSv" value="static" />
+    <ref role="1TJDcQ" node="jayJfOhG5I" resolve="Modifier" />
+  </node>
+  <node concept="1TIwiD" id="4UY1WdYQTxg">
+    <property role="EcuMT" value="5673981116761741392" />
+    <property role="3GE5qa" value="modifier" />
+    <property role="TrG5h" value="AbstractModifier" />
+    <property role="34LRSv" value="abstract" />
+    <ref role="1TJDcQ" node="jayJfOhG5I" resolve="Modifier" />
+  </node>
+  <node concept="1TIwiD" id="4UY1WdYQTxh">
+    <property role="EcuMT" value="5673981116761741393" />
+    <property role="3GE5qa" value="modifier" />
+    <property role="TrG5h" value="FinalModifier" />
+    <property role="34LRSv" value="final" />
+    <ref role="1TJDcQ" node="jayJfOhG5I" resolve="Modifier" />
   </node>
 </model>
 
