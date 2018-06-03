@@ -165,7 +165,7 @@
     <node concept="3EZMnI" id="1o52yCRqJLc" role="2wV5jI">
       <node concept="l2Vlx" id="1o52yCRqJLd" role="2iSdaV" />
       <node concept="3F0ifn" id="1o52yCRqJLi" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;?php declare(strict_types=1);" />
+        <property role="3F0ifm" value="&lt;?php" />
         <node concept="ljvvj" id="1o52yCRqJLu" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
