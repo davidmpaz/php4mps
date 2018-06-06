@@ -17,23 +17,14 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
-      <concept id="6089045305654894366" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Default" flags="ng" index="2kknPJ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
-      <concept id="7671875129586001610" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeSubstituteMenu" flags="ng" index="ulPW2">
-        <reference id="6089045305656903095" name="link" index="2ks2v6" />
-        <child id="6089045305656903122" name="menuReference" index="2ks2uz" />
-      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="3473224453637651916" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform_PlaceInCellHolder" flags="ng" index="CtIbL">
-        <property id="3473224453637651917" name="placeInCell" index="CtIbK" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
@@ -43,16 +34,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
       </concept>
-      <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
-        <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
-      </concept>
-      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
-        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
-      </concept>
-      <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
-        <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
-      </concept>
-      <concept id="7342352913006985500" name="jetbrains.mps.lang.editor.structure.TransformationLocation_Completion" flags="ng" index="3eGOoe" />
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -72,14 +53,6 @@
         <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
-      <concept id="5624877018226904808" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Named" flags="ng" index="3ICXOK" />
-      <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
-        <child id="1638911550608572412" name="sections" index="IW6Ez" />
-      </concept>
-      <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
-        <child id="7980428675268276157" name="locations" index="1Qtc8$" />
-        <child id="7980428675268276159" name="parts" index="1Qtc8A" />
-      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -122,28 +95,6 @@
       <property role="2ru_X1" value="true" />
       <ref role="1NtTu8" to="soun:h9B3oxE" resolve="visibility" />
       <node concept="3F0ifn" id="jayJfOhhK8" role="2ruayu" />
-    </node>
-  </node>
-  <node concept="3ICXOK" id="jayJfOhodQ">
-    <property role="3GE5qa" value="visibility" />
-    <property role="TrG5h" value="Empty_Visibility_TransformationMenu" />
-    <ref role="aqKnT" to="soun:h9B3isZ" resolve="IVisible" />
-    <node concept="1Qtc8_" id="jayJfOhodR" role="IW6Ez">
-      <node concept="ulPW2" id="jayJfOhoe0" role="1Qtc8A">
-        <ref role="2ks2v6" to="soun:h9B3oxE" resolve="visibility" />
-        <node concept="2kknPJ" id="jayJfOhoe3" role="2ks2uz">
-          <ref role="2ZyFGn" to="soun:jayJfOhgKc" resolve="Visibility" />
-        </node>
-      </node>
-      <node concept="3eGOoe" id="jayJfOhodV" role="1Qtc8$" />
-    </node>
-    <node concept="1Qtc8_" id="jayJfOhoe5" role="IW6Ez">
-      <node concept="mvV$s" id="jayJfOhoel" role="1Qtc8A" />
-      <node concept="3cWJ9i" id="jayJfOhoed" role="1Qtc8$">
-        <node concept="CtIbL" id="jayJfOhoef" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="jayJfOhoew">
