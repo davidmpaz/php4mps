@@ -23,11 +23,12 @@
         <child id="6453305938466799407" name="expr" index="0Hs2w" />
         <child id="6453305938466799409" name="statements" index="0Hs2Y" />
       </concept>
-      <concept id="6453305938466799400" name="net.php.core.structure.Break" flags="ng" index="0Hs2B">
-        <property id="6453305938466799401" name="numberOfLoops" index="0Hs2A" />
-      </concept>
+      <concept id="6453305938466799400" name="net.php.core.structure.Break" flags="ng" index="0Hs2B" />
       <concept id="6453305938466799420" name="net.php.core.structure.StatementList" flags="ng" index="0Hs2N" />
       <concept id="5669239491951950679" name="net.php.core.structure.PhpScript" flags="ng" index="2YL5gg" />
+      <concept id="1534484191431532944" name="net.php.core.structure.ILoopCounter" flags="ng" index="3yWjiH">
+        <property id="1534484191431532951" name="numberOfLoops" index="3yWjiE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -48,9 +49,7 @@
           <property role="30bXRw" value="1" />
         </node>
         <node concept="0Hs2N" id="4klrdRPWkfG" role="0Hs2Y">
-          <node concept="0Hs2B" id="4klrdRPWkwF" role="1aduh9">
-            <property role="0Hs2A" value="1" />
-          </node>
+          <node concept="0Hs2B" id="4klrdRPWkwF" role="1aduh9" />
         </node>
       </node>
       <node concept="0Hs2$" id="4klrdRPWkwQ" role="0HjOv">
@@ -58,14 +57,14 @@
           <property role="30bXRw" value="2" />
         </node>
         <node concept="0Hs2N" id="4klrdRPWkwS" role="0Hs2Y">
-          <node concept="0Hs2B" id="4klrdRPWkxV" role="1aduh9">
-            <property role="0Hs2A" value="1" />
-          </node>
+          <node concept="0Hs2B" id="4klrdRPWkxV" role="1aduh9" />
         </node>
       </node>
       <node concept="2vmpnb" id="4klrdRPWkfw" role="0HjO1" />
       <node concept="0Hs2N" id="25RrRUXbytl" role="0HjOq">
-        <node concept="0Hs2B" id="25RrRUXbyu0" role="1aduh9" />
+        <node concept="0Hs2B" id="25RrRUXbyu0" role="1aduh9">
+          <property role="3yWjiE" value="1" />
+        </node>
       </node>
     </node>
   </node>

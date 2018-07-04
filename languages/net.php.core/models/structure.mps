@@ -353,7 +353,7 @@
     <property role="TrG5h" value="BitwiseOr" />
     <property role="34LRSv" value="|" />
     <property role="R4oN_" value="bitwise or" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="5CeQhTL5UFL">
     <property role="EcuMT" value="6489362837857086193" />
@@ -1232,10 +1232,8 @@
     <property role="34LRSv" value="break" />
     <property role="3GE5qa" value="statement" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
-    <node concept="1TJgyi" id="5AeJSXpeRWD" role="1TKVEl">
-      <property role="IQ2nx" value="6453305938466799401" />
-      <property role="TrG5h" value="numberOfLoops" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="PrWs8" id="1lb_jRRIE6p" role="PzmwI">
+      <ref role="PrY4T" node="1lb_jRRIE6g" resolve="ILoopCounter" />
     </node>
   </node>
   <node concept="1TIwiD" id="5AeJSXpeRWF">
@@ -1469,10 +1467,8 @@
     <property role="TrG5h" value="Continue" />
     <property role="34LRSv" value="continue" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
-    <node concept="1TJgyi" id="3FupyzsEveV" role="1TKVEl">
-      <property role="IQ2nx" value="4241940224716436411" />
-      <property role="TrG5h" value="numberOfLoops" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="PrWs8" id="1lb_jRRILNU" role="PzmwI">
+      <ref role="PrY4T" node="1lb_jRRIE6g" resolve="ILoopCounter" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEveX">
@@ -2106,6 +2102,16 @@
       <property role="20kJfa" value="insteadof" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3FupyzsEXou" resolve="Trait" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1lb_jRRIE6g">
+    <property role="EcuMT" value="1534484191431532944" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="ILoopCounter" />
+    <node concept="1TJgyi" id="1lb_jRRIE6n" role="1TKVEl">
+      <property role="IQ2nx" value="1534484191431532951" />
+      <property role="TrG5h" value="numberOfLoops" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
