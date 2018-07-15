@@ -38,6 +38,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="fanb" ref="r:72630daf-7316-45e2-b7fa-7dd7a1247a3d(com.mbeddr.mpsutil.varscope.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -83,7 +84,6 @@
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <property id="2395585628928459314" name="unordered" index="38shpt" />
-        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -102,8 +102,14 @@
     <property role="R4oN_" value="php script" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="&lt;?php" />
-    <ref role="1TJDcQ" node="5AeJSXpeRWW" resolve="StatementList" />
-    <node concept="PrWs8" id="4UHbOvKqnHo" role="PzmwI">
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2yYL1yNEenP" role="1TKVEi">
+      <property role="IQ2ns" value="2935999617464591861" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statements" />
+      <ref role="20lvS9" node="5AeJSXpeRWW" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="6Mg8JcTxIAb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
@@ -1224,7 +1230,13 @@
     <property role="TrG5h" value="Statement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2yYL1yNE9tN" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNE9tS" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5AeJSXpeRWC">
     <property role="EcuMT" value="6453305938466799400" />
@@ -1260,7 +1272,20 @@
   <node concept="1TIwiD" id="5AeJSXpeRWW">
     <property role="EcuMT" value="6453305938466799420" />
     <property role="TrG5h" value="StatementList" />
-    <ref role="1TJDcQ" to="zzzn:49WTic8ig5D" resolve="BlockExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2yYL1yNE9tW" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNE9u1" role="PzmwI">
+      <ref role="PrY4T" to="fanb:NrU95lKEWo" resolve="IScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="2yYL1yNEbBC" role="1TKVEi">
+      <property role="IQ2ns" value="2935999617464580584" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5AeJSXpeRo6" resolve="Statement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5AeJSXpeSad">
     <property role="EcuMT" value="6453305938466800269" />
@@ -1382,26 +1407,39 @@
   <node concept="PlHQZ" id="3FupyzsDJAe">
     <property role="EcuMT" value="4241940224716241294" />
     <property role="TrG5h" value="IPHPFunctionLike" />
+    <node concept="1TJgyj" id="2yYL1yNEwAv" role="1TKVEi">
+      <property role="IQ2ns" value="2935999617464666527" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3FupyzsEZsS" resolve="Param" />
+    </node>
     <node concept="1TJgyj" id="3FupyzsDJnz" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716240355" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5AeJSXpeRWW" resolve="StatementList" />
-      <ref role="20ksaX" to="zzzn:49WTic8eSDm" resolve="body" />
-    </node>
-    <node concept="1TJgyj" id="3FupyzsDK67" role="1TKVEi">
-      <property role="IQ2ns" value="4241940224716243335" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="return" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="PrWs8" id="3FupyzsDJAf" role="PrDN$">
-      <ref role="PrY4T" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
     <node concept="1TJgyi" id="3FupyzsDJAh" role="1TKVEl">
       <property role="IQ2nx" value="4241940224716241297" />
       <property role="TrG5h" value="returnByReference" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNEwAz" role="PrDN$">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNEwB0" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNEwAI" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNEwAQ" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="2yYL1yNE_p5" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
   </node>
   <node concept="PlHQZ" id="3FupyzsDJAx">
@@ -2042,7 +2080,7 @@
   <node concept="1TIwiD" id="3FupyzsEZsS">
     <property role="EcuMT" value="4241940224716568376" />
     <property role="TrG5h" value="Param" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="zzzn:49WTic8eSD1" resolve="FunctionArgument" />
     <node concept="PrWs8" id="3FupyzsEZsV" role="PzmwI">
       <ref role="PrY4T" node="3FupyzsEXnF" resolve="IVarLike" />
     </node>
