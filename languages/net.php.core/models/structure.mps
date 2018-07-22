@@ -101,7 +101,7 @@
     <property role="TrG5h" value="PhpScript" />
     <property role="R4oN_" value="php script" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="&lt;?php" />
+    <property role="34LRSv" value="Php Script" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2yYL1yNEenP" role="1TKVEi">
       <property role="IQ2ns" value="2935999617464591861" />
@@ -1528,8 +1528,18 @@
     <property role="EcuMT" value="4241940224716436416" />
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Declare" />
-    <property role="R4oN_" value="declare key =&gt; value pair node" />
-    <ref role="1TJDcQ" to="700h:7kYh9WszdHD" resolve="KeyValuePair" />
+    <property role="R4oN_" value="directive = expr" />
+    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <node concept="PrWs8" id="48TtoL48q8X" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="48TtoL48q8Z" role="1TKVEi">
+      <property role="IQ2ns" value="4771974525474677311" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6JZACDWQJu4" resolve="ILiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEvf9">
     <property role="EcuMT" value="4241940224716436425" />
@@ -1572,14 +1582,14 @@
       <property role="IQ2ns" value="4241940224716451449" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="3FupyzsEyTV" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716451451" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="statementList" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5AeJSXpeRWW" resolve="StatementList" />
     </node>
   </node>

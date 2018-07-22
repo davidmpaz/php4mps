@@ -183,24 +183,5 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="3FupyzsEzoW">
-    <property role="3GE5qa" value="statement" />
-    <ref role="1M2myG" to="soun:3FupyzsEyTR" resolve="Do" />
-    <node concept="9SLcT" id="3FupyzsEzoX" role="9SGkU">
-      <node concept="3clFbS" id="3FupyzsEzoY" role="2VODD2">
-        <node concept="3clFbF" id="3FupyzsEzwh" role="3cqZAp">
-          <node concept="2OqwBi" id="3FupyzsE$Sv" role="3clFbG">
-            <node concept="2OqwBi" id="3FupyzsEzKB" role="2Oq$k0">
-              <node concept="EsrRn" id="3FupyzsEzwg" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3FupyzsE$ko" role="2OqNvi">
-                <ref role="3Tt5mk" to="soun:3FupyzsEyTT" resolve="condition" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="3FupyzsE_HV" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
