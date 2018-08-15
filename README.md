@@ -25,20 +25,19 @@ automate development, when trying to rise the level of abstraction or just
 when trying to get close to verticals business solutions, the approach is still
 based on parsed based languages or cli tools for code scaffolding. Other tools
 have focus on describing what you want by clicking on a web interface and giving
-you some custom code to use, which is by far the desired approach. Others generate
-code from a data base schema, which offcourse is only limited to the data access
-layer of an application. I may have miss some cases, but these are enough i think
-to make a point.
+you some custom code to use, which is by far, not the desired approach. Others 
+generate code from a data base schema, which offcourse is only limited to the data
+access layer of an application. I may have miss some cases, but these are enough i
+think to make a point.
 
 2. Most of my colleagues from my pasts 5 years of PHP development use any of the
 JetBrains IDEs, 99% of them using [PhpStorm](https://www.jetbrains.com/phpstorm/specials/phpstorm/phpstorm.html)
 it is natural then, that when thinking on building tooling for php, then you first
 think on building support for those IDEs.
 
-
 4. Last but not least. At the time of this writing i am startign to learn MPS. So
 this will be part of that learning journey. At the end i expect to succed in provide
-a high quality base language that could be used later on in further DSL implementations
+a high quality base language that could be used later on in further DSL implementations.
 
 ## Why not just implementing the DSL and generate code out of it?
 
@@ -53,6 +52,7 @@ embeddability.
     - fully support the current AST for the ^7.0 versions.
     - editors implementation.
 * add stubs for built-in functions and core libraries.
+* learn a lot :-)
 
 
 # Contributing
