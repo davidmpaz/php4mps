@@ -9,17 +9,22 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+        <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
       <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -63,11 +68,21 @@
         <child id="4241940224716453413" name="condition" index="3At50d" />
         <child id="4241940224716453415" name="statements" index="3At50f" />
       </concept>
+      <concept id="4241940224716532044" name="net.php.core.structure.Function" flags="ng" index="3AtgX$" />
       <concept id="4241940224716532105" name="net.php.core.structure.If" flags="ng" index="3AtgYx">
         <child id="746613132465370434" name="condition" index="VovnM" />
         <child id="746613132465370437" name="thenPart" index="VovnP" />
         <child id="746613132465370441" name="elsePart" index="VovnT" />
         <child id="4241940224716532106" name="elseIf" index="3AtgYy" />
+      </concept>
+      <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g">
+        <child id="2834539167099564730" name="type" index="2rGfNw" />
+      </concept>
+      <concept id="4241940224716559893" name="net.php.core.structure.Return" flags="ng" index="3Atr0X">
+        <child id="4241940224716559894" name="expr" index="3Atr0Y" />
+      </concept>
+      <concept id="4241940224716559851" name="net.php.core.structure.IVarLike" flags="ng" index="3Atrf3">
+        <child id="4241940224716559871" name="init" index="3Atrfn" />
       </concept>
       <concept id="4241940224716436410" name="net.php.core.structure.Continue" flags="ng" index="3AtTmi" />
       <concept id="4241940224716436425" name="net.php.core.structure.DeclareList" flags="ng" index="3AtTnx">
@@ -76,6 +91,10 @@
       </concept>
       <concept id="4241940224716436416" name="net.php.core.structure.Declare" flags="ng" index="3AtTnC">
         <child id="4771974525474677311" name="value" index="66duN" />
+      </concept>
+      <concept id="4241940224716241294" name="net.php.core.structure.IPHPFunctionLike" flags="ng" index="3Au9YA">
+        <child id="2935999617464666527" name="args" index="2r5cQ7" />
+        <child id="4241940224716240355" name="body" index="3Au9fb" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -95,6 +114,59 @@
           </node>
         </node>
         <node concept="0Hs2N" id="48TtoL43uvm" role="3AtTn$" />
+      </node>
+      <node concept="3AtgX$" id="5aza$gvvArJ" role="2r5BRK">
+        <property role="TrG5h" value="testing" />
+        <node concept="3Atp4g" id="5QL$AYTIrkt" role="2r5cQ7">
+          <property role="TrG5h" value="arg1" />
+          <node concept="30bdrU" id="1ECm9m20QKg" role="2rGfNw" />
+        </node>
+        <node concept="3Atp4g" id="5QL$AYTIrkQ" role="2r5cQ7">
+          <property role="TrG5h" value="arg2" />
+          <node concept="mLuIC" id="1ECm9m20QKr" role="2rGfNw" />
+        </node>
+        <node concept="3Atp4g" id="1ECm9m20QKy" role="2r5cQ7">
+          <property role="TrG5h" value="arg3" />
+          <node concept="mLuIC" id="7qGjRfOnzHt" role="2rGfNw" />
+          <node concept="30bXRB" id="7qGjRfOnzIi" role="3Atrfn">
+            <property role="30bXRw" value="123" />
+          </node>
+        </node>
+        <node concept="3Atp4g" id="7qGjRfOmK2v" role="2r5cQ7">
+          <property role="TrG5h" value="arg4" />
+          <node concept="30bdrP" id="7qGjRfOnzID" role="3Atrfn">
+            <property role="30bdrQ" value="tralala" />
+          </node>
+          <node concept="30bdrU" id="7qGjRfOnzKh" role="2rGfNw" />
+        </node>
+        <node concept="3Atp4g" id="7qGjRfOmK2G" role="2r5cQ7">
+          <property role="TrG5h" value="arg5" />
+          <node concept="30bXRB" id="7qGjRfOnzJG" role="3Atrfn">
+            <property role="30bXRw" value="1223" />
+          </node>
+        </node>
+        <node concept="3Atp4g" id="7qGjRfOnzJT" role="2r5cQ7">
+          <property role="TrG5h" value="arg6" />
+          <node concept="30bdrP" id="7qGjRfOnzKw" role="3Atrfn" />
+        </node>
+        <node concept="0Hs2N" id="5aza$gvvArL" role="3Au9fb">
+          <node concept="3At4yC" id="5aza$gvy5HP" role="2r5BRK">
+            <node concept="30bdrP" id="5aza$gvy5Ii" role="3At4yD">
+              <property role="30bdrQ" value="Yeah" />
+            </node>
+          </node>
+          <node concept="3At4yC" id="5aza$gvy5Jw" role="2r5BRK">
+            <node concept="30bdrP" id="5aza$gvy5JH" role="3At4yD">
+              <property role="30bdrQ" value="uff" />
+            </node>
+          </node>
+          <node concept="3Atr0X" id="5QL$AYTE_fm" role="2r5BRK">
+            <node concept="30bXRB" id="5QL$AYTE_fZ" role="3Atr0Y">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="mLuIC" id="gyd15GaPdN" role="2zM23F" />
       </node>
       <node concept="0HjO2" id="6Mg8JcT_QVM" role="2r5BRK">
         <node concept="0Hs2$" id="6Mg8JcT_QWm" role="0HjOv">
