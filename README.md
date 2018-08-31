@@ -54,6 +54,11 @@ embeddability.
 * add stubs for built-in functions and core libraries.
 * learn a lot :-)
 
+# How to use
+
+* Clone this project.
+* Clone also the [iets3.opensource](https://github.com/IETS3/iets3.opensource) project.
+* Open this project and add `iets3.opensource` project as Project Library.
 
 # Contributing
 
