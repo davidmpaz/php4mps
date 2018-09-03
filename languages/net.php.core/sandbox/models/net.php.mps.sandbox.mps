@@ -52,6 +52,7 @@
       </concept>
       <concept id="4241940224716463946" name="net.php.core.structure.Foreach" flags="ng" index="3At3_y">
         <child id="4241940224716463949" name="valueVariable" index="3At3__" />
+        <child id="4241940224716463953" name="keyVariable" index="3At3_T" />
         <child id="2830184583748433238" name="expr" index="1GmA2O" />
         <child id="2830184583748433207" name="statements" index="1GmA3l" />
       </concept>
@@ -307,13 +308,16 @@
         </node>
       </node>
       <node concept="3At3_y" id="2t6Pu9b86V1" role="2r5BRK">
+        <node concept="1b6sL1" id="2t6Pu9bc2rS" role="3At3_T">
+          <property role="TrG5h" value="$key" />
+        </node>
+        <node concept="1b6sL1" id="2t6Pu9bc2rT" role="3At3__">
+          <property role="TrG5h" value="$value" />
+        </node>
         <node concept="30bXRB" id="2t6Pu9b86XG" role="1GmA2O">
           <property role="30bXRw" value="123424" />
         </node>
         <node concept="0Hs2N" id="2t6Pu9b86V5" role="1GmA3l" />
-        <node concept="1b6sL1" id="2t6Pu9b8ccZ" role="3At3__">
-          <property role="TrG5h" value="$value" />
-        </node>
       </node>
     </node>
   </node>
