@@ -76,6 +76,9 @@
         <child id="4241940224716453415" name="statements" index="3At50f" />
       </concept>
       <concept id="4241940224716532044" name="net.php.core.structure.Function" flags="ng" index="3AtgX$" />
+      <concept id="4241940224716532047" name="net.php.core.structure.Global" flags="ng" index="3AtgXB">
+        <child id="4241940224716532048" name="variables" index="3AtgXS" />
+      </concept>
       <concept id="4241940224716532105" name="net.php.core.structure.If" flags="ng" index="3AtgYx">
         <child id="746613132465370434" name="condition" index="VovnM" />
         <child id="746613132465370437" name="thenPart" index="VovnP" />
@@ -307,6 +310,12 @@
           </node>
         </node>
       </node>
+      <node concept="3AtTnC" id="2t6Pu9bdV3B" role="2r5BRK">
+        <property role="TrG5h" value="$a" />
+        <node concept="30bdrP" id="2t6Pu9bdV5o" role="66duN">
+          <property role="30bdrQ" value="a" />
+        </node>
+      </node>
       <node concept="3At3_y" id="2t6Pu9b86V1" role="2r5BRK">
         <node concept="1b6sL1" id="2t6Pu9bc2rS" role="3At3_T">
           <property role="TrG5h" value="$key" />
@@ -317,7 +326,22 @@
         <node concept="30bXRB" id="2t6Pu9b86XG" role="1GmA2O">
           <property role="30bXRw" value="123424" />
         </node>
-        <node concept="0Hs2N" id="2t6Pu9b86V5" role="1GmA3l" />
+        <node concept="0Hs2N" id="2t6Pu9b86V5" role="1GmA3l">
+          <node concept="3AtgXB" id="2t6Pu9bdUYp" role="2r5BRK">
+            <node concept="1b6sL1" id="2t6Pu9bdUYr" role="3AtgXS">
+              <property role="TrG5h" value="$a" />
+            </node>
+            <node concept="1b6sL1" id="2t6Pu9bdUYt" role="3AtgXS">
+              <property role="TrG5h" value="$b" />
+            </node>
+            <node concept="1b6sL1" id="2t6Pu9bdUYw" role="3AtgXS">
+              <property role="TrG5h" value="$c" />
+            </node>
+          </node>
+          <node concept="3At4yC" id="2t6Pu9bdUZR" role="2r5BRK">
+            <node concept="30bdrP" id="2t6Pu9bdV66" role="3At4yD" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

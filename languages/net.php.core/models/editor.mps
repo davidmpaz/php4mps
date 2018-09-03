@@ -2299,5 +2299,23 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2t6Pu9bcXUH">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="soun:3FupyzsEQ_f" resolve="Global" />
+    <node concept="3EZMnI" id="2t6Pu9bcXUJ" role="2wV5jI">
+      <node concept="l2Vlx" id="2t6Pu9bcXUK" role="2iSdaV" />
+      <node concept="3F0ifn" id="2t6Pu9bcXUP" role="3EZMnx">
+        <property role="3F0ifm" value="global" />
+      </node>
+      <node concept="3F2HdR" id="2t6Pu9bcXV3" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="soun:3FupyzsEQ_g" resolve="variables" />
+        <node concept="l2Vlx" id="2t6Pu9bcXV5" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="2t6Pu9bcXUV" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1747,7 +1747,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variables" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <ref role="20lvS9" node="6xQJrOzrR7W" resolve="Variable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEQ_l">
