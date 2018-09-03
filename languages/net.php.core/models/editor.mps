@@ -2317,5 +2317,43 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2t6Pu9bdV6b">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="soun:3FupyzsEQ_l" resolve="Goto" />
+    <node concept="3EZMnI" id="2t6Pu9bdV6d" role="2wV5jI">
+      <node concept="2iRfu4" id="2t6Pu9bdV6e" role="2iSdaV" />
+      <node concept="3F0ifn" id="2t6Pu9bdV6j" role="3EZMnx">
+        <property role="3F0ifm" value="goto" />
+      </node>
+      <node concept="3F0A7n" id="2t6Pu9bdV6p" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2t6Pu9bdV6x" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2t6Pu9beNtk">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="soun:3FupyzsEQA6" resolve="HaltCompiler" />
+    <node concept="3EZMnI" id="2t6Pu9beNtm" role="2wV5jI">
+      <node concept="3F0ifn" id="2t6Pu9beNtx" role="3EZMnx">
+        <property role="3F0ifm" value="__halt_compiler" />
+      </node>
+      <node concept="3F0ifn" id="2t6Pu9beNtB" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F0ifn" id="2t6Pu9beNtJ" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F0ifn" id="2t6Pu9beNtT" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="3F0A7n" id="2t6Pu9beNu5" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:3FupyzsEQA7" resolve="remaining" />
+      </node>
+      <node concept="l2Vlx" id="2t6Pu9beNtn" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
