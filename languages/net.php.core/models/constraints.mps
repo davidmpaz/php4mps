@@ -10,6 +10,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -175,6 +176,28 @@
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="4fD91B__95R" role="37wK5m">
                   <property role="Xl_RC" value="(\\\\.|[^\\\\\'])*" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2t6Pu9b777R">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1M2myG" to="soun:6xQJrOzrR7W" resolve="Variable" />
+    <node concept="EnEH3" id="2t6Pu9b777S" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="2t6Pu9b777U" role="QCWH9">
+        <node concept="3clFbS" id="2t6Pu9b777V" role="2VODD2">
+          <node concept="3clFbF" id="2t6Pu9b77fe" role="3cqZAp">
+            <node concept="2OqwBi" id="2t6Pu9b78XP" role="3clFbG">
+              <node concept="1Wqviy" id="2t6Pu9b77fd" role="2Oq$k0" />
+              <node concept="liA8E" id="2t6Pu9b79jT" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <node concept="Xl_RD" id="2t6Pu9b7aiz" role="37wK5m">
+                  <property role="Xl_RC" value="$" />
                 </node>
               </node>
             </node>

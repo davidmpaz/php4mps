@@ -46,8 +46,14 @@
       <concept id="5669239491951950679" name="net.php.core.structure.PhpScript" flags="ng" index="2YL5gg">
         <child id="2935999617464591861" name="statements" index="2r5y7H" />
       </concept>
+      <concept id="7527412447237337596" name="net.php.core.structure.Variable" flags="ng" index="1b6sL1" />
       <concept id="1534484191431532944" name="net.php.core.structure.ILoopCounter" flags="ng" index="3yWjiH">
         <property id="1534484191431532951" name="numberOfLoops" index="3yWjiE" />
+      </concept>
+      <concept id="4241940224716463946" name="net.php.core.structure.Foreach" flags="ng" index="3At3_y">
+        <child id="4241940224716463949" name="valueVariable" index="3At3__" />
+        <child id="2830184583748433238" name="expr" index="1GmA2O" />
+        <child id="2830184583748433207" name="statements" index="1GmA3l" />
       </concept>
       <concept id="4241940224716451448" name="net.php.core.structure.IConditionalLoop" flags="ng" index="3At4xg">
         <child id="4241940224716451449" name="condition" index="3At4xh" />
@@ -298,6 +304,15 @@
               <property role="30bdrQ" value="yahoo" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3At3_y" id="2t6Pu9b86V1" role="2r5BRK">
+        <node concept="30bXRB" id="2t6Pu9b86XG" role="1GmA2O">
+          <property role="30bXRw" value="123424" />
+        </node>
+        <node concept="0Hs2N" id="2t6Pu9b86V5" role="1GmA3l" />
+        <node concept="1b6sL1" id="2t6Pu9b8ccZ" role="3At3__">
+          <property role="TrG5h" value="$value" />
         </node>
       </node>
     </node>
