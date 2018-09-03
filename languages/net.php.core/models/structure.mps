@@ -1272,7 +1272,7 @@
   <node concept="1TIwiD" id="5AeJSXpeRWW">
     <property role="EcuMT" value="6453305938466799420" />
     <property role="TrG5h" value="StatementList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
     <node concept="PrWs8" id="2yYL1yNE9tW" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
@@ -1456,6 +1456,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3FupyzsE49C" resolve="Interface" />
     </node>
+    <node concept="PrWs8" id="2t6Pu9bDUY4" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEuQW">
     <property role="EcuMT" value="4241940224716434876" />
@@ -1472,9 +1475,9 @@
     <node concept="1TJgyj" id="3FupyzsEuR9" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716434889" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="const" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3FupyzsEuQX" resolve="Const" />
+      <property role="20kJfa" value="constants" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3FupyzsEveX" resolve="ConstList" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEuQX">
@@ -1516,7 +1519,7 @@
       <property role="IQ2ns" value="4241940224716436414" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constants" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3FupyzsEuQX" resolve="Const" />
     </node>
   </node>

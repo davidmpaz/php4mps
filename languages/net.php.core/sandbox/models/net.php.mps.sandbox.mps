@@ -94,7 +94,17 @@
       <concept id="4241940224716559851" name="net.php.core.structure.IVarLike" flags="ng" index="3Atrf3">
         <child id="4241940224716559871" name="init" index="3Atrfn" />
       </concept>
+      <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0" />
+      <concept id="4241940224716434876" name="net.php.core.structure.ClassConstStmt" flags="ng" index="3AtSIk">
+        <child id="4241940224716434889" name="constants" index="3AtSJx" />
+      </concept>
+      <concept id="4241940224716434877" name="net.php.core.structure.Const" flags="ng" index="3AtSIl">
+        <child id="4241940224716434920" name="value" index="3AtSJ0" />
+      </concept>
       <concept id="4241940224716436410" name="net.php.core.structure.Continue" flags="ng" index="3AtTmi" />
+      <concept id="4241940224716436413" name="net.php.core.structure.ConstList" flags="ng" index="3AtTml">
+        <child id="4241940224716436414" name="constants" index="3AtTmm" />
+      </concept>
       <concept id="4241940224716436425" name="net.php.core.structure.DeclareList" flags="ng" index="3AtTnx">
         <child id="4241940224716436426" name="declares" index="3AtTny" />
         <child id="4241940224716436428" name="statementList" index="3AtTn$" />
@@ -340,6 +350,41 @@
           </node>
           <node concept="3At4yC" id="2t6Pu9bdUZR" role="2r5BRK">
             <node concept="30bdrP" id="2t6Pu9bdV66" role="3At4yD" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2YL5gg" id="2t6Pu9bF8eO">
+    <property role="TrG5h" value="Interfaces" />
+    <node concept="0Hs2N" id="2t6Pu9bF8eP" role="2r5y7H">
+      <node concept="3Atyh0" id="2t6Pu9bF8ga" role="2r5BRK">
+        <property role="TrG5h" value="Versionable" />
+        <node concept="3AtSIk" id="2t6Pu9bUyxU" role="2r5BRK">
+          <node concept="3AtTml" id="2t6Pu9bUyye" role="3AtSJx">
+            <node concept="3AtSIl" id="2t6Pu9bUyyg" role="3AtTmm">
+              <property role="TrG5h" value="value" />
+              <node concept="30bdrP" id="2t6Pu9bUyyq" role="3AtSJ0">
+                <property role="30bdrQ" value="tralala" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3AtgX$" id="2t6Pu9bHUYD" role="2r5BRK">
+          <property role="TrG5h" value="someName" />
+          <node concept="0Hs2N" id="2t6Pu9bHUYF" role="3Au9fb">
+            <node concept="3At4yC" id="2t6Pu9bHV0j" role="2r5BRK">
+              <node concept="30bdrP" id="2t6Pu9bHV0u" role="3At4yD" />
+            </node>
+            <node concept="3At4yC" id="2t6Pu9bHV1D" role="2r5BRK">
+              <node concept="30bdrP" id="2t6Pu9bHV1Q" role="3At4yD" />
+            </node>
+          </node>
+          <node concept="3Atp4g" id="2t6Pu9bHUYR" role="2r5cQ7">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="3Atp4g" id="2t6Pu9bHUZ4" role="2r5cQ7">
+            <property role="TrG5h" value="b" />
           </node>
         </node>
       </node>
