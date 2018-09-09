@@ -46,6 +46,9 @@
       <concept id="5669239491951950679" name="net.php.core.structure.PhpScript" flags="ng" index="2YL5gg">
         <child id="2935999617464591861" name="statements" index="2r5y7H" />
       </concept>
+      <concept id="385461470425197833" name="net.php.core.structure.InterfaceRef" flags="ng" index="164$8z">
+        <reference id="385461470425197834" name="ref" index="164$8w" />
+      </concept>
       <concept id="7527412447237337596" name="net.php.core.structure.Variable" flags="ng" index="1b6sL1" />
       <concept id="1534484191431532944" name="net.php.core.structure.ILoopCounter" flags="ng" index="3yWjiH">
         <property id="1534484191431532951" name="numberOfLoops" index="3yWjiE" />
@@ -94,9 +97,9 @@
       <concept id="4241940224716559851" name="net.php.core.structure.IVarLike" flags="ng" index="3Atrf3">
         <child id="4241940224716559871" name="init" index="3Atrfn" />
       </concept>
-      <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0" />
-      <concept id="4241940224716434876" name="net.php.core.structure.ClassConstStmt" flags="ng" index="3AtSIk">
-        <child id="4241940224716434889" name="constants" index="3AtSJx" />
+      <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0">
+        <child id="3490680890432336725" name="constants" index="2M1X2j" />
+        <child id="385461470425197836" name="extends" index="164$8A" />
       </concept>
       <concept id="4241940224716434877" name="net.php.core.structure.Const" flags="ng" index="3AtSIl">
         <child id="4241940224716434920" name="value" index="3AtSJ0" />
@@ -116,6 +119,7 @@
         <child id="2935999617464666527" name="args" index="2r5cQ7" />
         <child id="4241940224716240355" name="body" index="3Au9fb" />
       </concept>
+      <concept id="4241940224715916694" name="net.php.core.structure.Method" flags="ng" index="3Av6eY" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -358,35 +362,46 @@
   <node concept="2YL5gg" id="2t6Pu9bF8eO">
     <property role="TrG5h" value="Interfaces" />
     <node concept="0Hs2N" id="2t6Pu9bF8eP" role="2r5y7H">
-      <node concept="3Atyh0" id="2t6Pu9bF8ga" role="2r5BRK">
-        <property role="TrG5h" value="Versionable" />
-        <node concept="3AtSIk" id="2t6Pu9bUyxU" role="2r5BRK">
-          <node concept="3AtTml" id="2t6Pu9bUyye" role="3AtSJx">
-            <node concept="3AtSIl" id="2t6Pu9bUyyg" role="3AtTmm">
-              <property role="TrG5h" value="value" />
-              <node concept="30bdrP" id="2t6Pu9bUyyq" role="3AtSJ0">
-                <property role="30bdrQ" value="tralala" />
-              </node>
+      <node concept="3Atyh0" id="lprMD3nPX2" role="2r5BRK">
+        <property role="TrG5h" value="Button" />
+        <node concept="3Av6eY" id="lprMD3nPZD" role="2r5BRK">
+          <property role="TrG5h" value="name" />
+          <node concept="0Hs2N" id="lprMD3nPZE" role="3Au9fb" />
+          <node concept="3Atp4g" id="lprMD3nPZR" role="2r5cQ7">
+            <property role="TrG5h" value="arg1" />
+            <node concept="30bdrU" id="lprMD3nQ01" role="2rGfNw" />
+          </node>
+        </node>
+        <node concept="3AtTml" id="lprMD3nPXr" role="2M1X2j">
+          <node concept="3AtSIl" id="lprMD3nPXt" role="3AtTmm">
+            <property role="TrG5h" value="ttt" />
+            <node concept="30bXRB" id="lprMD3nPYb" role="3AtSJ0">
+              <property role="30bXRw" value="123" />
             </node>
           </node>
         </node>
-        <node concept="3AtgX$" id="2t6Pu9bHUYD" role="2r5BRK">
-          <property role="TrG5h" value="someName" />
-          <node concept="0Hs2N" id="2t6Pu9bHUYF" role="3Au9fb">
-            <node concept="3At4yC" id="2t6Pu9bHV0j" role="2r5BRK">
-              <node concept="30bdrP" id="2t6Pu9bHV0u" role="3At4yD" />
+        <node concept="3AtTml" id="lprMD3nPYw" role="2M1X2j">
+          <node concept="3AtSIl" id="lprMD3nPY_" role="3AtTmm">
+            <property role="TrG5h" value="tttt" />
+            <node concept="30bXRB" id="lprMD3nPZs" role="3AtSJ0">
+              <property role="30bXRw" value="4566" />
             </node>
-            <node concept="3At4yC" id="2t6Pu9bHV1D" role="2r5BRK">
-              <node concept="30bdrP" id="2t6Pu9bHV1Q" role="3At4yD" />
-            </node>
-          </node>
-          <node concept="3Atp4g" id="2t6Pu9bHUYR" role="2r5cQ7">
-            <property role="TrG5h" value="a" />
-          </node>
-          <node concept="3Atp4g" id="2t6Pu9bHUZ4" role="2r5cQ7">
-            <property role="TrG5h" value="b" />
           </node>
         </node>
+        <node concept="164$8z" id="lprMD3nQ29" role="164$8A">
+          <ref role="164$8w" node="lprMD3nQ1l" resolve="Version" />
+        </node>
+      </node>
+      <node concept="3Atyh0" id="lprMD3nQ1l" role="2r5BRK">
+        <property role="TrG5h" value="Version" />
+        <node concept="3Av6eY" id="lprMD3nQ1_" role="2r5BRK">
+          <property role="TrG5h" value="getVersion" />
+          <node concept="0Hs2N" id="lprMD3nQ1A" role="3Au9fb" />
+          <node concept="mLuIC" id="lprMD3nQ1W" role="2zM23F" />
+        </node>
+      </node>
+      <node concept="3Atyh0" id="lprMD3nQ7N" role="2r5BRK">
+        <property role="TrG5h" value="Dummy" />
       </node>
     </node>
   </node>

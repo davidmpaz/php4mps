@@ -84,6 +84,7 @@
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <property id="2395585628928459314" name="unordered" index="38shpt" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -1449,12 +1450,27 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="interface" />
     <ref role="1TJDcQ" node="3FupyzsCwlL" resolve="ClassLike" />
-    <node concept="1TJgyj" id="3FupyzsEuQU" role="1TKVEi">
-      <property role="IQ2ns" value="4241940224716434874" />
+    <node concept="1TJgyj" id="lprMD3iMOc" role="1TKVEi">
+      <property role="IQ2ns" value="385461470425197836" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="extends" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3FupyzsE49C" resolve="Interface" />
+      <ref role="20lvS9" node="lprMD3iMO9" resolve="InterfaceRef" />
+    </node>
+    <node concept="1TJgyj" id="31LoWq2tFdl" role="1TKVEi">
+      <property role="IQ2ns" value="3490680890432336725" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constants" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3FupyzsEveX" resolve="ConstList" />
+    </node>
+    <node concept="1TJgyj" id="31LoWq2tFdg" role="1TKVEi">
+      <property role="IQ2ns" value="3490680890432336720" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20ksaX" node="2yYL1yNEbBC" resolve="statements" />
+      <ref role="20lvS9" node="3FupyzsCwmm" resolve="Method" />
     </node>
     <node concept="PrWs8" id="2t6Pu9bDUY4" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -1490,6 +1506,9 @@
     <node concept="PrWs8" id="3FupyzsEuQY" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="31LoWq2ztFN" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
     <node concept="1TJgyj" id="3FupyzsEuRC" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716434920" />
       <property role="20lmBu" value="aggregation" />
@@ -1521,6 +1540,15 @@
       <property role="20kJfa" value="constants" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3FupyzsEuQX" resolve="Const" />
+    </node>
+    <node concept="PrWs8" id="31LoWq2ztFI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:YXKE79ImBi" resolve="IWantNewLine" />
+    </node>
+    <node concept="PrWs8" id="31LoWq2BGLq" role="PzmwI">
+      <ref role="PrY4T" node="h9B3isZ" resolve="IVisible" />
+    </node>
+    <node concept="PrWs8" id="31LoWq2BGLy" role="PzmwI">
+      <ref role="PrY4T" node="4UY1WdYQSGq" resolve="IHasModifiers" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEvf0">
@@ -2208,6 +2236,19 @@
       <property role="IQ2nx" value="1534484191431532951" />
       <property role="TrG5h" value="numberOfLoops" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="lprMD3iMO9">
+    <property role="EcuMT" value="385461470425197833" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="InterfaceRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="lprMD3iMOa" role="1TKVEi">
+      <property role="IQ2ns" value="385461470425197834" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3FupyzsE49C" resolve="Interface" />
     </node>
   </node>
 </model>
