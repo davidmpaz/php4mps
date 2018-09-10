@@ -120,6 +120,10 @@
         <child id="4241940224716240355" name="body" index="3Au9fb" />
       </concept>
       <concept id="4241940224715916694" name="net.php.core.structure.Method" flags="ng" index="3Av6eY" />
+      <concept id="1178549954367" name="net.php.core.structure.IVisible" flags="ng" index="1B3ioH">
+        <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1146644602865" name="net.php.core.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -406,7 +410,16 @@
     </node>
   </node>
   <node concept="3Atyh0" id="55frxK3xh23">
-    <property role="TrG5h" value="TestInterface" />
+    <property role="TrG5h" value="ContainerAwareInterface" />
+    <node concept="3Av6eY" id="55frxK426ZA" role="2r5BRK">
+      <property role="TrG5h" value="setContainer" />
+      <node concept="0Hs2N" id="55frxK426ZB" role="3Au9fb" />
+      <node concept="3Tm1VV" id="55frxK426ZM" role="1B3o_S" />
+      <node concept="3Atp4g" id="55frxK426ZV" role="2r5cQ7">
+        <property role="TrG5h" value="$container" />
+        <node concept="30bdrP" id="55frxK42719" role="3Atrfn" />
+      </node>
+    </node>
   </node>
 </model>
 
