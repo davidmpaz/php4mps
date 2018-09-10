@@ -682,7 +682,7 @@
     <property role="EcuMT" value="7527412447237204434" />
     <property role="3GE5qa" value="expression.assign" />
     <property role="TrG5h" value="AssignRef" />
-    <property role="34LRSv" value="&amp;=" />
+    <property role="34LRSv" value="=&amp;" />
     <property role="R4oN_" value="assignment by reference" />
     <ref role="1TJDcQ" to="8lgj:aPhVmWYxIJ" resolve="AssignmentExpr" />
   </node>

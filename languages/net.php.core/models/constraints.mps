@@ -201,28 +201,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="2t6Pu9b777R">
-    <property role="3GE5qa" value="expression" />
-    <ref role="1M2myG" to="soun:6xQJrOzrR7W" resolve="Variable" />
-    <node concept="EnEH3" id="2t6Pu9b777S" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="QB0g5" id="2t6Pu9b777U" role="QCWH9">
-        <node concept="3clFbS" id="2t6Pu9b777V" role="2VODD2">
-          <node concept="3clFbF" id="2t6Pu9b77fe" role="3cqZAp">
-            <node concept="2OqwBi" id="2t6Pu9b78XP" role="3clFbG">
-              <node concept="1Wqviy" id="2t6Pu9b77fd" role="2Oq$k0" />
-              <node concept="liA8E" id="2t6Pu9b79jT" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                <node concept="Xl_RD" id="2t6Pu9b7aiz" role="37wK5m">
-                  <property role="Xl_RC" value="$" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="55frxK4hqXx">
     <ref role="1M2myG" to="soun:55frxK4hqXj" resolve="IValidNamedVariableConcept" />
     <node concept="EnEH3" id="55frxK4hqXy" role="1MhHOB">
