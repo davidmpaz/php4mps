@@ -1999,6 +1999,7 @@
     <property role="EcuMT" value="4241940224716559842" />
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Property" />
+    <property role="34LRSv" value="property" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
     <node concept="PrWs8" id="3FupyzsEXo3" role="PzmwI">
       <ref role="PrY4T" node="3FupyzsEXnF" resolve="IVarLike" />
@@ -2027,15 +2028,18 @@
     <property role="EcuMT" value="4241940224716559877" />
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="PropertyList" />
-    <property role="34LRSv" value="prop" />
+    <property role="34LRSv" value="prop list" />
     <property role="R4oN_" value="propert(y|ies)" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
     <node concept="1TJgyj" id="3FupyzsEXo6" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716559878" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="properties" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3FupyzsEXny" resolve="Property" />
+    </node>
+    <node concept="PrWs8" id="55frxK4hIve" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:YXKE79ImBi" resolve="IWantNewLine" />
     </node>
     <node concept="PrWs8" id="3FupyzsEXo8" role="PzmwI">
       <ref role="PrY4T" node="h9B3isZ" resolve="IVisible" />
@@ -2060,14 +2064,19 @@
   <node concept="1TIwiD" id="3FupyzsEXoo">
     <property role="EcuMT" value="4241940224716559896" />
     <property role="3GE5qa" value="statement" />
-    <property role="TrG5h" value="Static" />
+    <property role="TrG5h" value="StaticVariable" />
     <property role="34LRSv" value="static var" />
+    <property role="R4oN_" value="static variable(s)" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
     <node concept="1TJgyj" id="3FupyzsEXop" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716559897" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variables" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3FupyzsEXnF" resolve="IVarLike" />
+    </node>
+    <node concept="PrWs8" id="55frxK4pYiR" role="PzmwI">
+      <ref role="PrY4T" node="4UY1WdYQSGq" resolve="IHasModifiers" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEXor">
