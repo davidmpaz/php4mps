@@ -206,5 +206,26 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="55frxK4hqXx">
+    <ref role="1M2myG" to="soun:55frxK4hqXj" resolve="IValidNamedVariableConcept" />
+    <node concept="EnEH3" id="55frxK4hqXy" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="55frxK4hqX$" role="QCWH9">
+        <node concept="3clFbS" id="55frxK4hqX_" role="2VODD2">
+          <node concept="3clFbF" id="55frxK4hr4S" role="3cqZAp">
+            <node concept="2OqwBi" id="55frxK4hrxG" role="3clFbG">
+              <node concept="1Wqviy" id="55frxK4hr4R" role="2Oq$k0" />
+              <node concept="liA8E" id="55frxK4hs6d" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <node concept="Xl_RD" id="55frxK4hsen" role="37wK5m">
+                  <property role="Xl_RC" value="$" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1512,8 +1512,8 @@
     <property role="34LRSv" value="const" />
     <property role="R4oN_" value="const declaration" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
-    <node concept="PrWs8" id="3FupyzsEuQY" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="PrWs8" id="55frxK4hDcS" role="PzmwI">
+      <ref role="PrY4T" node="55frxK4hqXj" resolve="IValidNamedVariableConcept" />
     </node>
     <node concept="PrWs8" id="31LoWq2ztFN" role="PzmwI">
       <ref role="PrY4T" to="hm2y:YXKE79ImBi" resolve="IWantNewLine" />
@@ -2007,8 +2007,8 @@
   <node concept="PlHQZ" id="3FupyzsEXnF">
     <property role="EcuMT" value="4241940224716559851" />
     <property role="TrG5h" value="IVarLike" />
-    <node concept="PrWs8" id="3FupyzsEXnG" role="PrDN$">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="PrWs8" id="55frxK4hqXs" role="PrDN$">
+      <ref role="PrY4T" node="55frxK4hqXj" resolve="IValidNamedVariableConcept" />
     </node>
     <node concept="PrWs8" id="5QL$AYTEvDl" role="PrDN$">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
@@ -2284,6 +2284,13 @@
     <property role="TrG5h" value="IPhpResourceName" />
     <node concept="PrWs8" id="55frxK4d7vn" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="55frxK4hqXj">
+    <property role="EcuMT" value="5859022706842120019" />
+    <property role="TrG5h" value="IValidNamedVariableConcept" />
+    <node concept="PrWs8" id="55frxK4hqXm" role="PrDN$">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
   </node>
 </model>

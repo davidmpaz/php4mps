@@ -153,35 +153,35 @@
       <node concept="3AtgX$" id="5aza$gvvArJ" role="2r5BRK">
         <property role="TrG5h" value="testing" />
         <node concept="3Atp4g" id="5QL$AYTIrkt" role="2r5cQ7">
-          <property role="TrG5h" value="arg1" />
+          <property role="TrG5h" value="$arg1" />
           <node concept="30bdrU" id="1ECm9m20QKg" role="2rGfNw" />
         </node>
         <node concept="3Atp4g" id="5QL$AYTIrkQ" role="2r5cQ7">
-          <property role="TrG5h" value="arg2" />
+          <property role="TrG5h" value="$arg2" />
           <node concept="mLuIC" id="1ECm9m20QKr" role="2rGfNw" />
         </node>
         <node concept="3Atp4g" id="1ECm9m20QKy" role="2r5cQ7">
-          <property role="TrG5h" value="arg3" />
+          <property role="TrG5h" value="$arg3" />
           <node concept="mLuIC" id="7qGjRfOnzHt" role="2rGfNw" />
           <node concept="30bXRB" id="7qGjRfOnzIi" role="3Atrfn">
             <property role="30bXRw" value="123" />
           </node>
         </node>
         <node concept="3Atp4g" id="7qGjRfOmK2v" role="2r5cQ7">
-          <property role="TrG5h" value="arg4" />
+          <property role="TrG5h" value="$arg4" />
           <node concept="30bdrP" id="7qGjRfOnzID" role="3Atrfn">
             <property role="30bdrQ" value="tralala" />
           </node>
           <node concept="30bdrU" id="7qGjRfOnzKh" role="2rGfNw" />
         </node>
         <node concept="3Atp4g" id="7qGjRfOmK2G" role="2r5cQ7">
-          <property role="TrG5h" value="arg5" />
+          <property role="TrG5h" value="$arg5" />
           <node concept="30bXRB" id="7qGjRfOnzJG" role="3Atrfn">
             <property role="30bXRw" value="1223" />
           </node>
         </node>
         <node concept="3Atp4g" id="7qGjRfOnzJT" role="2r5cQ7">
-          <property role="TrG5h" value="arg6" />
+          <property role="TrG5h" value="$arg6" />
           <node concept="30bdrP" id="7qGjRfOnzKw" role="3Atrfn" />
         </node>
         <node concept="0Hs2N" id="5aza$gvvArL" role="3Au9fb">
@@ -396,13 +396,13 @@
           <property role="TrG5h" value="name" />
           <node concept="0Hs2N" id="lprMD3nPZE" role="3Au9fb" />
           <node concept="3Atp4g" id="lprMD3nPZR" role="2r5cQ7">
-            <property role="TrG5h" value="arg1" />
+            <property role="TrG5h" value="$arg1" />
             <node concept="30bdrU" id="lprMD3nQ01" role="2rGfNw" />
           </node>
         </node>
         <node concept="3AtTml" id="lprMD3nPXr" role="2M1X2j">
           <node concept="3AtSIl" id="lprMD3nPXt" role="3AtTmm">
-            <property role="TrG5h" value="ttt" />
+            <property role="TrG5h" value="$ttt" />
             <node concept="30bXRB" id="lprMD3nPYb" role="3AtSJ0">
               <property role="30bXRw" value="123" />
             </node>
@@ -410,7 +410,7 @@
         </node>
         <node concept="3AtTml" id="lprMD3nPYw" role="2M1X2j">
           <node concept="3AtSIl" id="lprMD3nPY_" role="3AtTmm">
-            <property role="TrG5h" value="tttt" />
+            <property role="TrG5h" value="$tttt" />
             <node concept="30bXRB" id="lprMD3nPZs" role="3AtSJ0">
               <property role="30bXRw" value="4566" />
             </node>
