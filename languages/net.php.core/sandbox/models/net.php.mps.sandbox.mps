@@ -82,12 +82,16 @@
       <concept id="4241940224716532047" name="net.php.core.structure.Global" flags="ng" index="3AtgXB">
         <child id="4241940224716532048" name="variables" index="3AtgXS" />
       </concept>
+      <concept id="4241940224716532053" name="net.php.core.structure.Goto" flags="ng" index="3AtgXX">
+        <reference id="5859022706838560900" name="label" index="1lg0Uo" />
+      </concept>
       <concept id="4241940224716532105" name="net.php.core.structure.If" flags="ng" index="3AtgYx">
         <child id="746613132465370434" name="condition" index="VovnM" />
         <child id="746613132465370437" name="thenPart" index="VovnP" />
         <child id="746613132465370441" name="elsePart" index="VovnT" />
         <child id="4241940224716532106" name="elseIf" index="3AtgYy" />
       </concept>
+      <concept id="4241940224716532108" name="net.php.core.structure.Label" flags="ng" index="3AtgY$" />
       <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g">
         <child id="2834539167099564730" name="type" index="2rGfNw" />
       </concept>
@@ -196,6 +200,9 @@
         </node>
         <node concept="mLuIC" id="gyd15GaPdN" role="2zM23F" />
       </node>
+      <node concept="3AtgY$" id="55frxK45Eo4" role="2r5BRK">
+        <property role="TrG5h" value="labelSwitch" />
+      </node>
       <node concept="0HjO2" id="6Mg8JcT_QVM" role="2r5BRK">
         <node concept="0Hs2$" id="6Mg8JcT_QWm" role="0HjOv">
           <node concept="30bXRB" id="6Mg8JcT_QWF" role="0Hs2w">
@@ -235,6 +242,9 @@
           </node>
         </node>
         <node concept="2vmpnb" id="6Mg8JcTC8Xr" role="3At4xh" />
+      </node>
+      <node concept="3AtgXX" id="55frxK45Es5" role="2r5BRK">
+        <ref role="1lg0Uo" node="55frxK45Eo4" resolve="labelSwitch" />
       </node>
       <node concept="3AtgYx" id="5dZlyAVMQTi" role="2r5BRK">
         <node concept="2vmpnb" id="5dZlyAVMQUa" role="VovnM" />

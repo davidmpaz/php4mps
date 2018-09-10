@@ -2374,10 +2374,16 @@
       <node concept="3F0ifn" id="2t6Pu9bdV6j" role="3EZMnx">
         <property role="3F0ifm" value="goto" />
       </node>
-      <node concept="3F0A7n" id="2t6Pu9bdV6p" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1iCGBv" id="55frxK43Q28" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:55frxK43Q24" resolve="label" />
+        <node concept="1sVBvm" id="55frxK43Q2a" role="1sWHZn">
+          <node concept="3F0A7n" id="55frxK43Q2i" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
       </node>
-      <node concept="3F0ifn" id="2t6Pu9bdV6x" role="3EZMnx">
+      <node concept="3F0ifn" id="55frxK45EtN" role="3EZMnx">
         <property role="3F0ifm" value=";" />
       </node>
     </node>

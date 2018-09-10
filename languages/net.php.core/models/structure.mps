@@ -1790,8 +1790,12 @@
     <property role="TrG5h" value="Goto" />
     <property role="34LRSv" value="goto" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
-    <node concept="PrWs8" id="3FupyzsEQ_m" role="PzmwI">
-      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    <node concept="1TJgyj" id="55frxK43Q24" role="1TKVEi">
+      <property role="IQ2ns" value="5859022706838560900" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="label" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3FupyzsEQAc" resolve="Label" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsEQ_o">
