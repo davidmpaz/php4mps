@@ -20,4 +20,5 @@ other way) in every software project.
   From [semicolon](https://github.com/nikic/PHP-Parser/blob/v4.0.3/lib/PhpParser/Node/Stmt/Namespace_.php#L10) 
   variant the one expressing the FQN of concept is taken.
 
-* Param in functions and methods editors doesnt implement "by reference" yet.
+* Param in functions and methods editors doesnt implement "by reference".
+* If syntax is supported only in its braced form. Short: if ($a): endif; is not supported.

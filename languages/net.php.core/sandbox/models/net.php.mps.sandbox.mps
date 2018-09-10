@@ -21,6 +21,7 @@
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
+      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -50,6 +51,7 @@
         <reference id="385461470425197834" name="ref" index="164$8w" />
       </concept>
       <concept id="7527412447237337596" name="net.php.core.structure.Variable" flags="ng" index="1b6sL1" />
+      <concept id="5859022706847375521" name="net.php.core.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
       <concept id="1534484191431532944" name="net.php.core.structure.ILoopCounter" flags="ng" index="3yWjiH">
         <property id="1534484191431532951" name="numberOfLoops" index="3yWjiE" />
       </concept>
@@ -92,6 +94,9 @@
         <child id="4241940224716532106" name="elseIf" index="3AtgYy" />
       </concept>
       <concept id="4241940224716532108" name="net.php.core.structure.Label" flags="ng" index="3AtgY$" />
+      <concept id="4241940224716568265" name="net.php.core.structure.TryCatch" flags="ng" index="3Atp3x">
+        <child id="4241940224716568266" name="statementList" index="3Atp3y" />
+      </concept>
       <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g">
         <child id="2834539167099564730" name="type" index="2rGfNw" />
       </concept>
@@ -101,20 +106,12 @@
       <concept id="4241940224716559851" name="net.php.core.structure.IVarLike" flags="ng" index="3Atrf3">
         <child id="4241940224716559871" name="init" index="3Atrfn" />
       </concept>
-      <concept id="4241940224716551468" name="net.php.core.structure.Namespace" flags="ng" index="3Attc4">
-        <child id="5859022706839526793" name="statements" index="1lknel" />
-      </concept>
+      <concept id="4241940224716559839" name="net.php.core.structure.Nop" flags="ng" index="3AtrfR" />
+      <concept id="4241940224716551468" name="net.php.core.structure.Namespace" flags="ng" index="3Attc4" />
       <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0">
-        <child id="3490680890432336725" name="constants" index="2M1X2j" />
         <child id="385461470425197836" name="extends" index="164$8A" />
       </concept>
-      <concept id="4241940224716434877" name="net.php.core.structure.Const" flags="ng" index="3AtSIl">
-        <child id="4241940224716434920" name="value" index="3AtSJ0" />
-      </concept>
       <concept id="4241940224716436410" name="net.php.core.structure.Continue" flags="ng" index="3AtTmi" />
-      <concept id="4241940224716436413" name="net.php.core.structure.ConstList" flags="ng" index="3AtTml">
-        <child id="4241940224716436414" name="constants" index="3AtTmm" />
-      </concept>
       <concept id="4241940224716436425" name="net.php.core.structure.DeclareList" flags="ng" index="3AtTnx">
         <child id="4241940224716436426" name="declares" index="3AtTny" />
         <child id="4241940224716436428" name="statementList" index="3AtTn$" />
@@ -215,9 +212,11 @@
             <node concept="0Hs2B" id="6Mg8JcT_QX6" role="2r5BRK">
               <property role="3yWjiE" value="1" />
             </node>
-            <node concept="3AtTnC" id="Dswb0Lbcm_" role="2r5BRK">
-              <property role="TrG5h" value="true" />
-              <node concept="2vmpnb" id="Dswb0Lbcn5" role="66duN" />
+            <node concept="1lQCUX" id="55frxK4GBeC" role="2r5BRK">
+              <property role="TrG5h" value="$a" />
+              <node concept="30bXRB" id="55frxK53Up1" role="3Atrfn">
+                <property role="30bXRw" value="12" />
+              </node>
             </node>
           </node>
         </node>
@@ -245,6 +244,13 @@
           </node>
         </node>
         <node concept="2vmpnb" id="6Mg8JcTC8Xr" role="3At4xh" />
+      </node>
+      <node concept="3AtrfR" id="55frxK4BISj" role="2r5BRK" />
+      <node concept="1lQCUX" id="55frxK4Cue6" role="2r5BRK">
+        <property role="TrG5h" value="$variable" />
+        <node concept="30bdrP" id="55frxK53Upn" role="3Atrfn">
+          <property role="30bdrQ" value="tralala" />
+        </node>
       </node>
       <node concept="3AtgXX" id="55frxK45Es5" role="2r5BRK">
         <ref role="1lg0Uo" node="55frxK45Eo4" resolve="labelSwitch" />
@@ -308,16 +314,16 @@
           </node>
         </node>
       </node>
-      <node concept="3AtTnC" id="2izOLSBXWaU" role="2r5BRK">
-        <property role="TrG5h" value="i" />
-        <node concept="30bXRB" id="2izOLSBXWcm" role="66duN">
-          <property role="30bXRw" value="34" />
+      <node concept="1lQCUX" id="55frxK4GB4G" role="2r5BRK">
+        <property role="TrG5h" value="$i" />
+        <node concept="30bXRB" id="55frxK53UpS" role="3Atrfn">
+          <property role="30bXRw" value="1" />
         </node>
       </node>
-      <node concept="3AtTnC" id="2izOLSBXWdE" role="2r5BRK">
-        <property role="TrG5h" value="j" />
-        <node concept="30bXRB" id="2izOLSBXWf8" role="66duN">
-          <property role="30bXRw" value="45" />
+      <node concept="1lQCUX" id="55frxK4GB7Z" role="2r5BRK">
+        <property role="TrG5h" value="$j" />
+        <node concept="30bXRB" id="55frxK53UqD" role="3Atrfn">
+          <property role="30bXRw" value="10" />
         </node>
       </node>
       <node concept="3At505" id="2izOLSBXW7P" role="2r5BRK">
@@ -327,6 +333,9 @@
         <node concept="30bdrP" id="2izOLSBXWnv" role="3At50o" />
         <node concept="30bXRB" id="2izOLSBXWpP" role="3At50o">
           <property role="30bXRw" value="1" />
+        </node>
+        <node concept="1b6sL1" id="55frxK53Urb" role="3At50o">
+          <property role="TrG5h" value="$j" />
         </node>
         <node concept="0Hs2N" id="2izOLSBXW7R" role="3lC53">
           <node concept="3At4yC" id="2izOLSBXWj3" role="2r5BRK">
@@ -341,11 +350,8 @@
           </node>
         </node>
       </node>
-      <node concept="3AtTnC" id="2t6Pu9bdV3B" role="2r5BRK">
+      <node concept="1lQCUX" id="55frxK4GBcQ" role="2r5BRK">
         <property role="TrG5h" value="$a" />
-        <node concept="30bdrP" id="2t6Pu9bdV5o" role="66duN">
-          <property role="30bdrQ" value="a" />
-        </node>
       </node>
       <node concept="3At3_y" id="2t6Pu9b86V1" role="2r5BRK">
         <node concept="1b6sL1" id="2t6Pu9bc2rS" role="3At3_T">
@@ -374,58 +380,38 @@
           </node>
         </node>
       </node>
+      <node concept="3Atp3x" id="55frxK586_i" role="2r5BRK">
+        <node concept="0Hs2N" id="55frxK586_k" role="3Atp3y">
+          <node concept="3At4yC" id="55frxK586Be" role="2r5BRK">
+            <node concept="30bdrP" id="55frxK586Bn" role="3At4yD" />
+          </node>
+          <node concept="3At4yC" id="55frxK586BB" role="2r5BRK">
+            <node concept="30bXRB" id="55frxK586Cm" role="3At4yD">
+              <property role="30bXRw" value="123" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2YL5gg" id="2t6Pu9bF8eO">
     <property role="TrG5h" value="Interfaces" />
     <node concept="0Hs2N" id="2t6Pu9bF8eP" role="2r5y7H">
-      <node concept="3Attc4" id="55frxK49AeW" role="2r5BRK">
+      <node concept="3Attc4" id="55frxK4PeRz" role="2r5BRK">
         <property role="TrG5h" value="Interfaces" />
-        <node concept="0Hs2N" id="55frxK49AeY" role="1lknel">
-          <node concept="3Atyh0" id="55frxK4d73k" role="2r5BRK">
-            <property role="TrG5h" value="Button2" />
-            <node concept="164$8z" id="55frxK4d73r" role="164$8A">
-              <ref role="164$8w" node="lprMD3nQ1l" resolve="Version" />
-            </node>
+        <node concept="3Atyh0" id="55frxK4PeRI" role="2r5BRK">
+          <property role="TrG5h" value="Button" />
+          <node concept="164$8z" id="55frxK4PeSs" role="164$8A">
+            <ref role="164$8w" node="55frxK4PeRS" resolve="Versionable" />
           </node>
         </node>
-      </node>
-      <node concept="3Atyh0" id="lprMD3nPX2" role="2r5BRK">
-        <property role="TrG5h" value="Button" />
-        <node concept="3Av6eY" id="lprMD3nPZD" role="2r5BRK">
-          <property role="TrG5h" value="name" />
-          <node concept="0Hs2N" id="lprMD3nPZE" role="3Au9fb" />
-          <node concept="3Atp4g" id="lprMD3nPZR" role="2r5cQ7">
-            <property role="TrG5h" value="$arg1" />
-            <node concept="30bdrU" id="lprMD3nQ01" role="2rGfNw" />
+        <node concept="3Atyh0" id="55frxK4PeRS" role="2r5BRK">
+          <property role="TrG5h" value="Versionable" />
+          <node concept="3Av6eY" id="55frxK4PeRW" role="2r5BRK">
+            <property role="TrG5h" value="getVersion" />
+            <node concept="0Hs2N" id="55frxK4PeRX" role="3Au9fb" />
+            <node concept="2vmvy5" id="55frxK4PeSf" role="2zM23F" />
           </node>
-        </node>
-        <node concept="3AtTml" id="lprMD3nPXr" role="2M1X2j">
-          <node concept="3AtSIl" id="lprMD3nPXt" role="3AtTmm">
-            <property role="TrG5h" value="$ttt" />
-            <node concept="30bXRB" id="lprMD3nPYb" role="3AtSJ0">
-              <property role="30bXRw" value="123" />
-            </node>
-          </node>
-        </node>
-        <node concept="3AtTml" id="lprMD3nPYw" role="2M1X2j">
-          <node concept="3AtSIl" id="lprMD3nPY_" role="3AtTmm">
-            <property role="TrG5h" value="$tttt" />
-            <node concept="30bXRB" id="lprMD3nPZs" role="3AtSJ0">
-              <property role="30bXRw" value="4566" />
-            </node>
-          </node>
-        </node>
-        <node concept="164$8z" id="lprMD3nQ29" role="164$8A">
-          <ref role="164$8w" node="lprMD3nQ1l" resolve="Version" />
-        </node>
-      </node>
-      <node concept="3Atyh0" id="lprMD3nQ1l" role="2r5BRK">
-        <property role="TrG5h" value="Version" />
-        <node concept="3Av6eY" id="lprMD3nQ1_" role="2r5BRK">
-          <property role="TrG5h" value="getVersion" />
-          <node concept="0Hs2N" id="lprMD3nQ1A" role="3Au9fb" />
-          <node concept="mLuIC" id="lprMD3nQ1W" role="2zM23F" />
         </node>
       </node>
     </node>
