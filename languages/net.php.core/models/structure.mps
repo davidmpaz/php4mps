@@ -1955,7 +1955,7 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Namespace" />
     <property role="34LRSv" value="namespace" />
-    <ref role="1TJDcQ" node="5AeJSXpeRWW" resolve="StatementList" />
+    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
     <node concept="PrWs8" id="3FupyzsEVkH" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
@@ -1965,6 +1965,13 @@
       <property role="20kJfa" value="prefix" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4UY1WdYRiCP" resolve="Name" />
+    </node>
+    <node concept="1TJgyj" id="55frxK47xQ9" role="1TKVEi">
+      <property role="IQ2ns" value="5859022706839526793" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5AeJSXpeRWW" resolve="StatementList" />
     </node>
     <node concept="1TJgyi" id="3FupyzsEVkO" role="1TKVEl">
       <property role="IQ2nx" value="4241940224716551476" />

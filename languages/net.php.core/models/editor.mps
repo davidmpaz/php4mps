@@ -2802,5 +2802,36 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="55frxK47oXr">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="soun:3FupyzsEVkG" resolve="Namespace" />
+    <node concept="3EZMnI" id="55frxK47oXt" role="2wV5jI">
+      <node concept="l2Vlx" id="55frxK47oXu" role="2iSdaV" />
+      <node concept="3F0ifn" id="55frxK47oXz" role="3EZMnx">
+        <property role="3F0ifm" value="namespace" />
+      </node>
+      <node concept="3F0A7n" id="55frxK47xPU" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="55frxK47EmL" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="ljvvj" id="55frxK47EmT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="55frxK47En4" role="3EZMnx" />
+      <node concept="1iCGBv" id="55frxK47Emt" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:55frxK47xQ9" resolve="statements" />
+        <node concept="1sVBvm" id="55frxK47Emv" role="1sWHZn">
+          <node concept="PMmxH" id="55frxK47EmC" role="2wV5jI">
+            <ref role="PMmxG" node="1o52yCRt3C5" resolve="StatementListWithoutBraces" />
+          </node>
+        </node>
+        <node concept="pVoyu" id="55frxK4bn6e" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

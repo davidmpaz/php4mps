@@ -101,6 +101,9 @@
       <concept id="4241940224716559851" name="net.php.core.structure.IVarLike" flags="ng" index="3Atrf3">
         <child id="4241940224716559871" name="init" index="3Atrfn" />
       </concept>
+      <concept id="4241940224716551468" name="net.php.core.structure.Namespace" flags="ng" index="3Attc4">
+        <child id="5859022706839526793" name="statements" index="1lknel" />
+      </concept>
       <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0">
         <child id="3490680890432336725" name="constants" index="2M1X2j" />
         <child id="385461470425197836" name="extends" index="164$8A" />
@@ -376,6 +379,17 @@
   <node concept="2YL5gg" id="2t6Pu9bF8eO">
     <property role="TrG5h" value="Interfaces" />
     <node concept="0Hs2N" id="2t6Pu9bF8eP" role="2r5y7H">
+      <node concept="3Attc4" id="55frxK49AeW" role="2r5BRK">
+        <property role="TrG5h" value="Interfaces" />
+        <node concept="0Hs2N" id="55frxK49AeY" role="1lknel">
+          <node concept="3Atyh0" id="55frxK4d73k" role="2r5BRK">
+            <property role="TrG5h" value="Button2" />
+            <node concept="164$8z" id="55frxK4d73r" role="164$8A">
+              <ref role="164$8w" node="lprMD3nQ1l" resolve="Version" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3Atyh0" id="lprMD3nPX2" role="2r5BRK">
         <property role="TrG5h" value="Button" />
         <node concept="3Av6eY" id="lprMD3nPZD" role="2r5BRK">
@@ -413,9 +427,6 @@
           <node concept="0Hs2N" id="lprMD3nQ1A" role="3Au9fb" />
           <node concept="mLuIC" id="lprMD3nQ1W" role="2zM23F" />
         </node>
-      </node>
-      <node concept="3Atyh0" id="lprMD3nQ7N" role="2r5BRK">
-        <property role="TrG5h" value="Dummy" />
       </node>
     </node>
   </node>
