@@ -121,6 +121,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -179,6 +182,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -858,6 +862,31 @@
           <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="55frxK3SSy_" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="showBody" />
+      <ref role="13i0hy" node="55frxK3SGQB" resolve="showBody" />
+      <node concept="3Tm1VV" id="55frxK3SSyA" role="1B3o_S" />
+      <node concept="3clFbS" id="55frxK3SSyD" role="3clF47">
+        <node concept="3clFbF" id="55frxK3SSyG" role="3cqZAp">
+          <node concept="3fqX7Q" id="55frxK3Nl0E" role="3clFbG">
+            <node concept="2OqwBi" id="55frxK3Nl0G" role="3fr31v">
+              <node concept="2OqwBi" id="55frxK3Nl0H" role="2Oq$k0">
+                <node concept="13iPFW" id="55frxK3STne" role="2Oq$k0" />
+                <node concept="1mfA1w" id="55frxK3Nl0J" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="55frxK3Nl0K" role="2OqNvi">
+                <node concept="chp4Y" id="55frxK3Nl0L" role="cj9EA">
+                  <ref role="cht4Q" to="soun:3FupyzsE49C" resolve="Interface" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="55frxK3SSyE" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1o52yCRrq21">
@@ -1689,6 +1718,21 @@
     </node>
     <node concept="13hLZK" id="55frxK3xh5Y" role="13h7CW">
       <node concept="3clFbS" id="55frxK3xh5Z" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="55frxK3SGQs">
+    <property role="3GE5qa" value="statement" />
+    <ref role="13h7C2" to="soun:55frxK3SGQr" resolve="IOptionallyDefinedBody" />
+    <node concept="13i0hz" id="55frxK3SGQB" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="showBody" />
+      <node concept="3Tm1VV" id="55frxK3SGQC" role="1B3o_S" />
+      <node concept="10P_77" id="55frxK3SGQR" role="3clF45" />
+      <node concept="3clFbS" id="55frxK3SGQE" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="55frxK3SGQt" role="13h7CW">
+      <node concept="3clFbS" id="55frxK3SGQu" role="2VODD2" />
     </node>
   </node>
 </model>
