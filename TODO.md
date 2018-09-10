@@ -19,3 +19,5 @@ other way) in every software project.
   the braced version is not implemented. 
   From [semicolon](https://github.com/nikic/PHP-Parser/blob/v4.0.3/lib/PhpParser/Node/Stmt/Namespace_.php#L10) 
   variant the one expressing the FQN of concept is taken.
+
+* Param in functions and methods editors doesnt implement "by reference" yet.
