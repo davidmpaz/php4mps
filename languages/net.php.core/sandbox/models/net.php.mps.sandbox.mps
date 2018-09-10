@@ -405,5 +405,8 @@
       </node>
     </node>
   </node>
+  <node concept="3Atyh0" id="55frxK3xh23">
+    <property role="TrG5h" value="TestInterface" />
+  </node>
 </model>
 
