@@ -31,10 +31,16 @@
       </concept>
     </language>
     <language id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="net.php.core">
+      <concept id="6453305938466947503" name="net.php.core.structure.Class" flags="ng" index="0GRSw" />
       <concept id="6453305938466800269" name="net.php.core.structure.Switch" flags="ng" index="0HjO2">
         <child id="6453305938466800270" name="expr" index="0HjO1" />
         <child id="6453305938466800277" name="default" index="0HjOq" />
         <child id="6453305938466800272" name="cases" index="0HjOv" />
+      </concept>
+      <concept id="6453305938466800281" name="net.php.core.structure.Catch" flags="ng" index="0HjOm">
+        <child id="6453305938466800286" name="var" index="0HjOh" />
+        <child id="6453305938466800284" name="types" index="0HjOj" />
+        <child id="6453305938466800298" name="statements" index="0HjO_" />
       </concept>
       <concept id="6453305938466799403" name="net.php.core.structure.Case" flags="ng" index="0Hs2$">
         <child id="6453305938466799407" name="expr" index="0Hs2w" />
@@ -51,6 +57,9 @@
         <reference id="385461470425197834" name="ref" index="164$8w" />
       </concept>
       <concept id="7527412447237337596" name="net.php.core.structure.Variable" flags="ng" index="1b6sL1" />
+      <concept id="5859022706858117772" name="net.php.core.structure.ClassRef" flags="ng" index="1ktEig">
+        <reference id="5859022706858117773" name="class" index="1ktEih" />
+      </concept>
       <concept id="5859022706847375521" name="net.php.core.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
       <concept id="1534484191431532944" name="net.php.core.structure.ILoopCounter" flags="ng" index="3yWjiH">
         <property id="1534484191431532951" name="numberOfLoops" index="3yWjiE" />
@@ -68,6 +77,9 @@
       <concept id="4241940224716451447" name="net.php.core.structure.Do" flags="ng" index="3At4xv" />
       <concept id="4241940224716451456" name="net.php.core.structure.Echo" flags="ng" index="3At4yC">
         <child id="4241940224716451457" name="expressions" index="3At4yD" />
+      </concept>
+      <concept id="4241940224716453418" name="net.php.core.structure.Finally" flags="ng" index="3At502">
+        <child id="4241940224716453419" name="statements" index="3At503" />
       </concept>
       <concept id="4241940224716453421" name="net.php.core.structure.For" flags="ng" index="3At505">
         <child id="2640185933042111069" name="statements" index="3lC53" />
@@ -96,6 +108,7 @@
       <concept id="4241940224716532108" name="net.php.core.structure.Label" flags="ng" index="3AtgY$" />
       <concept id="4241940224716568265" name="net.php.core.structure.TryCatch" flags="ng" index="3Atp3x">
         <child id="4241940224716568266" name="statementList" index="3Atp3y" />
+        <child id="4241940224716568268" name="catches" index="3Atp3$" />
       </concept>
       <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g">
         <child id="2834539167099564730" name="type" index="2rGfNw" />
@@ -391,6 +404,18 @@
             </node>
           </node>
         </node>
+        <node concept="0HjOm" id="14FADuO_tRh" role="3Atp3$">
+          <node concept="1ktEig" id="14FADuO_w4_" role="0HjOj">
+            <ref role="1ktEih" node="14FADuO_w4$" resolve="Exception" />
+          </node>
+          <node concept="1b6sL1" id="14FADuO_tRj" role="0HjOh">
+            <property role="TrG5h" value="$e" />
+          </node>
+          <node concept="0Hs2N" id="14FADuO_tRk" role="0HjO_" />
+        </node>
+      </node>
+      <node concept="3At502" id="14FADuOCyMj" role="2r5BRK">
+        <node concept="0Hs2N" id="14FADuOCyMl" role="3At503" />
       </node>
     </node>
   </node>
@@ -427,6 +452,9 @@
         <node concept="30bdrP" id="55frxK42719" role="3Atrfn" />
       </node>
     </node>
+  </node>
+  <node concept="0GRSw" id="14FADuO_w4$">
+    <property role="TrG5h" value="Exception" />
   </node>
 </model>
 
