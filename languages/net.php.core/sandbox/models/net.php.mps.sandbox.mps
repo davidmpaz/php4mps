@@ -12,10 +12,19 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
+        <child id="5115872837157187954" name="expr" index="30bsDf" />
+      </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
       <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
+      <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
+      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
+        <child id="5115872837156576280" name="right" index="30dEs_" />
+        <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
+      <concept id="1514143479005139333" name="org.iets3.core.expr.base.structure.LogicalImpliesExpression" flags="ng" index="3o403X" />
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
@@ -50,6 +59,7 @@
       <concept id="6453305938466799420" name="net.php.core.structure.StatementList" flags="ng" index="0Hs2N">
         <child id="2935999617464580584" name="statements" index="2r5BRK" />
       </concept>
+      <concept id="7621468059231777970" name="net.php.core.structure.ArrayShortExpr" flags="ng" index="2SIx1z" />
       <concept id="5669239491951950679" name="net.php.core.structure.PhpScript" flags="ng" index="2YL5gg">
         <child id="2935999617464591861" name="statements" index="2r5y7H" />
       </concept>
@@ -57,6 +67,12 @@
         <reference id="385461470425197834" name="ref" index="164$8w" />
       </concept>
       <concept id="7527412447237337596" name="net.php.core.structure.Variable" flags="ng" index="1b6sL1" />
+      <concept id="7527412447237204410" name="net.php.core.structure.ArrayExpr" flags="ng" index="1b6Xg7">
+        <child id="7527412447237204426" name="items" index="1b6XhR" />
+      </concept>
+      <concept id="7527412447237204418" name="net.php.core.structure.ArrayItem" flags="ng" index="1b6XhZ">
+        <child id="7527412447237204421" name="value" index="1b6XhS" />
+      </concept>
       <concept id="5859022706858117772" name="net.php.core.structure.ClassRef" flags="ng" index="1ktEig">
         <reference id="5859022706858117773" name="class" index="1ktEih" />
       </concept>
@@ -125,7 +141,13 @@
       <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0">
         <child id="385461470425197836" name="extends" index="164$8A" />
       </concept>
+      <concept id="4241940224716434877" name="net.php.core.structure.Const" flags="ng" index="3AtSIl">
+        <child id="4241940224716434920" name="value" index="3AtSJ0" />
+      </concept>
       <concept id="4241940224716436410" name="net.php.core.structure.Continue" flags="ng" index="3AtTmi" />
+      <concept id="4241940224716436413" name="net.php.core.structure.ConstList" flags="ng" index="3AtTml">
+        <child id="4241940224716436414" name="constants" index="3AtTmm" />
+      </concept>
       <concept id="4241940224716436425" name="net.php.core.structure.DeclareList" flags="ng" index="3AtTnx">
         <child id="4241940224716436426" name="declares" index="3AtTny" />
         <child id="4241940224716436428" name="statementList" index="3AtTn$" />
@@ -261,7 +283,58 @@
         </node>
         <node concept="2vmpnb" id="6Mg8JcTC8Xr" role="3At4xh" />
       </node>
-      <node concept="3AtrfR" id="55frxK4BISj" role="2r5BRK" />
+      <node concept="3AtTml" id="6B4Td7hh9VW" role="2r5BRK">
+        <node concept="3AtSIl" id="6B4Td7hh9XW" role="3AtTmm">
+          <property role="TrG5h" value="SOME_CONST" />
+          <node concept="30bsCy" id="6B4Td7hha0V" role="3AtSJ0">
+            <node concept="30deo4" id="6B4Td7hha0X" role="30bsDf">
+              <node concept="2vmpnb" id="6B4Td7hh9YV" role="30dEsF" />
+              <node concept="2vmpn$" id="6B4Td7hha0b" role="30dEs_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1lQCUX" id="6B4Td7hyb3f" role="2r5BRK">
+        <property role="TrG5h" value="$variable" />
+        <node concept="2SIx1z" id="6B4Td7hyb5C" role="3Atrfn">
+          <node concept="1b6XhZ" id="6B4Td7hyb5F" role="1b6XhR">
+            <node concept="3o403X" id="6B4Td7h$xnw" role="1b6XhS">
+              <node concept="30bXRB" id="6B4Td7hyb64" role="30dEsF">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bdrP" id="6B4Td7h$xpK" role="30dEs_">
+                <property role="30bdrQ" value="blabla" />
+              </node>
+            </node>
+          </node>
+          <node concept="1b6XhZ" id="6B4Td7hyb6h" role="1b6XhR">
+            <node concept="3o403X" id="6B4Td7h$xss" role="1b6XhS">
+              <node concept="30bXRB" id="6B4Td7h$xtw" role="30dEs_">
+                <property role="30bXRw" value="123" />
+              </node>
+              <node concept="30bXRB" id="6B4Td7hyb6G" role="30dEsF">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+          </node>
+          <node concept="1b6XhZ" id="6B4Td7hyb6T" role="1b6XhR">
+            <node concept="3o403X" id="6B4Td7h$xuY" role="1b6XhS">
+              <node concept="2SIx1z" id="6B4Td7h$xvE" role="30dEs_">
+                <node concept="1b6XhZ" id="6B4Td7h$xvU" role="1b6XhR">
+                  <node concept="30bdrP" id="6B4Td7h$xwT" role="1b6XhS">
+                    <property role="30bdrQ" value="yihaaaa" />
+                  </node>
+                </node>
+              </node>
+              <node concept="30bXRB" id="6B4Td7hyb7m" role="30dEsF">
+                <property role="30bXRw" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3AtrfR" id="6B4Td7hr1qb" role="2r5BRK" />
+      <node concept="3AtrfR" id="6B4Td7hoD1v" role="2r5BRK" />
       <node concept="1lQCUX" id="55frxK4Cue6" role="2r5BRK">
         <property role="TrG5h" value="$variable" />
         <node concept="30bdrP" id="55frxK53Upn" role="3Atrfn">

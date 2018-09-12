@@ -595,6 +595,7 @@
     <property role="TrG5h" value="ArrayDimFetch" />
     <property role="3GE5qa" value="expression.array" />
     <property role="R4oN_" value="array index fetch" />
+    <property role="34LRSv" value="array index" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6xQJrOzrmBc" role="1TKVEi">
       <property role="IQ2ns" value="7527412447237204428" />
@@ -617,32 +618,12 @@
     <property role="34LRSv" value="array" />
     <property role="R4oN_" value="array expression" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyi" id="6xQJrOzrmB0" role="1TKVEl">
-      <property role="IQ2nx" value="7527412447237204416" />
-      <property role="TrG5h" value="kind" />
-      <ref role="AX2Wp" node="6xQJrOzrmAV" resolve="ArraySyntax" />
-    </node>
     <node concept="1TJgyj" id="6xQJrOzrmBa" role="1TKVEi">
       <property role="IQ2ns" value="7527412447237204426" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6xQJrOzrmB2" resolve="ArrayItem" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="6xQJrOzrmAV">
-    <property role="3GE5qa" value="expression.array" />
-    <property role="TrG5h" value="ArraySyntax" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <ref role="Qgau1" node="6xQJrOzrmAX" />
-    <node concept="M4N5e" id="6xQJrOzrmAW" role="M5hS2">
-      <property role="1uS6qv" value="1" />
-      <property role="1uS6qo" value="array" />
-    </node>
-    <node concept="M4N5e" id="6xQJrOzrmAX" role="M5hS2">
-      <property role="1uS6qv" value="2" />
-      <property role="1uS6qo" value="[]" />
     </node>
   </node>
   <node concept="1TIwiD" id="6xQJrOzrmB2">
@@ -662,6 +643,7 @@
       <property role="IQ2ns" value="7527412447237204421" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="1TJgyi" id="6xQJrOzrmB8" role="1TKVEl">
@@ -2316,6 +2298,14 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5AeJSXpfs6J" resolve="Class" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6B4Td7hvJiM">
+    <property role="EcuMT" value="7621468059231777970" />
+    <property role="3GE5qa" value="expression.array" />
+    <property role="TrG5h" value="ArrayShortExpr" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="array short expression" />
+    <ref role="1TJDcQ" node="6xQJrOzrmAU" resolve="ArrayExpr" />
   </node>
 </model>
 
