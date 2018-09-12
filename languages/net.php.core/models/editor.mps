@@ -98,6 +98,7 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
@@ -118,6 +119,9 @@
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
@@ -3469,6 +3473,48 @@
         <ref role="1NtTu8" to="soun:3FupyzsEzoF" resolve="statements" />
         <node concept="1sVBvm" id="14FADuOCyO$" role="1sWHZn">
           <node concept="PMmxH" id="14FADuOCyOG" role="2wV5jI">
+            <ref role="PMmxG" node="wNL7VpGXUb" resolve="StatementListBraced" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6B4Td7h6tEj">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="soun:3FupyzsEZs5" resolve="While" />
+    <node concept="3EZMnI" id="6B4Td7h6tF5" role="2wV5jI">
+      <node concept="l2Vlx" id="6B4Td7h6tF6" role="2iSdaV" />
+      <node concept="3F0ifn" id="6B4Td7h6tF7" role="3EZMnx">
+        <property role="3F0ifm" value="while" />
+      </node>
+      <node concept="3F0ifn" id="6B4Td7h6tF8" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="6B4Td7h6tF9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="6B4Td7h6tFa" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
+        </node>
+        <node concept="11LMrY" id="6B4Td7h6tFb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6B4Td7h6tFf" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:3FupyzsEyTT" resolve="condition" />
+      </node>
+      <node concept="3F0ifn" id="6B4Td7h6tFm" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6B4Td7h6tFn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="6B4Td7h6tFo" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6B4Td7h6tKh" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:3FupyzsEyTV" resolve="statementList" />
+        <node concept="1sVBvm" id="6B4Td7h6tKj" role="1sWHZn">
+          <node concept="PMmxH" id="6B4Td7h6tKA" role="2wV5jI">
             <ref role="PMmxG" node="wNL7VpGXUb" resolve="StatementListBraced" />
           </node>
         </node>

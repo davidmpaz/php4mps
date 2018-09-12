@@ -113,6 +113,7 @@
       <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g">
         <child id="2834539167099564730" name="type" index="2rGfNw" />
       </concept>
+      <concept id="4241940224716568325" name="net.php.core.structure.While" flags="ng" index="3Atp4H" />
       <concept id="4241940224716559893" name="net.php.core.structure.Return" flags="ng" index="3Atr0X">
         <child id="4241940224716559894" name="expr" index="3Atr0Y" />
       </concept>
@@ -416,6 +417,20 @@
       </node>
       <node concept="3At502" id="14FADuOCyMj" role="2r5BRK">
         <node concept="0Hs2N" id="14FADuOCyMl" role="3At503" />
+      </node>
+      <node concept="3Atp4H" id="6B4Td7hb9o$" role="2r5BRK">
+        <node concept="2vmpnb" id="6B4Td7hb9qX" role="3At4xh" />
+        <node concept="0Hs2N" id="6B4Td7hb9yK" role="3At4xj">
+          <node concept="3At4yC" id="6B4Td7hb9yS" role="2r5BRK">
+            <node concept="30bdrP" id="6B4Td7hb9z0" role="3At4yD" />
+          </node>
+          <node concept="3At4yC" id="6B4Td7hb9zc" role="2r5BRK">
+            <node concept="30bXRB" id="6B4Td7hb9zV" role="3At4yD">
+              <property role="30bXRw" value="123" />
+            </node>
+          </node>
+          <node concept="3Atr0X" id="6B4Td7hb9$h" role="2r5BRK" />
+        </node>
       </node>
     </node>
   </node>
