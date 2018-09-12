@@ -134,6 +134,7 @@
         <child id="4771974525474677311" name="value" index="66duN" />
       </concept>
       <concept id="4241940224716241294" name="net.php.core.structure.IPHPFunctionLike" flags="ng" index="3Au9YA">
+        <property id="4241940224716241297" name="returnByReference" index="3Au9YT" />
         <child id="2935999617464666527" name="args" index="2r5cQ7" />
         <child id="4241940224716240355" name="body" index="3Au9fb" />
       </concept>
@@ -163,6 +164,7 @@
       </node>
       <node concept="3AtgX$" id="5aza$gvvArJ" role="2r5BRK">
         <property role="TrG5h" value="testing" />
+        <property role="3Au9YT" value="false" />
         <node concept="3Atp4g" id="5QL$AYTIrkt" role="2r5cQ7">
           <property role="TrG5h" value="$arg1" />
           <node concept="30bdrU" id="1ECm9m20QKg" role="2rGfNw" />
@@ -460,6 +462,7 @@
     <property role="TrG5h" value="ContainerAwareInterface" />
     <node concept="3Av6eY" id="55frxK426ZA" role="2r5BRK">
       <property role="TrG5h" value="setContainer" />
+      <property role="3Au9YT" value="false" />
       <node concept="0Hs2N" id="55frxK426ZB" role="3Au9fb" />
       <node concept="3Tm1VV" id="55frxK426ZM" role="1B3o_S" />
       <node concept="3Atp4g" id="55frxK426ZV" role="2r5cQ7">
