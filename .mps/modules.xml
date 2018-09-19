@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/net.php.core.expr/net.php.core.expr.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/net.php.core.types/net.php.core.types.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/net.php.core/net.php.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/net.php.core/sandbox/net.php.core.sandbox.msd" folder="" />
