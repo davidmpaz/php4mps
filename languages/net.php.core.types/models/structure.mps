@@ -51,7 +51,7 @@
   </registry>
   <node concept="1TIwiD" id="19Mz9MX9QZG">
     <property role="EcuMT" value="1329279444843982828" />
-    <property role="TrG5h" value="IntegerPhpType" />
+    <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="int" />
     <property role="R4oN_" value="Integer Php Type" />
     <property role="3GE5qa" value="scalar" />
@@ -59,7 +59,7 @@
   </node>
   <node concept="1TIwiD" id="19Mz9MX9QZL">
     <property role="EcuMT" value="1329279444843982833" />
-    <property role="TrG5h" value="FloatPhpType" />
+    <property role="TrG5h" value="FloatType" />
     <property role="34LRSv" value="float" />
     <property role="R4oN_" value="Float Php Type" />
     <property role="3GE5qa" value="scalar" />
@@ -67,45 +67,45 @@
   </node>
   <node concept="1TIwiD" id="19Mz9MX9SNy">
     <property role="EcuMT" value="1329279444843990242" />
-    <property role="TrG5h" value="ArrayPhpType" />
+    <property role="TrG5h" value="ArrayType" />
     <property role="34LRSv" value="array" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9SZz">
     <property role="EcuMT" value="1329279444843991011" />
-    <property role="TrG5h" value="ObjectPhpType" />
+    <property role="TrG5h" value="ObjectType" />
     <property role="34LRSv" value="object" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9T_Z">
     <property role="EcuMT" value="1329279444843993471" />
-    <property role="TrG5h" value="CallablePhpType" />
+    <property role="TrG5h" value="CallableType" />
     <property role="34LRSv" value="callable" />
     <ref role="1TJDcQ" to="zzzn:5Win3SAb5Rp" resolve="GenericFunctionType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9TAc">
     <property role="EcuMT" value="1329279444843993484" />
-    <property role="TrG5h" value="IterablePhpType" />
+    <property role="TrG5h" value="IterableType" />
     <property role="34LRSv" value="iterable" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9Uy4">
     <property role="EcuMT" value="1329279444843997316" />
-    <property role="TrG5h" value="ResourcePhpType" />
+    <property role="TrG5h" value="ResourceType" />
     <property role="34LRSv" value="resource" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9Uy5">
     <property role="EcuMT" value="1329279444843997317" />
     <property role="3GE5qa" value="scalar" />
-    <property role="TrG5h" value="NullPhpType" />
+    <property role="TrG5h" value="NullType" />
     <property role="34LRSv" value="null" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MXa9$Y">
     <property role="EcuMT" value="1329279444844058942" />
-    <property role="TrG5h" value="Mixed" />
+    <property role="TrG5h" value="MixedType" />
     <property role="34LRSv" value="mixed" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>

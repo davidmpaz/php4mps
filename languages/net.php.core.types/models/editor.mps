@@ -92,37 +92,37 @@
     </node>
   </node>
   <node concept="24kQdi" id="19Mz9MXa8h8">
-    <ref role="1XX52x" to="8rwl:19Mz9MX9T_Z" resolve="CallablePhpType" />
+    <ref role="1XX52x" to="8rwl:19Mz9MX9T_Z" resolve="CallableType" />
     <node concept="PMmxH" id="19Mz9MXa8ha" role="2wV5jI">
       <ref role="PMmxG" node="19Mz9MXa4pr" resolve="phpTypeAlias" />
     </node>
   </node>
   <node concept="24kQdi" id="19Mz9MXa8hu">
-    <ref role="1XX52x" to="8rwl:19Mz9MX9TAc" resolve="IterablePhpType" />
+    <ref role="1XX52x" to="8rwl:19Mz9MX9TAc" resolve="IterableType" />
     <node concept="PMmxH" id="19Mz9MXa8hw" role="2wV5jI">
       <ref role="PMmxG" node="19Mz9MXa4pr" resolve="phpTypeAlias" />
     </node>
   </node>
   <node concept="24kQdi" id="19Mz9MXa8hy">
-    <ref role="1XX52x" to="8rwl:19Mz9MX9SNy" resolve="ArrayPhpType" />
+    <ref role="1XX52x" to="8rwl:19Mz9MX9SNy" resolve="ArrayType" />
     <node concept="PMmxH" id="19Mz9MXa8h$" role="2wV5jI">
       <ref role="PMmxG" node="19Mz9MXa4pr" resolve="phpTypeAlias" />
     </node>
   </node>
   <node concept="24kQdi" id="19Mz9MXa8RQ">
-    <ref role="1XX52x" to="8rwl:19Mz9MX9SZz" resolve="ObjectPhpType" />
+    <ref role="1XX52x" to="8rwl:19Mz9MX9SZz" resolve="ObjectType" />
     <node concept="PMmxH" id="19Mz9MXa8RS" role="2wV5jI">
       <ref role="PMmxG" node="19Mz9MXa4pr" resolve="phpTypeAlias" />
     </node>
   </node>
   <node concept="24kQdi" id="19Mz9MXa9dr">
-    <ref role="1XX52x" to="8rwl:19Mz9MX9Uy4" resolve="ResourcePhpType" />
+    <ref role="1XX52x" to="8rwl:19Mz9MX9Uy4" resolve="ResourceType" />
     <node concept="PMmxH" id="19Mz9MXa9dt" role="2wV5jI">
       <ref role="PMmxG" node="19Mz9MXa4pr" resolve="phpTypeAlias" />
     </node>
   </node>
   <node concept="24kQdi" id="19Mz9MXa9$Z">
-    <ref role="1XX52x" to="8rwl:19Mz9MXa9$Y" resolve="Mixed" />
+    <ref role="1XX52x" to="8rwl:19Mz9MXa9$Y" resolve="MixedType" />
     <node concept="PMmxH" id="19Mz9MXa9_1" role="2wV5jI">
       <ref role="PMmxG" node="19Mz9MXa4pr" resolve="phpTypeAlias" />
     </node>
