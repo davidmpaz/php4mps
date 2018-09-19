@@ -1756,14 +1756,14 @@
       <property role="IQ2ns" value="4241940224716463953" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="keyVariable" />
-      <ref role="20lvS9" node="6xQJrOzrR7W" resolve="VariableRef" />
+      <ref role="20lvS9" node="55frxK4_u2x" resolve="VariableIdentifier" />
     </node>
     <node concept="1TJgyj" id="3FupyzsE_Xd" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716463949" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="valueVariable" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6xQJrOzrR7W" resolve="VariableRef" />
+      <ref role="20lvS9" node="55frxK4_u2x" resolve="VariableIdentifier" />
     </node>
     <node concept="1TJgyi" id="3FupyzsE_Xf" role="1TKVEl">
       <property role="IQ2nx" value="4241940224716463951" />
@@ -2272,11 +2272,11 @@
   </node>
   <node concept="1TIwiD" id="55frxK4_u2x">
     <property role="EcuMT" value="5859022706847375521" />
-    <property role="3GE5qa" value="statement" />
+    <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="VariableIdentifier" />
     <property role="34LRSv" value="var declaration" />
     <property role="R4oN_" value="variable declaration" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="19Mz9MX1Fd_" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
@@ -2301,6 +2301,19 @@
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="array short expression" />
     <ref role="1TJDcQ" node="6xQJrOzrmAU" resolve="ArrayExpr" />
+  </node>
+  <node concept="1TIwiD" id="19Mz9MX2uPx">
+    <property role="EcuMT" value="1329279444842048865" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="ExpressionStatement" />
+    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <node concept="1TJgyj" id="19Mz9MX2uPy" role="1TKVEi">
+      <property role="IQ2ns" value="1329279444842048866" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 
