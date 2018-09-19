@@ -49,14 +49,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="19Mz9MX9QZ$">
-    <property role="EcuMT" value="1329279444843982820" />
-    <property role="TrG5h" value="BooleanPhpType" />
-    <property role="34LRSv" value="boolean" />
-    <property role="R4oN_" value="Boolean Php Type" />
-    <property role="3GE5qa" value="scalar" />
-    <ref role="1TJDcQ" to="tpee:f_0P_4Y" resolve="BooleanType" />
-  </node>
   <node concept="1TIwiD" id="19Mz9MX9QZG">
     <property role="EcuMT" value="1329279444843982828" />
     <property role="TrG5h" value="IntegerPhpType" />
@@ -72,14 +64,6 @@
     <property role="R4oN_" value="Float Php Type" />
     <property role="3GE5qa" value="scalar" />
     <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
-  </node>
-  <node concept="1TIwiD" id="19Mz9MX9QZU">
-    <property role="EcuMT" value="1329279444843982842" />
-    <property role="TrG5h" value="StringPhpType" />
-    <property role="34LRSv" value="string" />
-    <property role="R4oN_" value="String Php Type" />
-    <property role="3GE5qa" value="scalar" />
-    <ref role="1TJDcQ" to="5qo5:4rZeNQ6OYR7" resolve="StringType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9SNy">
     <property role="EcuMT" value="1329279444843990242" />
@@ -118,12 +102,6 @@
     <property role="34LRSv" value="null" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
-  </node>
-  <node concept="1TIwiD" id="19Mz9MXa2KB">
-    <property role="EcuMT" value="1329279444844031015" />
-    <property role="3GE5qa" value="scalar" />
-    <property role="TrG5h" value="VoidPhpType" />
-    <ref role="1TJDcQ" to="hm2y:79jc6Yz3CVd" resolve="VoidType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MXa9$Y">
     <property role="EcuMT" value="1329279444844058942" />
