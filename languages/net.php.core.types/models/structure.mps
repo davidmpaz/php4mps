@@ -23,7 +23,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -32,8 +31,13 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -53,17 +57,15 @@
     <property role="EcuMT" value="1329279444843982828" />
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="int" />
-    <property role="R4oN_" value="Integer Php Type" />
     <property role="3GE5qa" value="scalar" />
-    <ref role="1TJDcQ" to="tpee:f_0OyhT" resolve="IntegerType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9QZL">
     <property role="EcuMT" value="1329279444843982833" />
     <property role="TrG5h" value="FloatType" />
     <property role="34LRSv" value="float" />
-    <property role="R4oN_" value="Float Php Type" />
     <property role="3GE5qa" value="scalar" />
-    <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9SNy">
     <property role="EcuMT" value="1329279444843990242" />
@@ -108,6 +110,17 @@
     <property role="TrG5h" value="MixedType" />
     <property role="34LRSv" value="mixed" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="PlHQZ" id="19Mz9MXaQG2">
+    <property role="EcuMT" value="1329279444844243714" />
+    <property role="TrG5h" value="ITyped" />
+    <node concept="PrWs8" id="19Mz9MXl4Xs" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="19Mz9MXlBK2">
+    <property role="EcuMT" value="1329279444847066114" />
+    <property role="TrG5h" value="IClassifier" />
   </node>
 </model>
 
