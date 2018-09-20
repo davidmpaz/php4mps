@@ -39,6 +39,7 @@
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="fanb" ref="r:72630daf-7316-45e2-b7fa-7dd7a1247a3d(com.mbeddr.mpsutil.varscope.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="8rwl" ref="r:0330d130-429e-4582-9988-a65cad7d61ab(net.php.core.types.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1441,17 +1442,17 @@
     <node concept="PrWs8" id="2yYL1yNEwAz" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="PrWs8" id="2yYL1yNEwB0" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
-    </node>
     <node concept="PrWs8" id="2yYL1yNEwAI" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
     <node concept="PrWs8" id="2yYL1yNEwAQ" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
-    <node concept="PrWs8" id="2yYL1yNE_p5" role="PrDN$">
-      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
+    <node concept="PrWs8" id="6JJb9fYlf_b" role="PrDN$">
+      <ref role="PrY4T" to="8rwl:19Mz9MXaQG2" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="6JJb9fYlVpY" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:79jc6Yz3CVE" resolve="IVoidContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsE49C">
@@ -2009,11 +2010,11 @@
     <node concept="PrWs8" id="19Mz9MX1Leg" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
-    <node concept="PrWs8" id="5QL$AYTEvDl" role="PrDN$">
-      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
-    </node>
     <node concept="PrWs8" id="3FupyzsEXnU" role="PrDN$">
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
+    </node>
+    <node concept="PrWs8" id="19Mz9MXrDIh" role="PrDN$">
+      <ref role="PrY4T" to="8rwl:19Mz9MXaQG2" resolve="ITyped" />
     </node>
     <node concept="1TJgyj" id="3FupyzsEXnZ" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716559871" />
@@ -2168,12 +2169,6 @@
     <property role="EcuMT" value="4241940224716568376" />
     <property role="TrG5h" value="Param" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2tmj_EWTFaU" role="1TKVEi">
-      <property role="IQ2ns" value="2834539167099564730" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
     <node concept="PrWs8" id="3FupyzsEZsV" role="PzmwI">
       <ref role="PrY4T" node="3FupyzsEXnF" resolve="IVarLike" />
     </node>

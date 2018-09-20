@@ -10,7 +10,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="nkja" ref="r:3a57d5f6-2f6a-4b27-99ee-eeb4e69a7cd3(net.php.core.types.behavior)" implicit="true" />
+    <import index="4tyt" ref="r:0fd9e029-da95-4d13-a0df-fe375de6d7b8(net.php.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -259,26 +259,52 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="19Mz9MXraTc">
+  <node concept="1M2fIO" id="6JJb9fYll51">
+    <ref role="1M2myG" to="soun:3FupyzsDJAe" resolve="IPHPFunctionLike" />
+    <node concept="9SLcT" id="6JJb9fYll52" role="9SGkU">
+      <node concept="3clFbS" id="6JJb9fYll53" role="2VODD2">
+        <node concept="3clFbF" id="6JJb9fYlwSz" role="3cqZAp">
+          <node concept="2OqwBi" id="6JJb9fYlxam" role="3clFbG">
+            <node concept="EsrRn" id="6JJb9fYlwSy" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6JJb9fYlxNz" role="2OqNvi">
+              <ref role="37wK5l" to="4tyt:6JJb9fYlvek" resolve="canBeParentOf" />
+              <node concept="2DD5aU" id="6JJb9fYly2I" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6JJb9fYlsMH">
     <property role="3GE5qa" value="statement" />
-    <ref role="1M2myG" to="soun:3FupyzsEQ_c" resolve="Function" />
-    <node concept="9SLcT" id="19Mz9MXraTd" role="9SGkU">
-      <node concept="3clFbS" id="19Mz9MXraTe" role="2VODD2">
-        <node concept="3clFbF" id="19Mz9MXrb0x" role="3cqZAp">
-          <node concept="22lmx$" id="19Mz9MXrun6" role="3clFbG">
-            <node concept="2OqwBi" id="19Mz9MXruZU" role="3uHU7w">
-              <node concept="2DD5aU" id="19Mz9MXruBO" role="2Oq$k0" />
-              <node concept="2Zo12i" id="19Mz9MXrvx_" role="2OqNvi">
-                <node concept="chp4Y" id="19Mz9MXrvP6" role="2Zo12j">
-                  <ref role="cht4Q" to="soun:5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1M2myG" to="soun:3FupyzsCwmm" resolve="Method" />
+    <node concept="9SLcT" id="6JJb9fYlsMI" role="9SGkU">
+      <node concept="3clFbS" id="6JJb9fYlsMJ" role="2VODD2">
+        <node concept="3clFbF" id="6JJb9fYlA1Y" role="3cqZAp">
+          <node concept="22lmx$" id="6JJb9fYlF5Q" role="3clFbG">
+            <node concept="2OqwBi" id="6JJb9fYlFQf" role="3uHU7w">
+              <node concept="2DD5aU" id="6JJb9fYlFqV" role="2Oq$k0" />
+              <node concept="2Zo12i" id="6JJb9fYlGr8" role="2OqNvi">
+                <node concept="chp4Y" id="6JJb9fYlGJS" role="2Zo12j">
+                  <ref role="cht4Q" to="soun:jayJfOhG5I" resolve="Modifier" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="19Mz9MXrdQr" role="3uHU7B">
-              <node concept="EsrRn" id="19Mz9MXrbIs" role="2Oq$k0" />
-              <node concept="2qgKlT" id="19Mz9MXreBg" role="2OqNvi">
-                <ref role="37wK5l" to="nkja:19Mz9MXlJmF" resolve="isBuiltInType" />
-                <node concept="2DD5aU" id="19Mz9MXrl9l" role="37wK5m" />
+            <node concept="22lmx$" id="6JJb9fYlChL" role="3uHU7B">
+              <node concept="2OqwBi" id="6JJb9fYlAo0" role="3uHU7B">
+                <node concept="EsrRn" id="6JJb9fYlA1X" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6JJb9fYlBhT" role="2OqNvi">
+                  <ref role="37wK5l" to="4tyt:6JJb9fYlvek" resolve="canBeParentOf" />
+                  <node concept="2DD5aU" id="6JJb9fYlBBl" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6JJb9fYlCXg" role="3uHU7w">
+                <node concept="2DD5aU" id="6JJb9fYlC$b" role="2Oq$k0" />
+                <node concept="2Zo12i" id="6JJb9fYlEeP" role="2OqNvi">
+                  <node concept="chp4Y" id="6JJb9fYlEzl" role="2Zo12j">
+                    <ref role="cht4Q" to="soun:jayJfOhgKc" resolve="Visibility" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

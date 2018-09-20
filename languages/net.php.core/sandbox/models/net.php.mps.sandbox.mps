@@ -26,10 +26,8 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
-      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
-      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -122,9 +120,7 @@
         <child id="4241940224716568266" name="statementList" index="3Atp3y" />
         <child id="4241940224716568268" name="catches" index="3Atp3$" />
       </concept>
-      <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g">
-        <child id="2834539167099564730" name="type" index="2rGfNw" />
-      </concept>
+      <concept id="4241940224716568376" name="net.php.core.structure.Param" flags="ng" index="3Atp4g" />
       <concept id="4241940224716568325" name="net.php.core.structure.While" flags="ng" index="3Atp4H" />
       <concept id="4241940224716559893" name="net.php.core.structure.Return" flags="ng" index="3Atr0X">
         <child id="4241940224716559894" name="expr" index="3Atr0Y" />
@@ -167,6 +163,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="d86bf34f-40cc-4e6f-9da4-97d97835d142" name="net.php.core.types">
+      <concept id="1329279444843982828" name="net.php.core.types.structure.IntegerType" flags="ng" index="2JludK" />
+    </language>
   </registry>
   <node concept="2YL5gg" id="6Mg8JcTxHba">
     <property role="TrG5h" value="Test" />
@@ -183,36 +182,27 @@
       <node concept="3AtgX$" id="5aza$gvvArJ" role="2r5BRK">
         <property role="TrG5h" value="testing" />
         <property role="3Au9YT" value="false" />
-        <node concept="3Atp4g" id="5QL$AYTIrkt" role="2r5cQ7">
-          <property role="TrG5h" value="$arg1" />
-          <node concept="30bdrU" id="1ECm9m20QKg" role="2rGfNw" />
+        <node concept="3Atp4g" id="6JJb9fYlkSj" role="2r5cQ7">
+          <property role="TrG5h" value="arg1" />
         </node>
-        <node concept="3Atp4g" id="5QL$AYTIrkQ" role="2r5cQ7">
-          <property role="TrG5h" value="$arg2" />
-          <node concept="mLuIC" id="1ECm9m20QKr" role="2rGfNw" />
+        <node concept="3Atp4g" id="6JJb9fYlkS1" role="2r5cQ7">
+          <property role="TrG5h" value="arg2" />
         </node>
-        <node concept="3Atp4g" id="1ECm9m20QKy" role="2r5cQ7">
-          <property role="TrG5h" value="$arg3" />
-          <node concept="mLuIC" id="7qGjRfOnzHt" role="2rGfNw" />
-          <node concept="30bXRB" id="7qGjRfOnzIi" role="3Atrfn">
-            <property role="30bXRw" value="123" />
-          </node>
+        <node concept="3Atp4g" id="6JJb9fYlkRk" role="2r5cQ7">
+          <property role="TrG5h" value="arg3" />
+          <node concept="30bdrU" id="6JJb9fYlkSC" role="2zM23F" />
         </node>
-        <node concept="3Atp4g" id="7qGjRfOmK2v" role="2r5cQ7">
-          <property role="TrG5h" value="$arg4" />
-          <node concept="30bdrP" id="7qGjRfOnzID" role="3Atrfn">
-            <property role="30bdrQ" value="tralala" />
-          </node>
-          <node concept="30bdrU" id="7qGjRfOnzKh" role="2rGfNw" />
+        <node concept="3Atp4g" id="6JJb9fYlkR4" role="2r5cQ7">
+          <property role="TrG5h" value="arg4" />
         </node>
         <node concept="3Atp4g" id="7qGjRfOmK2G" role="2r5cQ7">
-          <property role="TrG5h" value="$arg5" />
+          <property role="TrG5h" value="arg5" />
           <node concept="30bXRB" id="7qGjRfOnzJG" role="3Atrfn">
             <property role="30bXRw" value="1223" />
           </node>
         </node>
         <node concept="3Atp4g" id="7qGjRfOnzJT" role="2r5cQ7">
-          <property role="TrG5h" value="$arg6" />
+          <property role="TrG5h" value="arg6" />
           <node concept="30bdrP" id="7qGjRfOnzKw" role="3Atrfn" />
         </node>
         <node concept="0Hs2N" id="5aza$gvvArL" role="3Au9fb">
@@ -232,7 +222,7 @@
             </node>
           </node>
         </node>
-        <node concept="mLuIC" id="gyd15GaPdN" role="2zM23F" />
+        <node concept="2JludK" id="6JJb9fYlsHQ" role="2zM23F" />
       </node>
       <node concept="3AtgY$" id="55frxK45Eo4" role="2r5BRK">
         <property role="TrG5h" value="labelSwitch" />
@@ -470,7 +460,7 @@
           <node concept="3Av6eY" id="55frxK4PeRW" role="2r5BRK">
             <property role="TrG5h" value="getVersion" />
             <node concept="0Hs2N" id="55frxK4PeRX" role="3Au9fb" />
-            <node concept="2vmvy5" id="55frxK4PeSf" role="2zM23F" />
+            <node concept="30bdrU" id="6JJb9fYm2ng" role="2zM23F" />
           </node>
         </node>
       </node>
@@ -484,7 +474,7 @@
       <node concept="0Hs2N" id="55frxK426ZB" role="3Au9fb" />
       <node concept="3Tm1VV" id="55frxK426ZM" role="1B3o_S" />
       <node concept="3Atp4g" id="55frxK426ZV" role="2r5cQ7">
-        <property role="TrG5h" value="$container" />
+        <property role="TrG5h" value="container" />
         <node concept="30bdrP" id="55frxK42719" role="3Atrfn" />
       </node>
     </node>

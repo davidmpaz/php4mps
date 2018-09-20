@@ -63,6 +63,7 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="0aec89ab-27ac-42ca-bc26-613b2eed58f7(net.php.core)" version="0" />
         <module reference="5fb36021-6c65-43ff-a10f-1087ac988d13(net.php.core#01)" version="0" />
+        <module reference="d86bf34f-40cc-4e6f-9da4-97d97835d142(net.php.core.types)" version="0" />
         <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
         <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
         <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
@@ -95,6 +96,7 @@
     <dependency reexport="false">aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)</dependency>
     <dependency reexport="false">71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)</dependency>
     <dependency reexport="false">7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</dependency>
+    <dependency reexport="false">d86bf34f-40cc-4e6f-9da4-97d97835d142(net.php.core.types)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -186,6 +188,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="0aec89ab-27ac-42ca-bc26-613b2eed58f7(net.php.core)" version="0" />
+    <module reference="d86bf34f-40cc-4e6f-9da4-97d97835d142(net.php.core.types)" version="0" />
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
@@ -199,6 +202,7 @@
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="2" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>d86bf34f-40cc-4e6f-9da4-97d97835d142(net.php.core.types)</extendedLanguage>
     <extendedLanguage>7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</extendedLanguage>
     <extendedLanguage>3819ba36-98f4-49ac-b779-34f3a458c09b(com.mbeddr.mpsutil.varscope)</extendedLanguage>
     <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
