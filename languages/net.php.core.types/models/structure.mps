@@ -120,7 +120,7 @@
   </node>
   <node concept="PlHQZ" id="19Mz9MXlBK2">
     <property role="EcuMT" value="1329279444847066114" />
-    <property role="TrG5h" value="IClassifier" />
+    <property role="TrG5h" value="IClassifierType" />
   </node>
 </model>
 

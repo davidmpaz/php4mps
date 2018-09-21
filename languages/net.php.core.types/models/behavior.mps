@@ -245,7 +245,7 @@
             </node>
             <node concept="2Zo12i" id="19Mz9MXlXeh" role="2OqNvi">
               <node concept="chp4Y" id="19Mz9MXlXkb" role="2Zo12j">
-                <ref role="cht4Q" to="8rwl:19Mz9MXlBK2" resolve="IClassifier" />
+                <ref role="cht4Q" to="8rwl:19Mz9MXlBK2" resolve="IClassifierType" />
               </node>
             </node>
           </node>
