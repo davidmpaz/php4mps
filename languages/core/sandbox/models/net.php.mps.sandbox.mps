@@ -10,8 +10,8 @@
   <imports />
   <registry>
     <language id="5c9452ed-8447-43ab-940e-32ae4074ed45" name="core.expr">
-      <concept id="7527412447237337596" name="" flags="ng" index="1b6sL1">
-        <reference id="1329279444840515768" name="" index="2Iw0g$" />
+      <concept id="7527412447237337596" name="core.expr.structure.VariableRef" flags="ng" index="1b6sL1">
+        <reference id="1329279444840515768" name="variable" index="2Iw0g$" />
       </concept>
       <concept id="5859022706847375521" name="core.expr.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
     </language>
@@ -35,6 +35,7 @@
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
+      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -468,6 +469,7 @@
           <node concept="3Av6eY" id="6JJb9fYsVLB" role="2r5BRK">
             <property role="TrG5h" value="test" />
             <node concept="0Hs2N" id="6JJb9fYsVLC" role="3Au9fb" />
+            <node concept="2vmvy5" id="6JJb9fZl9dh" role="2zM23F" />
           </node>
         </node>
       </node>
