@@ -31,6 +31,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -58,6 +59,7 @@
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="int" />
     <property role="3GE5qa" value="scalar" />
+    <property role="R4oN_" value="A number of the set ℤ = {..., -2, -1, 0, 1, 2, ...}" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9QZL">
@@ -65,36 +67,42 @@
     <property role="TrG5h" value="FloatType" />
     <property role="34LRSv" value="float" />
     <property role="3GE5qa" value="scalar" />
+    <property role="R4oN_" value="Floating point number" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9SNy">
     <property role="EcuMT" value="1329279444843990242" />
     <property role="TrG5h" value="ArrayType" />
     <property role="34LRSv" value="array" />
+    <property role="R4oN_" value="An ordered map" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9SZz">
     <property role="EcuMT" value="1329279444843991011" />
     <property role="TrG5h" value="ObjectType" />
     <property role="34LRSv" value="object" />
+    <property role="R4oN_" value="A generic php object" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9T_Z">
     <property role="EcuMT" value="1329279444843993471" />
     <property role="TrG5h" value="CallableType" />
     <property role="34LRSv" value="callable" />
+    <property role="R4oN_" value="Callbacks / Callables" />
     <ref role="1TJDcQ" to="zzzn:5Win3SAb5Rp" resolve="GenericFunctionType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9TAc">
     <property role="EcuMT" value="1329279444843993484" />
     <property role="TrG5h" value="IterableType" />
     <property role="34LRSv" value="iterable" />
+    <property role="R4oN_" value="An array or object implementing Traversable" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9Uy4">
     <property role="EcuMT" value="1329279444843997316" />
     <property role="TrG5h" value="ResourceType" />
     <property role="34LRSv" value="resource" />
+    <property role="R4oN_" value="A reference to an external resource" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="19Mz9MX9Uy5">
@@ -103,12 +111,14 @@
     <property role="TrG5h" value="NullType" />
     <property role="34LRSv" value="null" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="NULL is the only possible value of type null" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlMSN" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="19Mz9MXa9$Y">
     <property role="EcuMT" value="1329279444844058942" />
     <property role="TrG5h" value="MixedType" />
     <property role="34LRSv" value="mixed" />
+    <property role="R4oN_" value="Accept multiple types" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
   </node>
   <node concept="PlHQZ" id="19Mz9MXaQG2">
