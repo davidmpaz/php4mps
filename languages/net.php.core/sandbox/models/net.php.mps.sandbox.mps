@@ -462,6 +462,10 @@
             <node concept="0Hs2N" id="55frxK4PeRX" role="3Au9fb" />
             <node concept="30bdrU" id="6JJb9fYm2ng" role="2zM23F" />
           </node>
+          <node concept="3Av6eY" id="6JJb9fYsVLB" role="2r5BRK">
+            <property role="TrG5h" value="test" />
+            <node concept="0Hs2N" id="6JJb9fYsVLC" role="3Au9fb" />
+          </node>
         </node>
       </node>
     </node>
