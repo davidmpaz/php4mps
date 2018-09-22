@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="core" uuid="0aec89ab-27ac-42ca-bc26-613b2eed58f7" languageVersion="10" moduleVersion="10">
+<language namespace="core" uuid="0aec89ab-27ac-42ca-bc26-613b2eed58f7" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

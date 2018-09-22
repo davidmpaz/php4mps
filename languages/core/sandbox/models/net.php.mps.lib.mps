@@ -2,8 +2,9 @@
 <model ref="r:3c16ca4b-3b33-4517-8c6f-09a74f0349ea(net.php.mps.lib)">
   <persistence version="9" />
   <languages>
-    <use id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="net.php.core" version="0" />
+    <use id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="core" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
   </languages>
   <imports />
   <registry>
@@ -21,38 +22,38 @@
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
     </language>
-    <language id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="net.php.core">
-      <concept id="6453305938466947503" name="net.php.core.structure.Class" flags="ng" index="0GRSw">
+    <language id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="core">
+      <concept id="6453305938466947503" name="core.structure.Class" flags="ng" index="0GRSw">
         <child id="6453305938466947506" name="implementedInterfaces" index="0GRSX" />
         <child id="6453305938466947504" name="superclass" index="0GRSZ" />
         <child id="5859022706860444687" name="properties" index="1k4y8j" />
         <child id="5859022706860444683" name="constants" index="1k4y8n" />
       </concept>
-      <concept id="6453305938466799420" name="net.php.core.structure.StatementList" flags="ng" index="0Hs2N">
+      <concept id="6453305938466799420" name="core.structure.StatementList" flags="ng" index="0Hs2N">
         <child id="2935999617464580584" name="statements" index="2r5BRK" />
       </concept>
-      <concept id="385461470425197833" name="net.php.core.structure.InterfaceRef" flags="ng" index="164$8z">
+      <concept id="385461470425197833" name="core.structure.InterfaceRef" flags="ng" index="164$8z">
         <reference id="385461470425197834" name="ref" index="164$8w" />
       </concept>
-      <concept id="5859022706858117772" name="net.php.core.structure.ClassRef" flags="ng" index="1ktEig">
+      <concept id="5859022706858117772" name="core.structure.ClassRef" flags="ng" index="1ktEig">
         <reference id="5859022706858117773" name="class" index="1ktEih" />
       </concept>
-      <concept id="4241940224716559877" name="net.php.core.structure.PropertyList" flags="ng" index="3Atr0H">
+      <concept id="4241940224716559877" name="core.structure.PropertyList" flags="ng" index="3Atr0H">
         <child id="4241940224716559878" name="properties" index="3Atr0I" />
       </concept>
-      <concept id="4241940224716559893" name="net.php.core.structure.Return" flags="ng" index="3Atr0X" />
-      <concept id="4241940224716559842" name="net.php.core.structure.Property" flags="ng" index="3Atrfa" />
-      <concept id="4241940224716325480" name="net.php.core.structure.Interface" flags="ng" index="3Atyh0" />
-      <concept id="4241940224716434877" name="net.php.core.structure.Const" flags="ng" index="3AtSIl">
+      <concept id="4241940224716559893" name="core.structure.Return" flags="ng" index="3Atr0X" />
+      <concept id="4241940224716559842" name="core.structure.Property" flags="ng" index="3Atrfa" />
+      <concept id="4241940224716325480" name="core.structure.Interface" flags="ng" index="3Atyh0" />
+      <concept id="4241940224716434877" name="core.structure.Const" flags="ng" index="3AtSIl">
         <child id="4241940224716434920" name="value" index="3AtSJ0" />
       </concept>
-      <concept id="4241940224716436413" name="net.php.core.structure.ConstList" flags="ng" index="3AtTml">
+      <concept id="4241940224716436413" name="core.structure.ConstList" flags="ng" index="3AtTml">
         <child id="4241940224716436414" name="constants" index="3AtTmm" />
       </concept>
-      <concept id="4241940224716241294" name="net.php.core.structure.IPHPFunctionLike" flags="ng" index="3Au9YA">
+      <concept id="4241940224716241294" name="core.structure.IPHPFunctionLike" flags="ng" index="3Au9YA">
         <child id="4241940224716240355" name="body" index="3Au9fb" />
       </concept>
-      <concept id="4241940224715916694" name="net.php.core.structure.Method" flags="ng" index="3Av6eY" />
+      <concept id="4241940224715916694" name="core.structure.Method" flags="ng" index="3Av6eY" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
