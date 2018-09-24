@@ -26,6 +26,7 @@
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -131,6 +132,23 @@
   <node concept="PlHQZ" id="19Mz9MXlBK2">
     <property role="EcuMT" value="1329279444847066114" />
     <property role="TrG5h" value="IClassifierType" />
+  </node>
+  <node concept="1TIwiD" id="2PgZjZ_jeiw">
+    <property role="EcuMT" value="3265388180715398304" />
+    <property role="3GE5qa" value="scalar" />
+    <property role="TrG5h" value="BoolType" />
+    <property role="34LRSv" value="bool" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="The truth values of logic and Boolean algebra" />
+    <ref role="1TJDcQ" to="5qo5:6sdnDbSlaon" resolve="BooleanType" />
+  </node>
+  <node concept="1TIwiD" id="2PgZjZ_jeOP">
+    <property role="EcuMT" value="3265388180715400501" />
+    <property role="3GE5qa" value="scalar" />
+    <property role="TrG5h" value="DoubleType" />
+    <property role="34LRSv" value="double" />
+    <property role="R4oN_" value="Alias for FloatType" />
+    <ref role="1TJDcQ" node="19Mz9MX9QZL" resolve="FloatType" />
   </node>
 </model>
 
