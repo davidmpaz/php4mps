@@ -11,6 +11,7 @@
     <import index="8rwl" ref="r:0330d130-429e-4582-9988-a65cad7d61ab(core.types.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="nkja" ref="r:3a57d5f6-2f6a-4b27-99ee-eeb4e69a7cd3(core.types.behavior)" implicit="true" />
+    <import index="o2yo" ref="r:d9fec68e-9c6d-4606-b43b-54982b373b10(core.expr.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -261,6 +262,39 @@
             <node concept="37vLTw" id="6xQJrOzrJ3a" role="3uHU7w">
               <ref role="3cqZAo" node="6xQJrOzrJ31" resolve="bodyIsBlock" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2PgZjZ_n8Vj">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1M2myG" to="soun:19Mz9MX2uPx" resolve="ExpressionStatement" />
+    <node concept="9SLcT" id="2PgZjZ_n8Vk" role="9SGkU">
+      <node concept="3clFbS" id="2PgZjZ_n8Vl" role="2VODD2">
+        <node concept="3clFbJ" id="2PgZjZ_n92B" role="3cqZAp">
+          <node concept="17R0WA" id="2PgZjZ_ncQg" role="3clFbw">
+            <node concept="2DA6wF" id="2PgZjZ_nd05" role="3uHU7w" />
+            <node concept="359W_D" id="2PgZjZ_n9oO" role="3uHU7B">
+              <ref role="359W_E" to="soun:19Mz9MX2uPx" resolve="ExpressionStatement" />
+              <ref role="359W_F" to="soun:19Mz9MX2uPy" resolve="expression" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="2PgZjZ_n92D" role="3clFbx">
+            <node concept="3cpWs6" id="2PgZjZ_na37" role="3cqZAp">
+              <node concept="2OqwBi" id="2PgZjZ_ndzF" role="3cqZAk">
+                <node concept="EsrRn" id="2PgZjZ_naaz" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2PgZjZ_ne4l" role="2OqNvi">
+                  <ref role="37wK5l" to="o2yo:2PgZjZ_iA50" resolve="isBuiltInExpression" />
+                  <node concept="2DD5aU" id="2PgZjZ_neju" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2PgZjZ_neHy" role="3cqZAp">
+          <node concept="3clFbT" id="2PgZjZ_nf6i" role="3cqZAk">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

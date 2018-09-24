@@ -3221,11 +3221,8 @@
   <node concept="24kQdi" id="19Mz9MX4V3B">
     <property role="3GE5qa" value="statement" />
     <ref role="1XX52x" to="soun:19Mz9MX2uPx" resolve="ExpressionStatement" />
-    <node concept="3EZMnI" id="19Mz9MX4V3D" role="2wV5jI">
-      <node concept="2iRfu4" id="19Mz9MX4V3E" role="2iSdaV" />
-      <node concept="3F1sOY" id="19Mz9MX4V3J" role="3EZMnx">
-        <ref role="1NtTu8" to="soun:19Mz9MX2uPy" resolve="expression" />
-      </node>
+    <node concept="3F1sOY" id="19Mz9MX4V3J" role="2wV5jI">
+      <ref role="1NtTu8" to="soun:19Mz9MX2uPy" resolve="expression" />
     </node>
   </node>
   <node concept="3p36aQ" id="6JJb9fZat4v">
