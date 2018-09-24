@@ -98,7 +98,7 @@
   </node>
   <node concept="24kQdi" id="55frxK4uIfp">
     <property role="3GE5qa" value="expression.assign" />
-    <ref role="1XX52x" to="i5gb:6xQJrOzrmBh" resolve="Assign" />
+    <ref role="1XX52x" to="i5gb:6xQJrOzrmBh" resolve="AssignExpr" />
     <node concept="3EZMnI" id="55frxK4uIfr" role="2wV5jI">
       <node concept="l2Vlx" id="55frxK4uIfs" role="2iSdaV" />
       <node concept="3F1sOY" id="55frxK4uIfx" role="3EZMnx">
@@ -443,6 +443,44 @@
         </node>
       </node>
       <node concept="2iRfu4" id="2t6Pu9b6h1H" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PgZjZ_jehb">
+    <property role="3GE5qa" value="expression.cast" />
+    <ref role="1XX52x" to="i5gb:2PgZjZ_jdZz" resolve="CastExpr" />
+    <node concept="3EZMnI" id="2PgZjZ_jehd" role="2wV5jI">
+      <node concept="3F0ifn" id="2PgZjZ_jehm" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="2PgZjZ_jehE" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:2Qbt$1tNGy9" resolve="expectedType" />
+      </node>
+      <node concept="3F0ifn" id="2PgZjZ_jehs" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F1sOY" id="2PgZjZ_jehO" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:252QIDzztQk" resolve="expr" />
+      </node>
+      <node concept="2iRfu4" id="2PgZjZ_jehj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PgZjZ_jei2">
+    <property role="3GE5qa" value="expression.cast" />
+    <ref role="1XX52x" to="i5gb:6xQJrOzqT0R" resolve="UnsetCast" />
+    <node concept="3EZMnI" id="2PgZjZ_jei4" role="2wV5jI">
+      <node concept="2iRfu4" id="2PgZjZ_jei5" role="2iSdaV" />
+      <node concept="3F0ifn" id="2PgZjZ_jeia" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F0ifn" id="2PgZjZ_jeiq" role="3EZMnx">
+        <property role="3F0ifm" value="unset" />
+      </node>
+      <node concept="3F0ifn" id="2PgZjZ_jeic" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F1sOY" id="2PgZjZ_jeid" role="3EZMnx">
+        <ref role="1NtTu8" to="hm2y:252QIDzztQk" resolve="expr" />
+      </node>
     </node>
   </node>
 </model>
