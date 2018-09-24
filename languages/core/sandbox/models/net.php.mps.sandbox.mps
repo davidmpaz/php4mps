@@ -35,7 +35,6 @@
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
-      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
       </concept>
@@ -169,6 +168,7 @@
     </language>
     <language id="d86bf34f-40cc-4e6f-9da4-97d97835d142" name="core.types">
       <concept id="1329279444843982828" name="core.types.structure.IntegerType" flags="ng" index="2JludK" />
+      <concept id="3265388180715398304" name="core.types.structure.BoolType" flags="ng" index="3871Av" />
     </language>
   </registry>
   <node concept="2YL5gg" id="6Mg8JcTxHba">
@@ -469,7 +469,7 @@
           <node concept="3Av6eY" id="6JJb9fYsVLB" role="2r5BRK">
             <property role="TrG5h" value="test" />
             <node concept="0Hs2N" id="6JJb9fYsVLC" role="3Au9fb" />
-            <node concept="2vmvy5" id="6JJb9fZl9dh" role="2zM23F" />
+            <node concept="3871Av" id="2PgZjZ_jklT" role="2zM23F" />
           </node>
         </node>
       </node>
