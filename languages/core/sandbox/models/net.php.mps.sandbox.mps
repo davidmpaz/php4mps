@@ -13,6 +13,8 @@
       <concept id="7527412447237337596" name="core.expr.structure.VariableRef" flags="ng" index="1b6sL1">
         <reference id="1329279444840515768" name="variable" index="2Iw0g$" />
       </concept>
+      <concept id="7527412447237033198" name="core.expr.structure.Plus" flags="ng" index="1b775j" />
+      <concept id="7527412447237033195" name="core.expr.structure.Mul" flags="ng" index="1b775m" />
       <concept id="5859022706847375521" name="core.expr.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
@@ -262,9 +264,26 @@
           <node concept="3AtTmi" id="6Mg8JcT_QY0" role="2r5BRK" />
         </node>
       </node>
-      <node concept="2JuQ7X" id="A1fOBQRRp2" role="2r5BRK">
-        <node concept="1lQCUX" id="A1fOBQRRrc" role="2JuQ7Y">
-          <property role="TrG5h" value="test" />
+      <node concept="2JuQ7X" id="A1fOBQSnSz" role="2r5BRK">
+        <node concept="1b775j" id="A1fOBQTrBE" role="2JuQ7Y">
+          <node concept="1b775j" id="A1fOBQTrBF" role="30dEsF">
+            <node concept="1b775m" id="A1fOBQTrBG" role="30dEsF">
+              <node concept="1lQCUX" id="A1fOBQSnU$" role="30dEsF">
+                <property role="TrG5h" value="test" />
+              </node>
+              <node concept="1lQCUX" id="A1fOBQSnVp" role="30dEs_">
+                <property role="TrG5h" value="test2" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="A1fOBQTrBH" role="30dEs_">
+              <property role="30bXRw" value="23" />
+            </node>
+          </node>
+          <node concept="30bsCy" id="A1fOBQTrCc" role="30dEs_">
+            <node concept="30bXRB" id="A1fOBQTrCV" role="30bsDf">
+              <property role="30bXRw" value="23" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3At4xv" id="6Mg8JcTAoJv" role="2r5BRK">
