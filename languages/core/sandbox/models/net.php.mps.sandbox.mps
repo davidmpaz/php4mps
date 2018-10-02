@@ -5,7 +5,7 @@
     <use id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="core" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="3819ba36-98f4-49ac-b779-34f3a458c09b" name="com.mbeddr.mpsutil.varscope" version="0" />
-    <use id="5c9452ed-8447-43ab-940e-32ae4074ed45" name="core.expr" version="0" />
+    <use id="5c9452ed-8447-43ab-940e-32ae4074ed45" name="core.expr" version="1" />
   </languages>
   <imports />
   <registry>
