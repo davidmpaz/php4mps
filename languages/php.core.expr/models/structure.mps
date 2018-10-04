@@ -1072,7 +1072,7 @@
     <property role="EcuMT" value="7527412447237337596" />
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="VariableRef" />
-    <property role="34LRSv" value="var" />
+    <property role="34LRSv" value="var reference" />
     <property role="R4oN_" value="A variable reference" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="19Mz9MWWCyS" role="1TKVEi">
@@ -1081,6 +1081,9 @@
       <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="55frxK4_u2x" resolve="VariableIdentifier" />
+    </node>
+    <node concept="PrWs8" id="4J50Qoe192K" role="PzmwI">
+      <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
     </node>
     <node concept="PrWs8" id="4J50QodUCWD" role="PzmwI">
       <ref role="PrY4T" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
