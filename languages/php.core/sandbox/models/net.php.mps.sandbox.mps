@@ -10,11 +10,14 @@
   <imports />
   <registry>
     <language id="5c9452ed-8447-43ab-940e-32ae4074ed45" name="php.core.expr">
+      <concept id="6489362837857086172" name="php.core.expr.structure.BitwiseOrAssign" flags="ng" index="F6nf2" />
       <concept id="1784456430655081127" name="php.core.expr.structure.FalseLiteral" flags="ng" index="1aA2cc" />
       <concept id="1784456430654994383" name="php.core.expr.structure.TrueLiteral" flags="ng" index="1aApT$" />
       <concept id="7527412447237337596" name="php.core.expr.structure.VariableRef" flags="ng" index="1b6sL1">
         <reference id="1329279444840515768" name="variable" index="2Iw0g$" />
       </concept>
+      <concept id="7527412447237204434" name="php.core.expr.structure.AssignRef" flags="ng" index="1b6XhJ" />
+      <concept id="7527412447237033198" name="php.core.expr.structure.Plus" flags="ng" index="1b775j" />
       <concept id="5859022706847375521" name="php.core.expr.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
       <concept id="2309899214279084880" name="php.core.expr.structure.DoubleQuotedStringLiteral" flags="ng" index="3Q0m98" />
     </language>
@@ -495,6 +498,34 @@
   </node>
   <node concept="0GRSw" id="14FADuO_w4$">
     <property role="TrG5h" value="Exception" />
+  </node>
+  <node concept="2YL5gg" id="4J50QodUKld">
+    <property role="TrG5h" value="Assigments" />
+    <node concept="0Hs2N" id="4J50QodUKle" role="2r5y7H">
+      <node concept="2JuQ7X" id="4J50QodV$pp" role="2r5BRK">
+        <node concept="1b6XhJ" id="4J50QodVZ77" role="2JuQ7Y">
+          <node concept="1lQCUX" id="4J50QodV$pT" role="30dEsF">
+            <property role="TrG5h" value="test" />
+          </node>
+          <node concept="1b775j" id="4J50QodV$so" role="30dEs_">
+            <node concept="30bXRB" id="4J50QodV$sW" role="30dEs_">
+              <property role="30bXRw" value="12" />
+            </node>
+            <node concept="30bXRB" id="4J50QodV$qc" role="30dEsF">
+              <property role="30bXRw" value="23" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="4J50QodVZam" role="2r5BRK">
+        <node concept="F6nf2" id="4J50QodWivu" role="2JuQ7Y">
+          <node concept="1lQCUX" id="4J50QodVZax" role="30dEsF">
+            <property role="TrG5h" value="test" />
+          </node>
+          <node concept="1aApT$" id="4J50QodWiwR" role="30dEs_" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
