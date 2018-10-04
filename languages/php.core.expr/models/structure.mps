@@ -381,6 +381,9 @@
     <node concept="PrWs8" id="A1fOBQRZ79" role="PzmwI">
       <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
     </node>
+    <node concept="PrWs8" id="4J50QodU$7e" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6xQJrOzrmBj">
     <property role="EcuMT" value="7527412447237204435" />
@@ -1078,6 +1081,9 @@
       <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="55frxK4_u2x" resolve="VariableIdentifier" />
+    </node>
+    <node concept="PrWs8" id="4J50QodUCWD" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:aPhVmWYjmk" resolve="ICanBeLValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="2PgZjZ_iA3Y">
