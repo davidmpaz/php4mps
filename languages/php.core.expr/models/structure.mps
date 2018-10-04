@@ -1159,6 +1159,7 @@
     <property role="3GE5qa" value="expression.scalar" />
     <property role="TrG5h" value="TrueLiteral" />
     <property role="34LRSv" value="true" />
+    <property role="R4oN_" value="True boolean value" />
     <ref role="1TJDcQ" to="5qo5:6sdnDbSlcHp" resolve="TrueLiteral" />
     <node concept="PrWs8" id="1z3EqHimzvg" role="PzmwI">
       <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
@@ -1169,6 +1170,7 @@
     <property role="3GE5qa" value="expression.scalar" />
     <property role="TrG5h" value="FalseLiteral" />
     <property role="34LRSv" value="false" />
+    <property role="R4oN_" value="False boolean value" />
     <ref role="1TJDcQ" to="5qo5:6sdnDbSlcHQ" resolve="FalseLiteral" />
     <node concept="PrWs8" id="1z3EqHimSEC" role="PzmwI">
       <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />

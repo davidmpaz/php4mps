@@ -17,8 +17,6 @@
     <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
     <language slang="l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node" version="0" />
     <language slang="l:3819ba36-98f4-49ac-b779-34f3a458c09b:com.mbeddr.mpsutil.varscope" version="0" />
-    <language slang="l:5c9452ed-8447-43ab-940e-32ae4074ed45:core.expr" version="1" />
-    <language slang="l:d86bf34f-40cc-4e6f-9da4-97d97835d142:core.types" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -35,6 +33,8 @@
     <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="1" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="4" />
     <language slang="l:0aec89ab-27ac-42ca-bc26-613b2eed58f7:php.core" version="0" />
+    <language slang="l:5c9452ed-8447-43ab-940e-32ae4074ed45:php.core.expr" version="1" />
+    <language slang="l:d86bf34f-40cc-4e6f-9da4-97d97835d142:php.core.types" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
