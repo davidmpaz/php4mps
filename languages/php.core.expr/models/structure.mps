@@ -240,17 +240,13 @@
   </node>
   <node concept="1TIwiD" id="20eqhzm25OU">
     <property role="EcuMT" value="2309899214278647098" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.unary" />
     <property role="TrG5h" value="New" />
     <property role="34LRSv" value="new" />
     <property role="R4oN_" value="A new object instantiation" />
-    <ref role="1TJDcQ" node="6xQJrOzrTxu" resolve="FuncCall" />
-    <node concept="1TJgyj" id="20eqhzm25OV" role="1TKVEi">
-      <property role="IQ2ns" value="2309899214278647099" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="class" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <ref role="1TJDcQ" node="2PgZjZ_iAfx" resolve="UnaryExpr" />
+    <node concept="PrWs8" id="7GDtvDfA0W7" role="PzmwI">
+      <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="20eqhzm2kA8">
@@ -408,6 +404,9 @@
     <property role="34LRSv" value="clone" />
     <property role="R4oN_" value="A clone() call" />
     <ref role="1TJDcQ" node="2PgZjZ_iAfx" resolve="UnaryExpr" />
+    <node concept="PrWs8" id="7GDtvDfA0W5" role="PzmwI">
+      <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6xQJrOzrTxt">
     <property role="EcuMT" value="7527412447237347421" />
