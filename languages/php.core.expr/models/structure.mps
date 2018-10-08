@@ -754,7 +754,7 @@
   <node concept="1TIwiD" id="6xQJrOzqGNC">
     <property role="EcuMT" value="7527412447237033192" />
     <property role="3GE5qa" value="expression.binary" />
-    <property role="TrG5h" value="LogicalXor" />
+    <property role="TrG5h" value="BooleanXor" />
     <property role="34LRSv" value="xor" />
     <property role="R4oN_" value="Logical xor (xor) operation" />
     <ref role="1TJDcQ" node="2PgZjZ_iAQB" resolve="BinaryExpr" />
