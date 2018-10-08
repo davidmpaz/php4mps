@@ -21,16 +21,26 @@
       <concept id="6489362837857086179" name="php.core.expr.structure.PlusAssign" flags="ng" index="F6nfX" />
       <concept id="6489362837857086176" name="php.core.expr.structure.MinusAssign" flags="ng" index="F6nfY" />
       <concept id="6489362837857086177" name="php.core.expr.structure.ModAssign" flags="ng" index="F6nfZ" />
+      <concept id="7621468059231777970" name="php.core.expr.structure.ArrayShortExpr" flags="ng" index="2SIx1z" />
       <concept id="1784456430655081127" name="php.core.expr.structure.FalseLiteral" flags="ng" index="1aA2cc" />
       <concept id="1784456430654994383" name="php.core.expr.structure.TrueLiteral" flags="ng" index="1aApT$" />
       <concept id="7527412447237337596" name="php.core.expr.structure.VariableRef" flags="ng" index="1b6sL1">
         <reference id="1329279444840515768" name="variable" index="2Iw0g$" />
       </concept>
+      <concept id="7527412447237204410" name="php.core.expr.structure.ArrayExpr" flags="ng" index="1b6Xg7">
+        <child id="7527412447237204426" name="items" index="1b6XhR" />
+      </concept>
       <concept id="7527412447237204433" name="php.core.expr.structure.AssignExpr" flags="ng" index="1b6XhG" />
       <concept id="7527412447237204434" name="php.core.expr.structure.AssignRef" flags="ng" index="1b6XhJ" />
+      <concept id="7527412447237204418" name="php.core.expr.structure.ArrayItem" flags="ng" index="1b6XhZ">
+        <child id="7527412447237204421" name="value" index="1b6XhS" />
+      </concept>
       <concept id="7527412447237033198" name="php.core.expr.structure.Plus" flags="ng" index="1b775j" />
       <concept id="7527412447237033195" name="php.core.expr.structure.Mul" flags="ng" index="1b775m" />
       <concept id="7527412447237033191" name="php.core.expr.structure.LogicalOr" flags="ng" index="1b775q" />
+      <concept id="7527412447237084913" name="php.core.expr.structure.ArrayDimFetch" flags="ng" index="1b7iHc">
+        <child id="8874754258646817083" name="index" index="OFyN1" />
+      </concept>
       <concept id="5859022706847375521" name="php.core.expr.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
       <concept id="2309899214279084880" name="php.core.expr.structure.DoubleQuotedStringLiteral" flags="ng" index="3Q0m98" />
     </language>
@@ -685,6 +695,78 @@
           </node>
           <node concept="1b6sL1" id="7GDtvDfuUjZ" role="30dEsF">
             <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2YL5gg" id="7GDtvDfwUKO">
+    <property role="TrG5h" value="Arrays" />
+    <node concept="0Hs2N" id="7GDtvDfwUKP" role="2r5y7H">
+      <node concept="2JuQ7X" id="7GDtvDfwUKY" role="2r5BRK">
+        <node concept="1b6XhG" id="7GDtvDfwUNK" role="2JuQ7Y">
+          <node concept="1lQCUX" id="7GDtvDfwUNF" role="30dEsF">
+            <property role="TrG5h" value="arrayVariable" />
+          </node>
+          <node concept="2SIx1z" id="7GDtvDfwVgh" role="30dEs_" />
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfwVh5" role="2r5BRK">
+        <node concept="1b6XhG" id="7GDtvDfwVlH" role="2JuQ7Y">
+          <node concept="1b6Xg7" id="7GDtvDfwVm3" role="30dEs_" />
+          <node concept="1b6sL1" id="7GDtvDfwVlA" role="30dEsF">
+            <ref role="2Iw0g$" node="7GDtvDfwUNF" resolve="arrayVariable" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfwVtB" role="2r5BRK">
+        <node concept="F6nfX" id="7GDtvDfwVwF" role="2JuQ7Y">
+          <node concept="1b6sL1" id="7GDtvDfwVwA" role="30dEsF">
+            <ref role="2Iw0g$" node="7GDtvDfwUNF" resolve="arrayVariable" />
+          </node>
+          <node concept="2SIx1z" id="7GDtvDfwVxy" role="30dEs_">
+            <node concept="1b6XhZ" id="7GDtvDfwVxF" role="1b6XhR">
+              <node concept="30bXRB" id="7GDtvDfwVya" role="1b6XhS">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+            <node concept="1b6XhZ" id="7GDtvDfwVyn" role="1b6XhR">
+              <node concept="30bXRB" id="7GDtvDfwVyB" role="1b6XhS">
+                <property role="30bXRw" value="2" />
+              </node>
+            </node>
+            <node concept="1b6XhZ" id="7GDtvDfwVyO" role="1b6XhR">
+              <node concept="30bXRB" id="7GDtvDfwVz6" role="1b6XhS">
+                <property role="30bXRw" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfwVzG" role="2r5BRK">
+        <node concept="1b6XhG" id="7GDtvDfwVCl" role="2JuQ7Y">
+          <node concept="1b7iHc" id="7GDtvDfzn2m" role="30dEs_">
+            <node concept="1b6sL1" id="7GDtvDfwVCD" role="30czhm">
+              <ref role="2Iw0g$" node="7GDtvDfwUNF" resolve="arrayVariable" />
+            </node>
+            <node concept="30bXRB" id="7GDtvDfznhy" role="OFyN1">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="1lQCUX" id="7GDtvDfwVBz" role="30dEsF">
+            <property role="TrG5h" value="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfznim" role="2r5BRK">
+        <node concept="1b6XhG" id="7GDtvDfznlL" role="2JuQ7Y">
+          <node concept="30bXRB" id="7GDtvDfznmb" role="30dEs_">
+            <property role="30bXRw" value="23" />
+          </node>
+          <node concept="1b7iHc" id="7GDtvDfzugb" role="30dEsF">
+            <node concept="1b6sL1" id="7GDtvDfznlx" role="30czhm">
+              <ref role="2Iw0g$" node="7GDtvDfwUNF" resolve="arrayVariable" />
+            </node>
           </node>
         </node>
       </node>
