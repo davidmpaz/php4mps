@@ -10,14 +10,27 @@
   <imports />
   <registry>
     <language id="5c9452ed-8447-43ab-940e-32ae4074ed45" name="php.core.expr">
+      <concept id="6489362837857081159" name="php.core.expr.structure.BitwiseAndAssign" flags="ng" index="F6kTp" />
+      <concept id="6489362837857086174" name="php.core.expr.structure.ConcatAssign" flags="ng" index="F6nf0" />
+      <concept id="6489362837857086175" name="php.core.expr.structure.DivisionAssign" flags="ng" index="F6nf1" />
       <concept id="6489362837857086172" name="php.core.expr.structure.BitwiseOrAssign" flags="ng" index="F6nf2" />
+      <concept id="6489362837857086173" name="php.core.expr.structure.BitwiseXorAssign" flags="ng" index="F6nf3" />
+      <concept id="6489362837857086182" name="php.core.expr.structure.ShiftRightAssign" flags="ng" index="F6nfS" />
+      <concept id="6489362837857086181" name="php.core.expr.structure.ShiftLeftAssign" flags="ng" index="F6nfV" />
+      <concept id="6489362837857086178" name="php.core.expr.structure.MultAssign" flags="ng" index="F6nfW" />
+      <concept id="6489362837857086179" name="php.core.expr.structure.PlusAssign" flags="ng" index="F6nfX" />
+      <concept id="6489362837857086176" name="php.core.expr.structure.MinusAssign" flags="ng" index="F6nfY" />
+      <concept id="6489362837857086177" name="php.core.expr.structure.ModAssign" flags="ng" index="F6nfZ" />
       <concept id="1784456430655081127" name="php.core.expr.structure.FalseLiteral" flags="ng" index="1aA2cc" />
       <concept id="1784456430654994383" name="php.core.expr.structure.TrueLiteral" flags="ng" index="1aApT$" />
       <concept id="7527412447237337596" name="php.core.expr.structure.VariableRef" flags="ng" index="1b6sL1">
         <reference id="1329279444840515768" name="variable" index="2Iw0g$" />
       </concept>
+      <concept id="7527412447237204433" name="php.core.expr.structure.AssignExpr" flags="ng" index="1b6XhG" />
       <concept id="7527412447237204434" name="php.core.expr.structure.AssignRef" flags="ng" index="1b6XhJ" />
       <concept id="7527412447237033198" name="php.core.expr.structure.Plus" flags="ng" index="1b775j" />
+      <concept id="7527412447237033195" name="php.core.expr.structure.Mul" flags="ng" index="1b775m" />
+      <concept id="7527412447237033191" name="php.core.expr.structure.LogicalOr" flags="ng" index="1b775q" />
       <concept id="5859022706847375521" name="php.core.expr.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
       <concept id="2309899214279084880" name="php.core.expr.structure.DoubleQuotedStringLiteral" flags="ng" index="3Q0m98" />
     </language>
@@ -38,6 +51,14 @@
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
@@ -47,6 +68,14 @@
       <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
     <language id="0aec89ab-27ac-42ca-bc26-613b2eed58f7" name="php.core">
@@ -168,6 +197,9 @@
       <concept id="1146644602865" name="php.core.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -517,12 +549,143 @@
           </node>
         </node>
       </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTAg" role="2r5BRK">
+        <node concept="F6kTp" id="7GDtvDfuTAC" role="2JuQ7Y">
+          <node concept="1b6sL1" id="7GDtvDfuTAz" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+          <node concept="1b775q" id="7GDtvDfuTCz" role="30dEs_">
+            <node concept="1aA2cc" id="7GDtvDfuTD0" role="30dEs_" />
+            <node concept="1aApT$" id="7GDtvDfuTBW" role="30dEsF" />
+          </node>
+        </node>
+      </node>
       <node concept="2JuQ7X" id="4J50QodVZam" role="2r5BRK">
         <node concept="F6nf2" id="4J50QodWivu" role="2JuQ7Y">
-          <node concept="1lQCUX" id="4J50QodVZax" role="30dEsF">
-            <property role="TrG5h" value="test" />
-          </node>
           <node concept="1aApT$" id="4J50QodWiwR" role="30dEs_" />
+          <node concept="1b6sL1" id="7GDtvDfuTnK" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuThV" role="2r5BRK">
+        <node concept="F6nf3" id="7GDtvDfuTih" role="2JuQ7Y">
+          <node concept="1aA2cc" id="7GDtvDfuTiC" role="30dEs_" />
+          <node concept="1b6sL1" id="7GDtvDfuTia" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTF2" role="2r5BRK">
+        <node concept="1b6XhG" id="7GDtvDfuTFw" role="2JuQ7Y">
+          <node concept="3Q0m98" id="7GDtvDfuTFM" role="30dEs_" />
+          <node concept="1lQCUX" id="7GDtvDfuTFr" role="30dEsF">
+            <property role="TrG5h" value="string" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTGu" role="2r5BRK">
+        <node concept="F6nf0" id="7GDtvDfuTH0" role="2JuQ7Y">
+          <node concept="3Q0m98" id="7GDtvDfuTHf" role="30dEs_">
+            <property role="30bdrQ" value="Foo bar" />
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuTGV" role="30dEsF">
+            <ref role="2Iw0g$" node="7GDtvDfuTFr" resolve="string" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTJH" role="2r5BRK">
+        <node concept="F6nf1" id="7GDtvDfuTKn" role="2JuQ7Y">
+          <node concept="30bXRB" id="7GDtvDfuTKC" role="30dEs_">
+            <property role="30bXRw" value="23" />
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuTKi" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTNr" role="2r5BRK">
+        <node concept="F6nfY" id="7GDtvDfuTO5" role="2JuQ7Y">
+          <node concept="30bXRB" id="7GDtvDfuTOm" role="30dEs_">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuTO0" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTPN" role="2r5BRK">
+        <node concept="F6nfZ" id="7GDtvDfuTQx" role="2JuQ7Y">
+          <node concept="1b6sL1" id="7GDtvDfuTQs" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+          <node concept="30bXRB" id="7GDtvDfuTRL" role="30dEs_">
+            <property role="30bXRw" value="10" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTTi" role="2r5BRK">
+        <node concept="F6nfW" id="7GDtvDfuTU4" role="2JuQ7Y">
+          <node concept="30bXRB" id="7GDtvDfuTUl" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuTTZ" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuTVU" role="2r5BRK">
+        <node concept="F6nfX" id="7GDtvDfuTWK" role="2JuQ7Y">
+          <node concept="1b6sL1" id="7GDtvDfuTWF" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+          <node concept="30bXRB" id="7GDtvDfuU02" role="30dEs_">
+            <property role="30bXRw" value="90" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuU1F" role="2r5BRK">
+        <node concept="1b6XhG" id="7GDtvDfuU34" role="2JuQ7Y">
+          <node concept="1b775m" id="7GDtvDfuU3G" role="30dEs_">
+            <node concept="30bXRB" id="7GDtvDfuU42" role="30dEs_">
+              <property role="30bXRw" value="2" />
+            </node>
+            <node concept="1b6sL1" id="7GDtvDfuU3r" role="30dEsF">
+              <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+            </node>
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuU2w" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+        <node concept="1z9TsT" id="7GDtvDfuU7$" role="lGtFl">
+          <node concept="OjmMv" id="7GDtvDfuU7_" role="1w35rA">
+            <node concept="19SGf9" id="7GDtvDfuU7A" role="OjmMu">
+              <node concept="19SUe$" id="7GDtvDfuU7B" role="19SJt6">
+                <property role="19SUeA" value="Power assigment editor doesnt work &#10;out of the box due to multiplication&#10;editor." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuUfG" role="2r5BRK">
+        <node concept="F6nfV" id="7GDtvDfuUgO" role="2JuQ7Y">
+          <node concept="30bXRB" id="7GDtvDfuUh5" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuUgJ" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="2JuQ7X" id="7GDtvDfuUiW" role="2r5BRK">
+        <node concept="F6nfS" id="7GDtvDfuUk4" role="2JuQ7Y">
+          <node concept="30bXRB" id="7GDtvDfuUkl" role="30dEs_">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="1b6sL1" id="7GDtvDfuUjZ" role="30dEsF">
+            <ref role="2Iw0g$" node="4J50QodV$pT" resolve="test" />
+          </node>
         </node>
       </node>
     </node>
