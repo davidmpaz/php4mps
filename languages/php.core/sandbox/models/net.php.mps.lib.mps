@@ -16,6 +16,9 @@
       <concept id="7527412447237204418" name="php.core.expr.structure.ArrayItem" flags="ng" index="1b6XhZ">
         <child id="7527412447237204421" name="value" index="1b6XhS" />
       </concept>
+      <concept id="4532311062545966289" name="php.core.expr.structure.IReferenceable" flags="ng" index="3ghygO">
+        <property id="4532311062545966290" name="byRef" index="3ghygR" />
+      </concept>
       <concept id="5859022706847375521" name="php.core.expr.structure.VariableIdentifier" flags="ng" index="1lQCUX" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
@@ -116,6 +119,7 @@
             <node concept="3o403X" id="3VA0enI$xOb" role="1b6XhS">
               <node concept="1lQCUX" id="3VA0enI$xOn" role="30dEs_">
                 <property role="TrG5h" value="i" />
+                <property role="3ghygR" value="true" />
               </node>
               <node concept="1lQCUX" id="3VA0enI$xO6" role="30dEsF">
                 <property role="TrG5h" value="j" />
@@ -127,9 +131,19 @@
               <node concept="30bXRB" id="3VA0enIASJR" role="30dEs_">
                 <property role="30bXRw" value="23" />
               </node>
-              <node concept="1lQCUX" id="3VA0enIASJ_" role="30dEsF">
+              <node concept="1lQCUX" id="3VA0enIQlk4" role="30dEsF">
                 <property role="TrG5h" value="test" />
               </node>
+            </node>
+          </node>
+          <node concept="1b6XhZ" id="22YRXNFCmsd" role="1b6XhR">
+            <node concept="30bXRB" id="22YRXNFCmsv" role="1b6XhS">
+              <property role="30bXRw" value="54" />
+            </node>
+          </node>
+          <node concept="1b6XhZ" id="22YRXNFCmsG" role="1b6XhR">
+            <node concept="1lQCUX" id="22YRXNFCmsY" role="1b6XhS">
+              <property role="TrG5h" value="test" />
             </node>
           </node>
         </node>
