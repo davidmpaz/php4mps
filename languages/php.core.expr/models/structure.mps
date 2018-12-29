@@ -1039,7 +1039,7 @@
     <property role="TrG5h" value="ArrayItem" />
     <property role="34LRSv" value="item" />
     <property role="R4oN_" value="Array item, key =&gt; value" />
-    <ref role="1TJDcQ" node="2PgZjZ_k4U6" resolve="ArrayExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xQJrOzrmB3" role="1TKVEi">
       <property role="IQ2ns" value="7527412447237204419" />
       <property role="20lmBu" value="aggregation" />
@@ -1052,6 +1052,9 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="GYdwe87Q$n" role="PzmwI">
+      <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6B4Td7hvJiM">
@@ -1137,6 +1140,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="GYdwe87uZ1" role="PzmwI">
+      <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2PgZjZ_kWgO">
     <property role="EcuMT" value="3265388180715848756" />

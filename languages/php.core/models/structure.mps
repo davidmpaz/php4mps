@@ -1036,8 +1036,11 @@
     <property role="TrG5h" value="Property" />
     <property role="34LRSv" value="property" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3FupyzsEXo3" role="PzmwI">
+    <node concept="PrWs8" id="dYjOyY3AGc" role="PzmwI">
       <ref role="PrY4T" node="3FupyzsEXnF" resolve="IVarLike" />
+    </node>
+    <node concept="PrWs8" id="dYjOyY3Dbq" role="PzmwI">
+      <ref role="PrY4T" node="h9B3isZ" resolve="IVisible" />
     </node>
   </node>
   <node concept="PlHQZ" id="3FupyzsEXnF">

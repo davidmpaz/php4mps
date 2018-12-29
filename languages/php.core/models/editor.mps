@@ -22,6 +22,7 @@
     <import index="4tyt" ref="r:0fd9e029-da95-4d13-a0df-fe375de6d7b8(php.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="vzox" ref="r:7af140a0-6f25-4ad3-b85c-df0be0e89f09(php.core.expr.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -2877,8 +2878,16 @@
     <ref role="1XX52x" to="soun:3FupyzsEXny" resolve="Property" />
     <node concept="3EZMnI" id="55frxK4fr44" role="2wV5jI">
       <node concept="l2Vlx" id="55frxK4fr45" role="2iSdaV" />
+      <node concept="PMmxH" id="dYjOyY3FEO" role="3EZMnx">
+        <ref role="PMmxG" node="jayJfOhhJ8" resolve="ComponentVisibility" />
+      </node>
+      <node concept="3F0ifn" id="dYjOyXZzF8" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <ref role="1k5W1q" to="vzox:3VA0enIP7Is" resolve="phpVariablePrefix" />
+      </node>
       <node concept="3F0A7n" id="55frxK4fr4a" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="vzox:ub9nkyQsN2" resolve="phpIdentifier" />
       </node>
       <node concept="_tjkj" id="55frxK4fr4g" role="3EZMnx">
         <node concept="3EZMnI" id="55frxK4fr4n" role="_tjki">
