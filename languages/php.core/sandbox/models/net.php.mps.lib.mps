@@ -93,7 +93,7 @@
     </language>
   </registry>
   <node concept="3Atyh0" id="55frxK4d74e">
-    <property role="TrG5h" value="InterfaceLib" />
+    <property role="TrG5h" value="TestInterface" />
   </node>
   <node concept="0GRSw" id="55frxK5gEpn">
     <property role="TrG5h" value="ClassLib" />
@@ -183,14 +183,14 @@
       <node concept="3Tmbuc" id="dYjOyXZzjW" role="1B3o_S" />
     </node>
     <node concept="164$8z" id="55frxK5uB5m" role="0GRSX">
-      <ref role="164$8w" node="55frxK4d74e" resolve="InterfaceLib" />
+      <ref role="164$8w" node="55frxK4d74e" resolve="TestInterface" />
     </node>
     <node concept="1ktEig" id="55frxK5uB5t" role="0GRSZ">
-      <ref role="1ktEih" node="55frxK5pKYc" resolve="Abstract" />
+      <ref role="1ktEih" node="55frxK5pKYc" resolve="TestAbstract" />
     </node>
   </node>
   <node concept="0GRSw" id="55frxK5pKYc">
-    <property role="TrG5h" value="Abstract" />
+    <property role="TrG5h" value="TestAbstract" />
   </node>
 </model>
 
