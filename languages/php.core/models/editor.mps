@@ -3230,5 +3230,11 @@
   <node concept="3p36aQ" id="6JJb9fZat4v">
     <ref role="aqKnT" to="soun:6xQJrOzro3K" resolve="Closure" />
   </node>
+  <node concept="24kQdi" id="dYjOyY5GeR">
+    <ref role="1XX52x" to="soun:5AeJSXpeRWW" resolve="StatementList" />
+    <node concept="PMmxH" id="dYjOyY5GeT" role="2wV5jI">
+      <ref role="PMmxG" node="1o52yCRt3C5" resolve="StatementListWithoutBraces" />
+    </node>
+  </node>
 </model>
 
