@@ -270,6 +270,7 @@
     <property role="TrG5h" value="Break" />
     <property role="34LRSv" value="break" />
     <property role="3GE5qa" value="statement" />
+    <property role="R4oN_" value="Break instruction" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
     <node concept="PrWs8" id="1lb_jRRIE6p" role="PzmwI">
       <ref role="PrY4T" node="1lb_jRRIE6g" resolve="ILoopCounter" />
@@ -280,7 +281,7 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Case" />
     <property role="34LRSv" value="case" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5AeJSXpeRWJ" role="1TKVEi">
       <property role="IQ2ns" value="6453305938466799407" />
       <property role="20lmBu" value="aggregation" />
@@ -299,7 +300,7 @@
   <node concept="1TIwiD" id="5AeJSXpeRWW">
     <property role="EcuMT" value="6453305938466799420" />
     <property role="TrG5h" value="StatementList" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2yYL1yNE9u1" role="PzmwI">
       <ref role="PrY4T" to="fanb:NrU95lKEWo" resolve="IScopeProvider" />
     </node>
@@ -347,7 +348,7 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Catch" />
     <property role="34LRSv" value="catch" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2a$QO9k_z41" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
     </node>
@@ -366,7 +367,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="i5gb:6xQJrOzrR7W" resolve="VariableRef" />
+      <ref role="20lvS9" to="i5gb:55frxK4_u2x" resolve="VariableIdentifier" />
     </node>
     <node concept="1TJgyj" id="5AeJSXpeSaE" role="1TKVEi">
       <property role="IQ2ns" value="6453305938466800298" />
@@ -690,7 +691,7 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Else" />
     <property role="34LRSv" value="else" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3FupyzsEzoy" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716453410" />
       <property role="20lmBu" value="aggregation" />
@@ -704,7 +705,7 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="ElseIf" />
     <property role="34LRSv" value="elseif" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3FupyzsEzo_" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716453413" />
       <property role="20lmBu" value="aggregation" />
@@ -725,7 +726,7 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Finally" />
     <property role="34LRSv" value="finally" />
-    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3FupyzsEzoF" role="1TKVEi">
       <property role="IQ2ns" value="4241940224716453419" />
       <property role="20lmBu" value="aggregation" />
@@ -1342,6 +1343,21 @@
       <property role="20kJfa" value="uses" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="i5gb:6xQJrOzrR7T" resolve="ClosureUse" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JRplPog3Y2">
+    <property role="EcuMT" value="2015190809858555778" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="AssignStmt" />
+    <property role="34LRSv" value="assign" />
+    <property role="R4oN_" value="Assignment" />
+    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <node concept="1TJgyj" id="1JRplPog3Y3" role="1TKVEi">
+      <property role="IQ2ns" value="2015190809858555779" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="assign" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="i5gb:6xQJrOzrmBh" resolve="AssignExpr" />
     </node>
   </node>
 </model>

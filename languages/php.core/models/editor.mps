@@ -3236,5 +3236,15 @@
       <ref role="PMmxG" node="1o52yCRt3C5" resolve="StatementListWithoutBraces" />
     </node>
   </node>
+  <node concept="24kQdi" id="1JRplPog3Y5">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="soun:1JRplPog3Y2" resolve="AssignStmt" />
+    <node concept="3EZMnI" id="1JRplPog3Za" role="2wV5jI">
+      <node concept="2iRfu4" id="1JRplPog3Zb" role="2iSdaV" />
+      <node concept="3F1sOY" id="1JRplPoksdQ" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:1JRplPog3Y3" resolve="assign" />
+      </node>
+    </node>
+  </node>
 </model>
 
