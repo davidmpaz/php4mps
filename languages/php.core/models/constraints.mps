@@ -8,8 +8,8 @@
   <imports>
     <import index="soun" ref="r:a3c7662d-5610-4f5d-936c-b43ef74f3d81(php.core.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="8rwl" ref="r:0330d130-429e-4582-9988-a65cad7d61ab(php.core.types.structure)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="8rwl" ref="r:0330d130-429e-4582-9988-a65cad7d61ab(php.core.types.structure)" implicit="true" />
     <import index="nkja" ref="r:3a57d5f6-2f6a-4b27-99ee-eeb4e69a7cd3(php.core.types.behavior)" implicit="true" />
     <import index="o2yo" ref="r:d9fec68e-9c6d-4606-b43b-54982b373b10(php.core.expr.behavior)" implicit="true" />
   </imports>
@@ -179,18 +179,18 @@
           <node concept="17R0WA" id="5hOpZXQSyFI" role="3clFbw">
             <node concept="2DA6wF" id="5hOpZXQSyNb" role="3uHU7w" />
             <node concept="359W_D" id="5hOpZXQSxrI" role="3uHU7B">
-              <ref role="359W_E" to="8rwl:19Mz9MXaQG2" resolve="ITyped" />
               <ref role="359W_F" to="hm2y:69zaTr1EKHX" resolve="type" />
+              <ref role="359W_E" to="8rwl:19Mz9MXaQG2" resolve="ITyped" />
             </node>
           </node>
           <node concept="3clFbS" id="5hOpZXQSxko" role="3clFbx">
             <node concept="3cpWs6" id="5hOpZXQSyUE" role="3cqZAp">
               <node concept="2OqwBi" id="5hOpZXQSzrS" role="3cqZAk">
-                <node concept="EsrRn" id="5hOpZXQSz9h" role="2Oq$k0" />
                 <node concept="2qgKlT" id="5hOpZXQS$7T" role="2OqNvi">
                   <ref role="37wK5l" to="nkja:19Mz9MXlJmF" resolve="isBuiltInType" />
                   <node concept="2DD5aU" id="5hOpZXQS$qM" role="37wK5m" />
                 </node>
+                <node concept="EsrRn" id="5hOpZXQSz9h" role="2Oq$k0" />
               </node>
             </node>
           </node>

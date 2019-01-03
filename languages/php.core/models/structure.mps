@@ -471,11 +471,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5AeJSXpeRWW" resolve="StatementList" />
     </node>
-    <node concept="1TJgyi" id="3FupyzsDJAh" role="1TKVEl">
-      <property role="IQ2nx" value="4241940224716241297" />
-      <property role="TrG5h" value="returnByReference" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="2yYL1yNEwAz" role="PrDN$">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
@@ -1215,10 +1210,8 @@
     <node concept="PrWs8" id="1JRTu4eaTWC" role="PzmwI">
       <ref role="PrY4T" to="i5gb:2PgZjZ_iA3Y" resolve="IExpression" />
     </node>
-    <node concept="1TJgyi" id="3FupyzsEZsX" role="1TKVEl">
-      <property role="IQ2nx" value="4241940224716568381" />
-      <property role="TrG5h" value="byReference" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="PrWs8" id="95w1OTcG0s" role="PzmwI">
+      <ref role="PrY4T" to="i5gb:3VA0enIC2jh" resolve="IReferenceable" />
     </node>
     <node concept="1TJgyi" id="3FupyzsEZsZ" role="1TKVEl">
       <property role="IQ2nx" value="4241940224716568383" />
@@ -1358,6 +1351,41 @@
       <property role="20kJfa" value="assign" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="i5gb:6xQJrOzrmBh" resolve="AssignExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="95w1OTch8g">
+    <property role="EcuMT" value="163677824470815248" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="FunctionCall" />
+    <property role="34LRSv" value="function call" />
+    <property role="R4oN_" value="Function call" />
+    <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
+    <node concept="PrWs8" id="95w1OTd6ZH" role="PzmwI">
+      <ref role="PrY4T" node="95w1OTcvGq" resolve="IPHPFunctionCall" />
+    </node>
+    <node concept="PrWs8" id="95w1OTch9h" role="PzmwI">
+      <ref role="PrY4T" to="i5gb:3VA0enIC2jh" resolve="IReferenceable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="95w1OTcvGq">
+    <property role="EcuMT" value="163677824470874906" />
+    <property role="TrG5h" value="IPHPFunctionCall" />
+    <node concept="PrWs8" id="95w1OTcvGw" role="PrDN$">
+      <ref role="PrY4T" to="i5gb:3VA0enIC2jh" resolve="IReferenceable" />
+    </node>
+    <node concept="1TJgyj" id="95w1OTcvGy" role="1TKVEi">
+      <property role="IQ2ns" value="163677824470874914" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="i5gb:2PgZjZ_iA3Y" resolve="IExpression" />
+    </node>
+    <node concept="1TJgyj" id="95w1OTcvG$" role="1TKVEi">
+      <property role="IQ2ns" value="163677824470874916" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3FupyzsEQ_c" resolve="Function" />
     </node>
   </node>
 </model>

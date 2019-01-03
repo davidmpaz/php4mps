@@ -158,24 +158,6 @@
       <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6xQJrOzrTxu">
-    <property role="EcuMT" value="7527412447237347422" />
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="FuncCall" />
-    <property role="R4oN_" value="A function call" />
-    <property role="34LRSv" value="call func" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="20eqhzm2r7x" role="1TKVEi">
-      <property role="IQ2ns" value="2309899214278734305" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="namespace" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="A1fOBQS0$2" role="PzmwI">
-      <ref role="PrY4T" node="2PgZjZ_iA3Y" resolve="IExpression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7PCfZ2RZOkk">
     <property role="EcuMT" value="9036542955430561044" />
     <property role="3GE5qa" value="expression.binary" />
