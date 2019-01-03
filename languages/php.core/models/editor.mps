@@ -42,6 +42,7 @@
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="3459162043708467089" name="jetbrains.mps.lang.editor.structure.CellActionMap_CanExecuteFunction" flags="in" index="jK8Ss" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
@@ -2502,7 +2503,7 @@
       <node concept="3EZMnI" id="73cqIHvoYE$" role="3EZMnx">
         <node concept="l2Vlx" id="73cqIHvoYE_" role="2iSdaV" />
         <node concept="3F2HdR" id="73cqIHvoYF0" role="3EZMnx">
-          <ref role="1NtTu8" to="soun:31LoWq2tFdg" resolve="statements" />
+          <ref role="1NtTu8" to="soun:31LoWq2tFdg" resolve="methods" />
           <node concept="l2Vlx" id="73cqIHvoYF2" role="2czzBx" />
           <node concept="3F0ifn" id="lprMD3nQ88" role="2czzBI">
             <property role="3F0ifm" value="add methods" />
@@ -2848,9 +2849,20 @@
         </node>
       </node>
       <node concept="3F0ifn" id="55frxK47En4" role="3EZMnx" />
-      <node concept="PMmxH" id="55frxK4N9_M" role="3EZMnx">
-        <ref role="PMmxG" node="1o52yCRt3C5" resolve="StatementListWithoutBraces" />
-        <node concept="pVoyu" id="55frxK4N9_T" role="3F10Kt">
+      <node concept="3EZMnI" id="4Vm5A0MdvCl" role="3EZMnx">
+        <node concept="2iRkQZ" id="4Vm5A0MdvCm" role="2iSdaV" />
+        <node concept="3EZMnI" id="4Vm5A0M8AGO" role="3EZMnx">
+          <node concept="l2Vlx" id="4Vm5A0M8AGP" role="2iSdaV" />
+          <node concept="1iCGBv" id="4Vm5A0M8AHj" role="3EZMnx">
+            <ref role="1NtTu8" to="soun:4Vm5A0M8Aov" resolve="body" />
+            <node concept="1sVBvm" id="4Vm5A0M8AHk" role="1sWHZn">
+              <node concept="PMmxH" id="4Vm5A0M8AHp" role="2wV5jI">
+                <ref role="PMmxG" node="1o52yCRt3C5" resolve="StatementListWithoutBraces" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="4Vm5A0MfMw0" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -3138,7 +3150,7 @@
       <node concept="3EZMnI" id="55frxK5pL5y" role="3EZMnx">
         <node concept="l2Vlx" id="55frxK5pL5z" role="2iSdaV" />
         <node concept="3F2HdR" id="55frxK5pL6h" role="3EZMnx">
-          <ref role="1NtTu8" to="soun:55frxK5nkKk" resolve="statements" />
+          <ref role="1NtTu8" to="soun:55frxK5nkKk" resolve="methods" />
           <node concept="l2Vlx" id="55frxK5pL6j" role="2czzBx" />
           <node concept="3F0ifn" id="55frxK5pL6m" role="2czzBI">
             <property role="3F0ifm" value="add methods" />
