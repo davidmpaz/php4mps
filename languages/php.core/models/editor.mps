@@ -2037,21 +2037,6 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0ifn" id="5aza$gvsP9j" role="3EZMnx">
-          <property role="3F0ifm" value="&amp;" />
-          <node concept="pkWqt" id="5aza$gvsP9n" role="pqm2j">
-            <node concept="3clFbS" id="5aza$gvsP9o" role="2VODD2">
-              <node concept="3clFbF" id="5aza$gvsPgJ" role="3cqZAp">
-                <node concept="2OqwBi" id="5aza$gvsP$r" role="3clFbG">
-                  <node concept="pncrf" id="5aza$gvsPgI" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="5aza$gvsQaQ" role="2OqNvi">
-                    <ref role="37wK5l" to="4tyt:3FupyzsDJZX" resolve="returnByReference" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3F0A7n" id="5aza$gvv1_K" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
@@ -3283,6 +3268,21 @@
       </node>
       <node concept="3F0ifn" id="95w1OTdp8J" role="3EZMnx">
         <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Vm5A0Mn7jN">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1XX52x" to="soun:4Vm5A0Mn7eV" resolve="ThisExpression" />
+    <node concept="3EZMnI" id="4Vm5A0Mn7jS" role="2wV5jI">
+      <node concept="2iRfu4" id="4Vm5A0Mn7jT" role="2iSdaV" />
+      <node concept="3F0ifn" id="4Vm5A0Mn7jP" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <ref role="1k5W1q" to="vzox:3VA0enIP7Is" resolve="phpVariablePrefix" />
+      </node>
+      <node concept="3F0ifn" id="4Vm5A0Mn7k1" role="3EZMnx">
+        <property role="3F0ifm" value="this" />
+        <ref role="1k5W1q" to="vzox:ub9nkyQsN2" resolve="phpIdentifier" />
       </node>
     </node>
   </node>

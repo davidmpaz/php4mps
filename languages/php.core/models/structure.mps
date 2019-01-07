@@ -420,6 +420,9 @@
     <node concept="PrWs8" id="5AeJSXpfs78" role="PzmwI">
       <ref role="PrY4T" node="4UY1WdYQSGq" resolve="IHasModifiers" />
     </node>
+    <node concept="PrWs8" id="6YMYkOf8dgJ" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:4fgA7QrKSas" resolve="IContextTypeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3FupyzsCwlL">
     <property role="EcuMT" value="4241940224715916657" />
@@ -1390,6 +1393,19 @@
       <property role="20kJfa" value="function" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3FupyzsEQ_c" resolve="Function" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Vm5A0Mn7eV">
+    <property role="EcuMT" value="5680752582392050619" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4Vm5A0Mn7eW" role="PzmwI">
+      <ref role="PrY4T" to="i5gb:2PgZjZ_iA3Y" resolve="IExpression" />
+    </node>
+    <node concept="PrWs8" id="4Vm5A0MpB6K" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
   </node>
 </model>
