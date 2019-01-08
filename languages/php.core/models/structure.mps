@@ -1367,11 +1367,12 @@
     <property role="34LRSv" value="function call" />
     <property role="R4oN_" value="Function call" />
     <ref role="1TJDcQ" node="5AeJSXpeRo6" resolve="Statement" />
-    <node concept="PrWs8" id="95w1OTd6ZH" role="PzmwI">
-      <ref role="PrY4T" node="95w1OTcvGq" resolve="IPHPFunctionCall" />
-    </node>
-    <node concept="PrWs8" id="95w1OTch9h" role="PzmwI">
-      <ref role="PrY4T" to="i5gb:3VA0enIC2jh" resolve="IReferenceable" />
+    <node concept="1TJgyj" id="XZQq3QTzc3" role="1TKVEi">
+      <property role="IQ2ns" value="1116850517971448579" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="functionCall" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="i5gb:XZQq3QSUtP" resolve="FunctionCall" />
     </node>
   </node>
   <node concept="PlHQZ" id="95w1OTcvGq">

@@ -3239,35 +3239,10 @@
   <node concept="24kQdi" id="95w1OTch8O">
     <property role="3GE5qa" value="statement" />
     <ref role="1XX52x" to="soun:95w1OTch8g" resolve="FunctionCall" />
-    <node concept="3EZMnI" id="95w1OTch9b" role="2wV5jI">
-      <node concept="l2Vlx" id="95w1OTch9c" role="2iSdaV" />
-      <node concept="1iCGBv" id="95w1OTd6ZT" role="3EZMnx">
-        <ref role="1NtTu8" to="soun:95w1OTcvG$" resolve="function" />
-        <node concept="1sVBvm" id="95w1OTd6ZV" role="1sWHZn">
-          <node concept="3F0A7n" id="95w1OTd705" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="95w1OTdlHe" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-      </node>
-      <node concept="3F2HdR" id="95w1OTdoVw" role="3EZMnx">
-        <ref role="1NtTu8" to="soun:95w1OTcvGy" resolve="args" />
-        <node concept="l2Vlx" id="95w1OTdoVy" role="2czzBx" />
-        <node concept="3F0ifn" id="95w1OTdp82" role="2czzBI">
-          <property role="3F0ifm" value="" />
-          <node concept="VPxyj" id="95w1OTdp84" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="95w1OTdp8j" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="3F0ifn" id="95w1OTdp8J" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
+    <node concept="3EZMnI" id="XZQq3QTzca" role="2wV5jI">
+      <node concept="l2Vlx" id="XZQq3QTzcb" role="2iSdaV" />
+      <node concept="3F1sOY" id="288UDUSLmoW" role="3EZMnx">
+        <ref role="1NtTu8" to="soun:XZQq3QTzc3" resolve="functionCall" />
       </node>
     </node>
   </node>

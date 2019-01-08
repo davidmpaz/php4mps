@@ -68,10 +68,6 @@
       <concept id="6453305938466799420" name="php.core.structure.StatementList" flags="ng" index="0Hs2N">
         <child id="2935999617464580584" name="statements" index="2r5BRK" />
       </concept>
-      <concept id="163677824470874906" name="php.core.structure.IPHPFunctionCall" flags="ng" index="Vt7G7">
-        <reference id="163677824470874916" name="function" index="Vt7GT" />
-      </concept>
-      <concept id="163677824470815248" name="php.core.structure.FunctionCall" flags="ng" index="Vt98d" />
       <concept id="5669239491951950679" name="php.core.structure.PhpScript" flags="ng" index="2YL5gg">
         <child id="2935999617464591861" name="statements" index="2r5y7H" />
       </concept>
@@ -143,11 +139,6 @@
         <child id="2935999617464666527" name="args" index="2r5cQ7" />
         <child id="4241940224716240355" name="body" index="3Au9fb" />
       </concept>
-      <concept id="4241940224715916694" name="php.core.structure.Method" flags="ng" index="3Av6eY" />
-      <concept id="1178549954367" name="php.core.structure.IVisible" flags="ng" index="1B3ioH">
-        <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="1146644602865" name="php.core.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -402,9 +393,6 @@
           <node concept="3Atr0X" id="6B4Td7hb9$h" role="2r5BRK" />
         </node>
       </node>
-      <node concept="Vt98d" id="4Vm5A0M8qLH" role="2r5BRK">
-        <ref role="Vt7GT" node="5aza$gvvArJ" resolve="testing" />
-      </node>
     </node>
   </node>
   <node concept="2YL5gg" id="2t6Pu9bF8eO">
@@ -416,20 +404,11 @@
       </node>
     </node>
   </node>
-  <node concept="3Atyh0" id="55frxK3xh23">
-    <property role="TrG5h" value="ContainerAwareInterface" />
-    <node concept="3Av6eY" id="55frxK426ZA" role="2r5BRK">
-      <property role="TrG5h" value="setContainer" />
-      <node concept="0Hs2N" id="55frxK426ZB" role="3Au9fb" />
-      <node concept="3Tm1VV" id="55frxK426ZM" role="1B3o_S" />
-      <node concept="3Atp4g" id="55frxK426ZV" role="2r5cQ7">
-        <property role="TrG5h" value="container" />
-        <node concept="3Q0m98" id="1JRTu4eb7t1" role="3Atrfn" />
-      </node>
-    </node>
-  </node>
   <node concept="0GRSw" id="14FADuO_w4$">
     <property role="TrG5h" value="Exception" />
+  </node>
+  <node concept="3Atyh0" id="XZQq3QVRmB">
+    <property role="TrG5h" value="ContainerAwareInterface" />
   </node>
 </model>
 
