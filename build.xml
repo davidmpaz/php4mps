@@ -53,7 +53,6 @@
         <description>Php Core language support for MPS</description>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
-        <depends>org.iets3.core.os</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
