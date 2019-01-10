@@ -3,8 +3,8 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/php4mps" />
   <property name="build.layout" location="${build.dir}/artifacts/php4mps" />
-  <property name="project.home" location="${basedir}/../.." />
-  <property name="artifacts.root" location="${basedir}/../mps-artifacts" />
+  <property name="project.home" location="${basedir}" />
+  <property name="artifacts.root" location="${basedir}/artifacts" />
   <property name="platform.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="iets3.opensource.artifacts" location="${artifacts.root}/org.iets3.opensource" />
   <property name="mps_home" location="" />
@@ -99,7 +99,7 @@
     <jar destfile="${build.tmp}/default/php.core.zip/php-core/languages/php.core.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/php.core" />
       <fileset dir="${basedir}/languages/php.core" includes="icons/**" />
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project.home}/languages/php.core/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/php.core.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/php.core-generator.jar" />
@@ -129,28 +129,28 @@
       <fileset dir="${build.tmp}/java/out/php.core#01" />
       <fileset dir="${build.tmp}/default/php.core-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/java-php4mps-languages-php.core-generator-template">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-php.core-generator-template">
+      <fileset dir="${project.home}/languages/php.core/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/java-php4mps-languages-php.core-models">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-php.core-models">
+      <fileset dir="${project.home}/languages/php.core/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/php.core.zip/php-core/languages/php.core-src.jar" duplicate="preserve">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/generator/source_gen">
+      <fileset dir="${project.home}/languages/php.core/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/source_gen">
+      <fileset dir="${project.home}/languages/php.core/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/php.core/php.core.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/java-php4mps-languages-php.core-generator-template" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/java-php4mps-languages-php.core-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/php.core.zip">
       <fileset dir="${build.tmp}/default/php.core.zip" />
@@ -385,12 +385,12 @@
   <target name="makeDependents" />
   
   <target name="java.compile.php.core.sandbox" depends="java.compile.php.core, java.compile.php.core.expr, java.compile.php.core.types, fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core/sandbox/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core/sandbox/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core.sandbox" />
     <javac destdir="${build.tmp}/java/out/php.core.sandbox" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core/sandbox/source_gen" />
+        <path location="${project.home}/languages/php.core/sandbox/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -460,17 +460,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core.sandbox">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/sandbox/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core/sandbox/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.php.core" depends="java.compile.php.core.expr, java.compile.php.core.types, fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core" />
     <javac destdir="${build.tmp}/java/out/php.core" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core/source_gen" />
+        <path location="${project.home}/languages/php.core/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -527,12 +527,8 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/http-support/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.comp.os/languages/iets3.comp.os/org.iets3.components.core.jar" />
@@ -549,17 +545,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.php.core#01" depends="java.compile.php.core, java.compile.php.core.expr, java.compile.php.core.types, fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core/generator/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core#01" />
     <javac destdir="${build.tmp}/java/out/php.core#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core/generator/source_gen" />
+        <path location="${project.home}/languages/php.core/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -621,17 +617,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core#01">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core/generator/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core/generator/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.php.core.expr" depends="fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core.expr/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core.expr/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core.expr" />
     <javac destdir="${build.tmp}/java/out/php.core.expr" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core.expr/source_gen" />
+        <path location="${project.home}/languages/php.core.expr/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -667,13 +663,11 @@
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung/languages/group.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml/languages/group.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.traceExplorer.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles/languages/group.userstyles/com.mbeddr.mpsutil.userstyles.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles/languages/group.userstyles/com.mbeddr.mpsutil.userstyles.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
@@ -682,10 +676,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
@@ -701,17 +691,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core.expr">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core.expr/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core.expr/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.php.core.expr#01" depends="java.compile.php.core.expr, fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core.expr/generator/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core.expr/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core.expr#01" />
     <javac destdir="${build.tmp}/java/out/php.core.expr#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core.expr/generator/source_gen" />
+        <path location="${project.home}/languages/php.core.expr/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -770,17 +760,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core.expr#01">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core.expr/generator/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core.expr/generator/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.php.core.types" depends="fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core.types/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core.types/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core.types" />
     <javac destdir="${build.tmp}/java/out/php.core.types" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core.types/source_gen" />
+        <path location="${project.home}/languages/php.core.types/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -844,17 +834,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core.types">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core.types/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core.types/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.php.core.types#01" depends="java.compile.php.core.types, fetchDependencies">
-    <mkdir dir="${project.home}/java/php4mps/languages/php.core.types/generator/source_gen" />
+    <mkdir dir="${project.home}/languages/php.core.types/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core.types#01" />
     <javac destdir="${build.tmp}/java/out/php.core.types#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${project.home}/java/php4mps/languages/php.core.types/generator/source_gen" />
+        <path location="${project.home}/languages/php.core.types/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -910,17 +900,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core.types#01">
-      <fileset dir="${project.home}/java/php4mps/languages/php.core.types/generator/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.home}/languages/php.core.types/generator/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${project.home}/java/php4mps/languages/php.core/source_gen" />
-    <delete dir="${project.home}/java/php4mps/languages/php.core/generator/source_gen" />
-    <delete dir="${project.home}/java/php4mps/languages/php.core.expr/source_gen" />
-    <delete dir="${project.home}/java/php4mps/languages/php.core.expr/generator/source_gen" />
-    <delete dir="${project.home}/java/php4mps/languages/php.core.types/source_gen" />
-    <delete dir="${project.home}/java/php4mps/languages/php.core.types/generator/source_gen" />
-    <delete dir="${project.home}/java/php4mps/languages/php.core/sandbox/source_gen" />
+    <delete dir="${project.home}/languages/php.core/source_gen" />
+    <delete dir="${project.home}/languages/php.core/generator/source_gen" />
+    <delete dir="${project.home}/languages/php.core.expr/source_gen" />
+    <delete dir="${project.home}/languages/php.core.expr/generator/source_gen" />
+    <delete dir="${project.home}/languages/php.core.types/source_gen" />
+    <delete dir="${project.home}/languages/php.core.types/generator/source_gen" />
+    <delete dir="${project.home}/languages/php.core/sandbox/source_gen" />
   </target>
 </project>

@@ -131,23 +131,17 @@
     <node concept="3b7kt6" id="288UDUSQfO6" role="10PD9s" />
     <node concept="398rNT" id="46S$hakYoeL" role="1l3spd">
       <property role="TrG5h" value="project.home" />
-      <node concept="55IIr" id="46S$hakYoeT" role="398pKh">
-        <node concept="2Ry0Ak" id="46S$hakYoeW" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="46S$hakYoeZ" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-          </node>
+      <node concept="55IIr" id="7Blkwq5Yp8X" role="398pKh">
+        <node concept="2Ry0Ak" id="7Blkwq5Yp94" role="iGT6I">
+          <property role="2Ry0Am" value="" />
         </node>
       </node>
     </node>
     <node concept="398rNT" id="46S$hakYoek" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="55IIr" id="46S$hakYoeo" role="398pKh">
-        <node concept="2Ry0Ak" id="46S$hakYoer" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="46S$hakYoeC" role="2Ry0An">
-            <property role="2Ry0Am" value="mps-artifacts" />
-          </node>
+        <node concept="2Ry0Ak" id="7Blkwq5Yp8S" role="iGT6I">
+          <property role="2Ry0Am" value="artifacts" />
         </node>
       </node>
     </node>
