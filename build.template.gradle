@@ -1,0 +1,334 @@
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.61+'
+    }
+}
+
+
+group 'de.itemis.mps.build.example'
+description = "sample project for building MPS projects"
+
+import de.itemis.mps.gradle.GenerateLibrariesXml
+import de.itemis.mps.gradle.GitBasedVersioning
+import de.itemis.mps.gradle.GetMpsInBrowser
+import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.TestLanguages
+import de.itemis.mps.gradle.RunAntScript
+
+apply plugin: 'maven-publish'
+apply plugin: 'base'
+apply plugin: "java"
+
+
+ext.ciBuild = project.hasProperty("forceCI")
+
+ext.mainbranch = "master"
+
+/**
+ * Gets the branch name either from GIT (local builds), or from Jenkins env variables (CI BUILD).
+ *
+ * @return the current branch name with slashes ('/') replaced by dashes ('-')
+ * @throws org.gradle.api.GradleException if the branch name cannot be determined
+ */
+def getBranchName() {
+    if (ciBuild) {
+        String branchName = System.env.BRANCH_NAME
+        if (branchName == null || branchName.empty) {
+            throw new GradleException('Could not determine Git branch name')
+        }
+        return branchName.replace("/", "-")
+    } else {
+        return GitBasedVersioning.getGitBranch()
+    }
+}
+
+/**
+ * Branch prefix to be used in the snapshot version
+ *
+ * @return either '' (empty) in case current branch is the sprint branch or the branch name
+ */
+def branch() {
+    def branchName = getBranchName()
+    if (branchName.equals(mainbranch)) {
+        return ''
+    } else {
+        return "$branchName."
+    }
+}
+
+def getApplicationBuild() {
+    def buildNumber = System.getenv().BUILD_NUMBER
+    if (buildNumber != null) {
+        return buildNumber.toInteger()
+    } else {
+        return "9999.SNAPSHOT"
+    }
+}
+
+def major = '0'
+def minor = '1' //Minor version should always match the current sprint number
+def buildNumber = getApplicationBuild()
+
+if (project.hasProperty('release')) {
+    version = "$major.$minor.$buildNumber"
+} else {
+    version = "${branch()}$major.$minor-SNAPSHOT"
+}
+
+
+
+// Default repository credentials
+if (!project.hasProperty('nexusUsername')) {
+    ext.nexusUsername = ''
+    ext.nexusPassword = ''
+}
+logger.info 'Repository username: {}', project.nexusUsername
+
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/iets3/'
+]
+
+ext.releaseRepository = ""
+
+task wrapper(type: Wrapper) {
+    gradleVersion '4.7'
+    distributionType 'all'
+}
+
+configurations {
+    mps
+    mpsArtifacts
+    jdk
+    ant_lib
+    libs
+}
+
+def JDK_VERSION = "8u152b1136.39"
+// Dependency versions
+ext.mpsVersion = '2017.3.5'
+
+if (project.hasProperty('iets3OpenSourceVersion')) {
+    ext.iets3OpenSourceVersion = project.iets3OpenSourceVersion
+    logger.log(LogLevel.WARN, "IETS 3 open source versions externally overwritten to $ext.iets3OpenSourceVersion")
+} else {
+    ext.iets3OpenSourceVersion = 'maintenance-mps20173.0.1.+'
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    mpsArtifacts "org.iets3:opensource:$iets3OpenSourceVersion"
+    jdk "com.jetbrains.jdk:jdk:$JDK_VERSION:windows_x64@tgz"
+    jdk "com.jetbrains.jdk:jdk:$JDK_VERSION:osx_x64@tgz"
+    jdk "com.jetbrains.jdk:jdk:$JDK_VERSION:linux_x64@tgz"
+    ant_lib "org.apache.ant:ant-junit:1.10.1"
+    libs group: 'org.javamoney.moneta', name: 'moneta-core', version: '1.2.1'
+}
+
+// ___________________ utilities ___________________
+File scriptFile(String relativePath) {
+    new File("$rootDir/build/$relativePath")
+}
+
+repositories {
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    mavenCentral()
+}
+
+// JDK_HOME required for adding tools.jar into classpath of the forked ant process
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+    }
+    ext.jdk_home = jdk_home
+}
+
+//define directories
+ext.artifactsDir = new File(rootDir, 'artifacts')
+ext.libsDir = new File(rootDir, 'libs')
+ext.mpsDir = new File(artifactsDir, 'mps')
+ext.projectLibrariesDir = new File(buildDir, 'project-libraries')
+ext.jdkDir = new File(artifactsDir, 'jdk')
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into mpsDir
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    dependsOn configurations.mpsArtifacts
+    from {
+        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+    }
+    into artifactsDir
+}
+
+task resolveLibs(type: Copy) {
+    dependsOn configurations.libs
+    from {
+        configurations.libs.resolve()
+    }
+    into libsDir
+}
+
+task resolveJDKDependencies(type: Copy) {
+    description "Resolves distribution dependencies, copies them to $jdkDir stripping version numbers"
+    dependsOn configurations.jdk
+    from { configurations.jdk.resolve() }
+    into jdkDir
+
+    rename { filename ->
+        def resolvedArtifact = configurations.jdk.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+        return resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+    }
+}
+
+task generateLibrariesXml(type: GenerateLibrariesXml) {
+    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
+    defaults rootProject.file('projectlibraries.properties')
+    overrides rootProject.file('projectlibraries.overrides.properties')
+    destination file('code/.mps/libraries.xml')
+}
+
+task setup {
+    // We resolve MPS not for the users to use it but for the distribution packaging script to be able to refer to it.
+    dependsOn resolveMpsArtifacts
+    dependsOn generateLibrariesXml
+    dependsOn resolveLibs
+    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+}
+
+//define directories
+ext.project_home = '-Dproject.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+ext.mps_home = '-Dmps.home=' + resolveMps.destinationDir.getAbsolutePath()
+ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+ext.artifacts_dir = '-Dartifacts.root=' + new File(rootDir, 'artifacts')
+ext.pluginVersion = "-Dversion=" + version
+ext.buildDate = "-DbuildDate=" + new Date().toString()
+ext.applicationBuild = "-DapplicationBuild=" + getApplicationBuild()
+
+// default arguments for ANT
+ext.defaultScriptArgs = [mps_home, project_home, build_dir, artifacts_dir, ext.buildDate, ext.applicationBuild, ext.pluginVersion]
+ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({
+    true
+}) + project.files("$project.jdk_home/lib/tools.jar")
+
+//idea: run tasks for the generate .xml files directly
+task allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.mps.build.example.all.scripts/build.xml')
+}
+
+task build_languages(type: BuildLanguages, dependsOn: allScripts) {
+    scriptArgs = defaultScriptArgs
+    description = "Build all MPS languagee"
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.mps.build.example/build.xml')
+}
+
+task run_tests(type: TestLanguages, dependsOn: build_languages) {
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.mps.build.example/build-tests.xml')
+}
+
+
+task build_winRCP(type: RunAntScript, dependsOn: [build_languages, resolveJDKDependencies]) {
+    description "Creates the RCP"
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.mps.build.example/build-win-rcp.xml')
+    targets 'clean', 'assemble'
+}
+
+task packagewinRCP(type: Zip, dependsOn: build_winRCP) {
+    baseName 'RCP-win'
+    from rootProject.file('artifacts/de.itemis.mps.build.example.rcp.win/de.itemis.mps.build.example-RCP-win/')
+}
+
+task packagePlugin(type: Zip, dependsOn: build_languages) {
+    description "Package the plugin that contains  all languages and devkits"
+    baseName 'de.itemis.mps.build.example'
+    from artifactsDir
+    include 'de.itemis.mps.build.example/**'
+}
+
+test.dependsOn run_tests
+
+task showMpsVersion() {
+    doFirst {
+        println "#################################################"
+        println "#   The currently used MPS version is: ${mpsVersion} #"
+        println "#################################################"
+    }
+}
+
+task downloadMps(type: GetMpsInBrowser) {
+    version mpsVersion
+}
+
+// ___________________ publications _____________________
+publishing {
+    repositories {
+        maven {
+            name = 'release'
+            url project.releaseRepository
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+
+    publications {
+        plugins(MavenPublication) {
+            groupId 'de.itemis.mps.build.example'
+            artifactId 'plugin'
+            artifact packagePlugin
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mbeddrPlatformArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
+        }
+    }
+}

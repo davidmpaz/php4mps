@@ -2,6 +2,7 @@
 .mps/workspace.xml
 .mps/misc.xml
 .mps/markdown-navigator/
+.idea
 
 classes_gen/
 source_gen.caches/

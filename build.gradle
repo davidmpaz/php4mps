@@ -1,0 +1,65 @@
+import de.itemis.mps.gradle.BuildLanguages
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+        }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.61+'
+    }
+}
+
+group 'net.php.build'
+description = "Build PHP for MPS"
+
+File scriptFile(String relativePath) {
+    new File("$rootDir/$relativePath")
+}
+
+configurations {
+    ant_lib
+}
+
+dependencies {
+    ant_lib "org.apache.ant:ant-junit:1.10.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+// JDK_HOME required for adding tools.jar into classpath of the forked ant process
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Was not able to locate jdk home folder. Use " +
+                "'jdk_home' project variable to specify JDK location explicitly. " +
+                "Current JAVA_HOME is: $java_home"
+        )
+    }
+    ext.jdk_home = jdk_home
+}
+
+//define directories
+ext.project_home = '-Dproject.home=' + file(rootDir).getAbsolutePath()
+ext.mps_home = '-Dmps_home=/home/shak/.local/share/JetBrains/Toolbox/apps/MPS/ch-0/183.1562'
+ext.artifacts_dir = '-Dartifacts.root=' + new File(rootDir, 'artifacts')
+
+// default arguments for ANT
+ext.defaultScriptArgs = [mps_home, project_home, artifacts_dir]
+ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({
+    true
+}) + project.files("$project.jdk_home/lib/tools.jar")
+
+task build_languages(type: BuildLanguages) {
+    scriptArgs = defaultScriptArgs
+    description = "Build all MPS languages"
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('build.xml')
+}
