@@ -1465,13 +1465,6 @@
       <node concept="10Oyi0" id="7GDtvDfA5PZ" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="7GDtvDfA8N4">
-    <property role="3GE5qa" value="expression.cast" />
-    <ref role="13h7C2" to="i5gb:2PgZjZ_jdZz" resolve="CastExpr" />
-    <node concept="13hLZK" id="7GDtvDfA8N5" role="13h7CW">
-      <node concept="3clFbS" id="7GDtvDfA8N6" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="7GDtvDfA8Nf">
     <property role="3GE5qa" value="expression.unary" />
     <ref role="13h7C2" to="i5gb:20eqhzm2kA6" resolve="PreInc" />
