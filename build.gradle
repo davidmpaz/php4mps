@@ -31,7 +31,7 @@ configurations {
 
 // Dependency versions
 ext.mpsVersion = '2018.3.2'
-ext.artifactsVersion = '0.1+'
+ext.artifactsVersion = '0.2+'
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
