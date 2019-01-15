@@ -3,6 +3,7 @@
 .mps/misc.xml
 .mps/markdown-navigator/
 .idea
+.gradle
 
 classes_gen/
 source_gen.caches/

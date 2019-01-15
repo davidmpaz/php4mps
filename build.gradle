@@ -18,15 +18,31 @@ File scriptFile(String relativePath) {
     new File("$rootDir/$relativePath")
 }
 
+//define directories
+ext.artifactsDir = new File(rootDir, 'artifacts')
+ext.libsDir = new File(rootDir, 'libs')
+ext.mpsDir = new File(artifactsDir, 'mps')
+
 configurations {
+    mps
     ant_lib
+    mpsArtifacts
 }
 
+// Dependency versions
+ext.mpsVersion = '2018.3.2'
+ext.artifactsVersion = '0.1+'
+
 dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
     ant_lib "org.apache.ant:ant-junit:1.10.1"
+    mpsArtifacts "org.iets3:opensource:$artifactsVersion"
 }
 
 repositories {
+    maven {
+        url('https://projects.itemis.de/nexus/content/groups/OS/')
+    }
     mavenCentral()
 }
 
@@ -48,7 +64,7 @@ if (!hasProperty("jdk_home")) {
 
 //define directories
 ext.project_home = '-Dproject.home=' + file(rootDir).getAbsolutePath()
-ext.mps_home = '-Dmps_home=/home/shak/.local/share/JetBrains/Toolbox/apps/MPS/ch-0/183.1562'
+ext.mps_home = '-Dmps_home=' + mpsDir.getAbsolutePath()
 ext.artifacts_dir = '-Dartifacts.root=' + new File(rootDir, 'artifacts')
 
 // default arguments for ANT
@@ -57,7 +73,20 @@ ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({
     true
 }) + project.files("$project.jdk_home/lib/tools.jar")
 
-task build_languages(type: BuildLanguages) {
+task resolveMps(type: Copy) {
+    from { configurations.mps.resolve().collect { zipTree(it) } }
+    into mpsDir
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    from { configurations.mpsArtifacts.resolve().collect { zipTree(it) } }
+    into artifactsDir
+}
+
+task build_languages(
+        type: BuildLanguages,
+        dependsOn: [resolveMps, resolveMpsArtifacts]
+) {
     scriptArgs = defaultScriptArgs
     description = "Build all MPS languages"
     scriptClasspath = buildScriptClasspath
