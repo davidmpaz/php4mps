@@ -1,4 +1,5 @@
 import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.TestLanguages
 
 buildscript {
     repositories {
@@ -91,4 +92,13 @@ task build_languages(
     description = "Build all MPS languages"
     scriptClasspath = buildScriptClasspath
     script scriptFile('build.xml')
+}
+
+task run_tests(
+        type: TestLanguages, 
+        dependsOn: build_languages
+) {
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('build-tests.xml')
 }

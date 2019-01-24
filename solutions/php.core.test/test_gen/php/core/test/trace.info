@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:5e9231ee-57d2-4094-8087-51858cd04e2d(php.core.test@tests)/320980460852742591">
+    <file name="AssignExpression_Test.java">
+      <node id="320980460852742591" at="26,34,27,25" concept="6" />
+      <node id="320980460852742728" at="31,76,32,89" concept="1" />
+      <node id="320980460852742591" at="37,52,38,19" concept="6" />
+      <node id="320980460852742728" at="42,78,43,241" concept="4" />
+      <node id="320980460852742728" at="43,241,44,122" concept="1" />
+      <node id="320980460852742591" at="21,0,23,0" concept="5" trace="ourParamCache" />
+      <node id="320980460852742591" at="23,0,25,0" concept="2" trace="myWithCommandRule" />
+      <node id="320980460852742591" at="26,0,29,0" concept="0" trace="AssignExpression_Test#()V" />
+      <node id="320980460852742591" at="37,0,40,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="320980460852742728" at="30,0,34,0" concept="3" trace="test_ErrorMessagesCheck320980460852742728#()V" />
+      <node id="320980460852742728" at="42,0,46,0" concept="3" trace="test_ErrorMessagesCheck320980460852742728#()V" />
+      <scope id="320980460852742591" at="26,34,27,25" />
+      <scope id="320980460852742728" at="31,76,32,89" />
+      <scope id="320980460852742591" at="37,52,38,19" />
+      <scope id="320980460852742728" at="42,78,44,122">
+        <var name="operation" id="320980460852742728" />
+      </scope>
+      <scope id="320980460852742591" at="26,0,29,0" />
+      <scope id="320980460852742591" at="37,0,40,0">
+        <var name="owner" id="320980460852742591" />
+      </scope>
+      <scope id="320980460852742728" at="30,0,34,0" />
+      <scope id="320980460852742728" at="42,0,46,0" />
+      <unit id="320980460852742591" at="35,0,48,0" name="php.core.test.AssignExpression_Test$TestBody" />
+      <unit id="320980460852742591" at="19,0,49,0" name="php.core.test.AssignExpression_Test" />
+    </file>
+  </root>
+</debug-info>
+

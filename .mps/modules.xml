@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/php.core.types/php.core.types.mpl" folder="net.php" />
       <modulePath path="$PROJECT_DIR$/languages/php.core/php.core.mpl" folder="net.php" />
       <modulePath path="$PROJECT_DIR$/languages/php.core/sandbox/php.core.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/php.core.test/php.core.test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/php4mps.build/php4mps.build.msd" folder="_build" />
     </projectModules>
   </component>
