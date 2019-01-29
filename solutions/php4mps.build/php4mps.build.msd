@@ -21,7 +21,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" version="0" />
-    <module reference="9eddca89-921a-4916-82bb-60db2a2146c2(de.itemis.mps.build.example.build)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
     <module reference="31dfb853-8304-435d-b27c-e29ef9a627cf(org.iets3.opensource.build)" version="0" />

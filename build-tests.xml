@@ -102,10 +102,8 @@
         <id>php.core.test</id>
         <name>php.core.test</name>
         <version>0.1</version>
-        <depends>jetbrains.mps.core</depends>
-        <depends>org.iets3.core.os</depends>
-        <depends>com.mbeddr.platform</depends>
         <depends>com.mbeddr.mpsutil</depends>
+        <depends>org.iets3.core.os</depends>
         <depends>net.php.core</depends>
         <depends>net.php.expr</depends>
         <depends>net.php.types</depends>
@@ -169,14 +167,14 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.zip" />
-    <unzip src="${artifacts.net.php.mps}/php.core.zip" dest="${build.tmp}/deps/net.php.mps/php.core.zip" />
     <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.types.zip" />
     <unzip src="${artifacts.net.php.mps}/php.core.types.zip" dest="${build.tmp}/deps/net.php.mps/php.core.types.zip" />
-    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
-    <unzip src="${artifacts.mps}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
     <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.expr.zip" />
     <unzip src="${artifacts.net.php.mps}/php.core.expr.zip" dest="${build.tmp}/deps/net.php.mps/php.core.expr.zip" />
+    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <unzip src="${artifacts.mps}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.zip" />
+    <unzip src="${artifacts.net.php.mps}/php.core.zip" dest="${build.tmp}/deps/net.php.mps/php.core.zip" />
   </target>
   
   <target name="build" depends="assemble" />

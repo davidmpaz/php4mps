@@ -697,8 +697,11 @@
     </node>
     <node concept="m$_wf" id="6cGDqGrnMv1" role="3989C9">
       <property role="m$_wk" value="php.core.test" />
-      <node concept="m$_yC" id="10ank_VjJWI" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      <node concept="m$_yC" id="45s3b4rmUu6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
+      </node>
+      <node concept="m$_yC" id="45s3b4rro9_" role="m$_yJ">
+        <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
       <node concept="m$_yB" id="3nNewQPUlJb" role="m$_yh">
         <ref role="m$_yA" node="3nNewQPUlmy" resolve="php.core.test" />
@@ -717,15 +720,6 @@
         <node concept="3Mxwew" id="6cGDqGrnMvv" role="3MwsjC">
           <property role="3MwjfP" value="0.1" />
         </node>
-      </node>
-      <node concept="m$_yC" id="6cGDqGrnMw0" role="m$_yJ">
-        <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
-      </node>
-      <node concept="m$_yC" id="10ank_Vj1E_" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
-      </node>
-      <node concept="m$_yC" id="6cGDqGrnMv_" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
       <node concept="m$_yC" id="hOmwtcY0F$" role="m$_yJ">
         <ref role="m$_y1" node="288UDUSQfO$" resolve="net.php.core" />
