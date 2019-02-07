@@ -79,21 +79,21 @@
     </echoxml>
     <jar destfile="${build.layout}/php.core.test.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/php.core.test" />
-      <fileset dir="${basedir}/solutions/php.core.test/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${basedir}/code/solutions/php.core.test/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/php.core.test.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-php.core.test-models">
-      <fileset dir="${basedir}/solutions/php.core.test/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-solutions-php.core.test-models">
+      <fileset dir="${basedir}/code/solutions/php.core.test/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/php.core.test-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/php.core.test/source_gen">
+      <fileset dir="${basedir}/code/solutions/php.core.test/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/solutions/php.core.test/php.core.test.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-php.core.test-models" prefix="module/models" />
+      <zipfileset file="${basedir}/code/solutions/php.core.test/php.core.test.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-solutions-php.core.test-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/php.core.tets" />
     <mkdir dir="${build.layout}/php.core.tets/META-INF" />
@@ -143,21 +143,21 @@
     </echoxml>
     <jar destfile="${build.layout}/php.core.tets/languages/php.core.test.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/php.core.test" />
-      <fileset dir="${basedir}/solutions/php.core.test/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${basedir}/code/solutions/php.core.test/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/php.core.test.jar1" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-php.core.test-models1">
-      <fileset dir="${basedir}/solutions/php.core.test/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-solutions-php.core.test-models1">
+      <fileset dir="${basedir}/code/solutions/php.core.test/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/php.core.tets/languages/php.core.test-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/php.core.test/source_gen">
+      <fileset dir="${basedir}/code/solutions/php.core.test/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/solutions/php.core.test/php.core.test.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-php.core.test-models1" prefix="module/models" />
+      <zipfileset file="${basedir}/code/solutions/php.core.test/php.core.test.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-solutions-php.core.test-models1" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}org.iets3.opensource.minor=${org.iets3.opensource.minor}${line.separator}org.iets3.opensource.major=${org.iets3.opensource.major}${line.separator}org.iets3.opensource.build=${org.iets3.opensource.build}${line.separator}org.iets3.opensource.version=${org.iets3.opensource.version}${line.separator}net.php.mps.major=${net.php.mps.major}${line.separator}net.php.mps.minor=${net.php.mps.minor}${line.separator}net.php.mps.build=${net.php.mps.build}${line.separator}net.php.mps.version=${net.php.mps.version}</echo>
   </target>
@@ -169,12 +169,12 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.types.zip" />
     <unzip src="${artifacts.net.php.mps}/php.core.types.zip" dest="${build.tmp}/deps/net.php.mps/php.core.types.zip" />
-    <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.expr.zip" />
-    <unzip src="${artifacts.net.php.mps}/php.core.expr.zip" dest="${build.tmp}/deps/net.php.mps/php.core.expr.zip" />
-    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
-    <unzip src="${artifacts.mps}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
     <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.zip" />
     <unzip src="${artifacts.net.php.mps}/php.core.zip" dest="${build.tmp}/deps/net.php.mps/php.core.zip" />
+    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <unzip src="${artifacts.mps}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <mkdir dir="${build.tmp}/deps/net.php.mps/php.core.expr.zip" />
+    <unzip src="${artifacts.net.php.mps}/php.core.expr.zip" dest="${build.tmp}/deps/net.php.mps/php.core.expr.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -363,7 +363,7 @@
       <library file="${build.tmp}/deps/net.php.mps/php.core.types.zip/net.php.types/languages/php.core.types.jar" />
       <library file="${build.tmp}/deps/net.php.mps/php.core.zip/php-core/languages/php.core.jar" />
       <chunk>
-        <module file="${basedir}/solutions/php.core.test/php.core.test.msd" />
+        <module file="${basedir}/code/solutions/php.core.test/php.core.test.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
@@ -391,13 +391,13 @@
   <target name="module-tests" depends="assemble, test.php.core.test" />
   
   <target name="java.compile.php.core.test" depends="fetchDependencies">
-    <mkdir dir="${basedir}/solutions/php.core.test/source_gen" />
+    <mkdir dir="${basedir}/code/solutions/php.core.test/source_gen" />
     <mkdir dir="${build.tmp}/java/out/php.core.test" />
     <javac destdir="${build.tmp}/java/out/php.core.test" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/php.core.test/source_gen" />
-        <pathelement path="${basedir}/solutions/php.core.test/test_gen/" />
+        <path location="${basedir}/code/solutions/php.core.test/source_gen" />
+        <pathelement path="${basedir}/code/solutions/php.core.test/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/plugins/http-support/lib/httpsupport.jar" />
@@ -476,8 +476,8 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/php.core.test">
-      <fileset dir="${basedir}/solutions/php.core.test/source_gen" excludes="**/*.java" />
-      <fileset dir="${basedir}/solutions/php.core.test/test_gen/" excludes="**/*.java" />
+      <fileset dir="${basedir}/code/solutions/php.core.test/source_gen" excludes="**/*.java" />
+      <fileset dir="${basedir}/code/solutions/php.core.test/test_gen/" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -827,7 +827,7 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/solutions/php.core.test/source_gen" />
-    <delete dir="${basedir}/solutions/php.core.test/test_gen" />
+    <delete dir="${basedir}/code/solutions/php.core.test/source_gen" />
+    <delete dir="${basedir}/code/solutions/php.core.test/test_gen" />
   </target>
 </project>

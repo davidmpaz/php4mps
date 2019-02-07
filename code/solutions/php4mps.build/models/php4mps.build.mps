@@ -21,12 +21,7 @@
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW">
-        <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
-      </concept>
-      <concept id="6593674873635848984" name="jetbrains.mps.build.mps.tests.structure.RequiredPlugin" flags="ng" index="24YFd4">
-        <reference id="6593674873635848985" name="plugin" index="24YFd5" />
-      </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -165,14 +160,14 @@
   </registry>
   <node concept="1l3spW" id="288UDUSQfO4">
     <property role="TrG5h" value="net.php.mps" />
-    <property role="2DA0ip" value="../../" />
+    <property role="2DA0ip" value="../../../" />
     <node concept="10PD9b" id="288UDUSQfO5" role="10PD9s" />
     <node concept="3b7kt6" id="288UDUSQfO6" role="10PD9s" />
     <node concept="398rNT" id="46S$hakYoeL" role="1l3spd">
       <property role="TrG5h" value="project.home" />
       <node concept="55IIr" id="7Blkwq5Yp8X" role="398pKh">
-        <node concept="2Ry0Ak" id="7Blkwq5Yp94" role="iGT6I">
-          <property role="2Ry0Am" value="" />
+        <node concept="2Ry0Ak" id="24alMD$FWCb" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
         </node>
       </node>
     </node>
@@ -415,13 +410,16 @@
         <property role="3LESm3" value="4d8ba3af-d473-44cc-955b-c97c07dc587f" />
         <node concept="55IIr" id="288UDUSQfOa" role="3LF7KH">
           <node concept="2Ry0Ak" id="288UDUSQfOb" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="288UDUSQfOc" role="2Ry0An">
-              <property role="2Ry0Am" value="php.core" />
-              <node concept="2Ry0Ak" id="288UDUSQfOd" role="2Ry0An">
-                <property role="2Ry0Am" value="sandbox" />
-                <node concept="2Ry0Ak" id="288UDUSQfOe" role="2Ry0An">
-                  <property role="2Ry0Am" value="php.core.sandbox.msd" />
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="24alMD$FtLW" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="24alMD$FtLT" role="2Ry0An">
+                <property role="2Ry0Am" value="php.core" />
+                <node concept="2Ry0Ak" id="24alMD$FtLU" role="2Ry0An">
+                  <property role="2Ry0Am" value="sandbox" />
+                  <node concept="2Ry0Ak" id="24alMD$FtLV" role="2Ry0An">
+                    <property role="2Ry0Am" value="php.core.sandbox.msd" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -449,11 +447,14 @@
         <property role="BnDLt" value="true" />
         <node concept="55IIr" id="288UDUSQfOh" role="3LF7KH">
           <node concept="2Ry0Ak" id="288UDUSQfOi" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="288UDUSQfOj" role="2Ry0An">
-              <property role="2Ry0Am" value="php.core" />
-              <node concept="2Ry0Ak" id="288UDUSQfOk" role="2Ry0An">
-                <property role="2Ry0Am" value="php.core.mpl" />
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="24alMD$FtMg" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="24alMD$FtMe" role="2Ry0An">
+                <property role="2Ry0Am" value="php.core" />
+                <node concept="2Ry0Ak" id="24alMD$FtMf" role="2Ry0An">
+                  <property role="2Ry0Am" value="php.core.mpl" />
+                </node>
               </node>
             </node>
           </node>
@@ -569,11 +570,14 @@
         <property role="3LESm3" value="5c9452ed-8447-43ab-940e-32ae4074ed45" />
         <node concept="55IIr" id="288UDUSQfOn" role="3LF7KH">
           <node concept="2Ry0Ak" id="288UDUSQfOo" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="288UDUSQfOp" role="2Ry0An">
-              <property role="2Ry0Am" value="php.core.expr" />
-              <node concept="2Ry0Ak" id="288UDUSQfOq" role="2Ry0An">
-                <property role="2Ry0Am" value="php.core.expr.mpl" />
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="24alMD$FtMz" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="24alMD$FtMx" role="2Ry0An">
+                <property role="2Ry0Am" value="php.core.expr" />
+                <node concept="2Ry0Ak" id="24alMD$FtMy" role="2Ry0An">
+                  <property role="2Ry0Am" value="php.core.expr.mpl" />
+                </node>
               </node>
             </node>
           </node>
@@ -624,11 +628,14 @@
         <property role="3LESm3" value="d86bf34f-40cc-4e6f-9da4-97d97835d142" />
         <node concept="55IIr" id="288UDUSQfOt" role="3LF7KH">
           <node concept="2Ry0Ak" id="288UDUSQfOu" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="288UDUSQfOv" role="2Ry0An">
-              <property role="2Ry0Am" value="php.core.types" />
-              <node concept="2Ry0Ak" id="288UDUSQfOw" role="2Ry0An">
-                <property role="2Ry0Am" value="php.core.types.mpl" />
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="24alMD$FtMQ" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="24alMD$FtMO" role="2Ry0An">
+                <property role="2Ry0Am" value="php.core.types" />
+                <node concept="2Ry0Ak" id="24alMD$FtMP" role="2Ry0An">
+                  <property role="2Ry0Am" value="php.core.types.mpl" />
+                </node>
               </node>
             </node>
           </node>
@@ -671,19 +678,15 @@
     </node>
   </node>
   <node concept="1l3spW" id="6cGDqGrnMkT">
-    <property role="2DA0ip" value="../../" />
+    <property role="2DA0ip" value="../../../" />
     <property role="TrG5h" value="php.core.tests" />
     <property role="turDy" value="build-tests.xml" />
     <node concept="22LTRH" id="6cGDqGrnMqq" role="1hWBAP">
       <property role="TrG5h" value="php.core.test" />
-      <node concept="22LTRM" id="3nNewQPUlnC" role="22LTRK">
-        <ref role="22LTRN" node="3nNewQPUlmy" resolve="php.core.test" />
+      <node concept="22LTRM" id="24alMD$Ic5I" role="22LTRK">
+        <ref role="22LTRN" node="24alMD$Ic4x" resolve="php.core.test" />
       </node>
-      <node concept="24cAiW" id="6cGDqGrnMra" role="24cAkG">
-        <node concept="24YFd4" id="7ApEj2vLpaw" role="24YFd7">
-          <ref role="24YFd5" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
-        </node>
-      </node>
+      <node concept="24cAiW" id="6cGDqGrnMra" role="24cAkG" />
     </node>
     <node concept="1wNqPr" id="GUpsR1j0Ih" role="3989C9">
       <property role="1wNuhe" value="true" />
@@ -703,8 +706,8 @@
       <node concept="m$_yC" id="45s3b4rro9_" role="m$_yJ">
         <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
-      <node concept="m$_yB" id="3nNewQPUlJb" role="m$_yh">
-        <ref role="m$_yA" node="3nNewQPUlmy" resolve="php.core.test" />
+      <node concept="m$_yB" id="24alMD$Ic5F" role="m$_yh">
+        <ref role="m$_yA" node="24alMD$Ic4x" resolve="php.core.test" />
       </node>
       <node concept="3_J27D" id="6cGDqGrnMv3" role="m$_yQ">
         <node concept="3Mxwew" id="6cGDqGrnMvp" role="3MwsjC">
@@ -731,35 +734,38 @@
         <ref role="m$_y1" node="10ank_VjgMp" resolve="net.php.types" />
       </node>
     </node>
-    <node concept="1E1JtA" id="3nNewQPUlmy" role="3989C9">
+    <node concept="1E1JtA" id="24alMD$Ic4x" role="3989C9">
+      <property role="BnDLt" value="true" />
       <property role="TrG5h" value="php.core.test" />
       <property role="3LESm3" value="348deb4a-afe9-4903-bb53-0571ea08fc31" />
       <property role="aoJFB" value="sources and tests" />
-      <property role="BnDLt" value="true" />
-      <node concept="55IIr" id="3nNewQPUlm$" role="3LF7KH">
-        <node concept="2Ry0Ak" id="3nNewQPUlmS" role="iGT6I">
-          <property role="2Ry0Am" value="solutions" />
-          <node concept="2Ry0Ak" id="3nNewQPUlmX" role="2Ry0An">
-            <property role="2Ry0Am" value="php.core.test" />
-            <node concept="2Ry0Ak" id="hOmwtcY0EF" role="2Ry0An">
-              <property role="2Ry0Am" value="php.core.test.msd" />
+      <node concept="55IIr" id="24alMD$Ic4z" role="3LF7KH">
+        <node concept="2Ry0Ak" id="24alMD$Ic4S" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="24alMD$Ic4X" role="2Ry0An">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="24alMD$Ic5b" role="2Ry0An">
+              <property role="2Ry0Am" value="php.core.test" />
+              <node concept="2Ry0Ak" id="24alMD$Ic5t" role="2Ry0An">
+                <property role="2Ry0Am" value="php.core.test.msd" />
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="3nNewQPUln6" role="3bR37C">
-        <node concept="3bR9La" id="3nNewQPUln7" role="1SiIV1">
-          <ref role="3bR37D" node="288UDUSQfOs" resolve="php.core.expr" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="3nNewQPUrau" role="3bR37C">
-        <node concept="3bR9La" id="3nNewQPUraC" role="1SiIV1">
+      <node concept="1SiIV0" id="24alMD$Ic5v" role="3bR37C">
+        <node concept="3bR9La" id="24alMD$Ic5w" role="1SiIV1">
           <ref role="3bR37D" node="288UDUSQfOy" resolve="php.core.types" />
         </node>
       </node>
-      <node concept="1SiIV0" id="hOmwtcY0Ff" role="3bR37C">
-        <node concept="3bR9La" id="hOmwtcY0Fg" role="1SiIV1">
+      <node concept="1SiIV0" id="24alMD$Ic5x" role="3bR37C">
+        <node concept="3bR9La" id="24alMD$Ic5y" role="1SiIV1">
           <ref role="3bR37D" node="288UDUSQfOm" resolve="php.core" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="24alMD$Ic5z" role="3bR37C">
+        <node concept="3bR9La" id="24alMD$Ic5$" role="1SiIV1">
+          <ref role="3bR37D" node="288UDUSQfOs" resolve="php.core.expr" />
         </node>
       </node>
     </node>
@@ -787,13 +793,13 @@
     <node concept="398rNT" id="GUpsR1j0G5" role="1l3spd">
       <property role="TrG5h" value="project.home" />
       <node concept="55IIr" id="GUpsR1j0G6" role="398pKh">
-        <node concept="2Ry0Ak" id="GUpsR1j0G7" role="iGT6I" />
+        <node concept="2Ry0Ak" id="24alMD$Gc6Q" role="iGT6I" />
       </node>
     </node>
     <node concept="398rNT" id="GUpsR1j0G0" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="55IIr" id="GUpsR1j0G1" role="398pKh">
-        <node concept="2Ry0Ak" id="6cGDqGrnMmJ" role="iGT6I">
+        <node concept="2Ry0Ak" id="24alMD$HH3X" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
         </node>
       </node>
@@ -828,7 +834,7 @@
     <node concept="55IIr" id="6cGDqGrnMkU" role="auvoZ" />
     <node concept="1l3spV" id="6cGDqGrnMkV" role="1l3spN">
       <node concept="L2wRC" id="6cGDqGrnMEs" role="39821P">
-        <ref role="L2wRA" node="3nNewQPUlmy" resolve="php.core.test" />
+        <ref role="L2wRA" node="24alMD$Ic4x" resolve="php.core.test" />
       </node>
       <node concept="m$_wl" id="3nNewQPURYy" role="39821P">
         <ref role="m_rDy" node="6cGDqGrnMv1" resolve="php.core.test" />

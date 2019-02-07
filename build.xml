@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/net.php.mps" />
   <property name="build.layout" location="${build.dir}/artifacts/net.php.mps" />
-  <property name="project.home" location="${basedir}" />
+  <property name="project.home" location="${basedir}/code" />
   <property name="artifacts.root" location="${basedir}/artifacts" />
   <property name="platform.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="iets3.opensource.artifacts" location="${artifacts.root}/org.iets3.opensource" />
@@ -145,7 +145,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/php.core.types/php.core.types.mpl" prefix="module" />
+      <zipfileset file="${basedir}/code/languages/php.core.types/php.core.types.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core.types-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core.types-models" prefix="module/models" />
     </jar>
@@ -250,7 +250,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/php.core.expr/php.core.expr.mpl" prefix="module" />
+      <zipfileset file="${basedir}/code/languages/php.core.expr/php.core.expr.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core.expr-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core.expr-models" prefix="module/models" />
     </jar>
@@ -365,7 +365,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/php.core/php.core.mpl" prefix="module" />
+      <zipfileset file="${basedir}/code/languages/php.core/php.core.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-php.core-models" prefix="module/models" />
     </jar>
@@ -564,12 +564,12 @@
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
       <chunk>
-        <module file="${basedir}/languages/php.core/php.core.mpl" />
-        <module file="${basedir}/languages/php.core.expr/php.core.expr.mpl" />
-        <module file="${basedir}/languages/php.core.types/php.core.types.mpl" />
+        <module file="${basedir}/code/languages/php.core/php.core.mpl" />
+        <module file="${basedir}/code/languages/php.core.expr/php.core.expr.mpl" />
+        <module file="${basedir}/code/languages/php.core.types/php.core.types.mpl" />
       </chunk>
       <chunk>
-        <module file="${basedir}/languages/php.core/sandbox/php.core.sandbox.msd" />
+        <module file="${basedir}/code/languages/php.core/sandbox/php.core.sandbox.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
