@@ -16,7 +16,7 @@ group 'net.php.build'
 description = "Build PHP for MPS"
 
 File scriptFile(String relativePath) {
-    new File("$rootDir/$relativePath")
+    new File("$rootDir/code/$relativePath")
 }
 
 //define directories
@@ -64,7 +64,7 @@ if (!hasProperty("jdk_home")) {
 }
 
 //define directories
-ext.project_home = '-Dproject.home=' + file(rootDir).getAbsolutePath()
+ext.project_home = '-Dproject.home=' + file(rootDir).getAbsolutePath() + '/code'
 ext.mps_home = '-Dmps_home=' + mpsDir.getAbsolutePath()
 ext.artifacts_dir = '-Dartifacts.root=' + new File(rootDir, 'artifacts')
 
