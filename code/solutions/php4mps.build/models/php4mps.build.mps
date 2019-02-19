@@ -311,6 +311,12 @@
     </node>
     <node concept="m$_wf" id="288UDUSQfO$" role="3989C9">
       <property role="m$_wk" value="net.php.core" />
+      <node concept="m$_yC" id="4SLfaQoWxBV" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6860Y5_ZW8e" resolve="de.itemis.mps.utils" />
+      </node>
+      <node concept="m$_yC" id="4SLfaQoWxC9" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
+      </node>
       <node concept="3_J27D" id="288UDUSQfO_" role="m$_yQ">
         <node concept="3Mxwew" id="288UDUSQfOA" role="3MwsjC">
           <property role="3MwjfP" value="net.php.core" />

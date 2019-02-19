@@ -267,6 +267,8 @@
         <name>net.php.core</name>
         <description>Php Core language</description>
         <version>${version}</version>
+        <depends>de.itemis.mps.utils</depends>
+        <depends>com.mbeddr.mpsutil</depends>
         <depends>org.iets3.core.os</depends>
         <depends>org.iets3.comp.os</depends>
         <depends>net.php.types</depends>
@@ -408,12 +410,17 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jfreechart" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.json" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.projectview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.suppresswarning" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.treenotations" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.uisupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope" />
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
@@ -426,16 +433,23 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil" />
       <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.platform" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-math-editor" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-multiline" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-richtext" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" />
+      <plugin path="${artifacts.mps}/plugins/git4idea" />
       <plugin path="${artifacts.mps}/plugins/http-support" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${artifacts.mps}/plugins/mps-vcs" />
+      <plugin path="${artifacts.mps}/plugins/svn4idea" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.os" />
       <plugin path="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar/META-INF/plugin.xml/../.." />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common/languages/group.common/com.mbeddr.mpsutil.common.jar" />
