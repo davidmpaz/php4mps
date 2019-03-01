@@ -7,7 +7,7 @@
   <property name="artifacts.root" location="${basedir}/../artifacts" />
   <property name="platform.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="iets3.opensource.artifacts" location="${artifacts.root}/org.iets3.opensource" />
-  <property name="mps_home" location="" />
+  <property name="mps_home" location="${artifacts.root}/mps" />
   <property name="major" value="0" />
   <property name="minor" value="1" />
   <property name="build" value="0" />
